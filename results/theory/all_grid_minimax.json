@@ -1,0 +1,404 @@
+{
+  "claim_boundary": "Finite checks support implementation and proof arithmetic, not the universal quantifiers by themselves. Constants are loose. No new production audit CLI, measured efficiency, new generic likelihood-ratio method, scientific priority, human verification, or fellowship outcome is claimed.",
+  "dependencies": "Python standard library only",
+  "description": "Bounded exact support for the all-grid finite minimax proof.\n\nNo model labels or actual P*m tables are allocated. Finite arithmetic checks\ndo not establish a universal theorem, scientific priority, or model usefulness.\n",
+  "finite_matrix": {
+    "centered_slice_configurations": 24384,
+    "conditional_rank_identities": 151008,
+    "distinct_grids": 2300,
+    "family_configurations": 27600,
+    "largest_checked_F_to_proved_lower": "1203667345298385434050560/134937264358951201",
+    "largest_mixture_ratios": {
+      "2": "21617/6440",
+      "4": "1081/468"
+    },
+    "lower_branch_counts": {
+      "broad_bands": 6804,
+      "high_budget": 7618,
+      "tail_blocks": 3946,
+      "uniform_tail": 9232
+    },
+    "mixture_rank_checks": {
+      "2": 379856,
+      "4": 51864
+    }
+  },
+  "illustrative_profiles": [
+    {
+      "F": "7",
+      "G": "7",
+      "H": "3072",
+      "broad_count": 0,
+      "budgets": [
+        2,
+        8
+      ],
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "high_budget",
+      "pool_size": 8,
+      "prefix_cutoff": 7,
+      "prompts": 1,
+      "proved_lower": "7/2097152",
+      "proved_upper": 7,
+      "representatives": [
+        2,
+        8
+      ],
+      "residual_prefix": 24576,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "7/274877906944"
+    },
+    {
+      "F": "8",
+      "G": "8",
+      "H": "3072",
+      "broad_count": 0,
+      "budgets": [
+        2,
+        9
+      ],
+      "conditional_tail": {
+        "A": "3",
+        "block_length": 3,
+        "block_population": 3,
+        "blocks": 1,
+        "conditional_F": "5",
+        "conditional_G": "5",
+        "conditional_margin": "3/160",
+        "conditional_pool": 6,
+        "conditional_prefix": 5,
+        "conditional_scale": "1600/3",
+        "head_cutoff": 3,
+        "minimum_masses": [
+          "1/4"
+        ],
+        "retained_blocks": 1,
+        "tail_mass": "5/12"
+      },
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "tail_blocks",
+      "pool_size": 9,
+      "prefix_cutoff": 8,
+      "prompts": 1,
+      "proved_lower": "3/131072",
+      "proved_upper": 8,
+      "representatives": [
+        2,
+        9
+      ],
+      "residual_prefix": 24576,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "1/34359738368"
+    },
+    {
+      "F": "3300608/455",
+      "G": "3300608/455",
+      "H": "3072",
+      "broad_count": 3,
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "broad_bands",
+      "pool_size": 16,
+      "prefix_cutoff": 16,
+      "prompts": 1048576,
+      "proved_lower": "9/4",
+      "proved_upper": "56110336/455",
+      "representatives": [
+        1,
+        4,
+        16
+      ],
+      "residual_prefix": 0,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "12893/488552529920"
+    },
+    {
+      "F": "127",
+      "G": "128",
+      "H": "3072",
+      "broad_count": 0,
+      "budgets": [
+        1,
+        128
+      ],
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "uniform_tail",
+      "pool_size": 128,
+      "prefix_cutoff": 127,
+      "prompts": 1,
+      "proved_lower": "1/2048",
+      "proved_upper": 127,
+      "representatives": [
+        1,
+        128
+      ],
+      "residual_prefix": 24576,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "127/274877906944"
+    },
+    {
+      "F": "57",
+      "G": "20981986/286385",
+      "H": "3072",
+      "broad_count": 0,
+      "budgets": [
+        8,
+        128
+      ],
+      "conditional_tail": {
+        "A": "14",
+        "block_length": 14,
+        "block_population": 14,
+        "blocks": 3,
+        "conditional_F": "43",
+        "conditional_G": "75959230499236206767/1466403864123906125",
+        "conditional_margin": "2707770175/133415576208",
+        "conditional_pool": 114,
+        "conditional_prefix": 43,
+        "conditional_scale": "3337446745296122936112/7332019320619530625",
+        "head_cutoff": 14,
+        "minimum_masses": [
+          "16977716/108310807"
+        ],
+        "retained_blocks": 1,
+        "tail_mass": "8338473513/21662161400"
+      },
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "tail_blocks",
+      "pool_size": 128,
+      "prefix_cutoff": 57,
+      "prompts": 1,
+      "proved_lower": "7/65536",
+      "proved_upper": 57,
+      "representatives": [
+        8,
+        128
+      ],
+      "residual_prefix": 24576,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "57/274877906944"
+    },
+    {
+      "F": "349211947624/39703375",
+      "G": "349211947624/39703375",
+      "H": "3072",
+      "broad_count": 3,
+      "budgets": [
+        1,
+        7,
+        64,
+        128
+      ],
+      "epsilon": "1/128",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3/2",
+      "lower_branch": "broad_bands",
+      "pool_size": 128,
+      "prefix_cutoff": 127,
+      "prompts": 1048576,
+      "proved_lower": "9/4",
+      "proved_upper": "5936603109608/39703375",
+      "representatives": [
+        1,
+        7,
+        64
+      ],
+      "residual_prefix": 0,
+      "separated_grid": true,
+      "tau": "1/8",
+      "universal_lower": "43651493453/1364197577326592000"
+    }
+  ],
+  "interpretation": "The finite matrix and checksums support the implementation. Proofs supply universal quantifiers; theorem constants remain loose.",
+  "likelihood_checks": {
+    "interpretation": "Multiplier expectations and rational coefficient comparisons; the stopped-process and caching conclusions require the companion proof",
+    "multiplier_checks": 20,
+    "proposal_coefficient_checks": 8
+  },
+  "matrix_sha256": "3b0d96627782d50cd6c88b71061a05d3227df6265c6193e74c6dbd4426357875",
+  "original_log_interval": [
+    "3621618094152255057392447/1208925819614629174706176",
+    "56587782721128985271757/18889465931478580854784"
+  ],
+  "original_profiles_at_log_endpoints": [
+    {
+      "F": "2048",
+      "G": "2048",
+      "H": "18108090470761275286962235/2361183241434822606848",
+      "broad_count": 0,
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "epsilon": "1/160",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "3621618094152255057392447/1208925819614629174706176",
+      "lower_branch": "uniform_tail",
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proved_lower": "1/128",
+      "proved_upper": 2048,
+      "representatives": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "residual_prefix": 1917,
+      "separated_grid": true,
+      "tau": "1/10",
+      "universal_lower": "1/134217728"
+    },
+    {
+      "F": "2048",
+      "G": "2048",
+      "H": "282938913605644926358785/36893488147419103232",
+      "broad_count": 0,
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "epsilon": "1/160",
+      "interpretation": "Exact values of proof functionals and conservative theorem bounds, not measured query costs or exact minimax values",
+      "log_inverse_delta": "56587782721128985271757/18889465931478580854784",
+      "lower_branch": "uniform_tail",
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proved_lower": "1/128",
+      "proved_upper": 2048,
+      "representatives": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "residual_prefix": 1917,
+      "separated_grid": true,
+      "tau": "1/10",
+      "universal_lower": "1/134217728"
+    }
+  ],
+  "protocol": {
+    "claim_boundary": "Finite checks support implementation and proof arithmetic, not the universal quantifiers by themselves. Constants are loose. No new production audit CLI, measured efficiency, new generic likelihood-ratio method, scientific priority, human verification, or fellowship outcome is claimed.",
+    "conditional_identity_matrix": "Every m=5..128 and 1<=a<m/4, all conditional ranks, using k0=floor(m/(a+1))",
+    "conditional_identity_max_pool": 128,
+    "evidence_type": "deterministic_exact_rational_checks_not_model_measurements",
+    "grid_matrix": "Every nonempty subset of {1,...,m}, m=1..10",
+    "grid_max_pool": 10,
+    "larger_grid_matrix": "Every singleton, the full grid, the dyadic grid, the interval {floor(m/4),...,m}, and {1,m},{1,max(1,m//3),m},{max(1,m//8),m}; deduplicate within each pool",
+    "larger_pools": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "log_interpretation": "These exact rational L values correspond to delta=exp(-L); no rounded delta is substituted. All are at least log(4).",
+    "log_inverse_deltas": [
+      "3/2",
+      "12"
+    ],
+    "maximum_derived_scale_bits": 1024,
+    "maximum_pool": 128,
+    "maximum_prompts": 1099511627776,
+    "maximum_rational_input_bits": 256,
+    "mixture_matrix": "All nonempty factor-2 and factor-4 separated subsets through pool size32, at every rank; include zero support and rank one",
+    "mixture_max_pool": 32,
+    "original_profile": {
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "delta": "1/20",
+      "epsilon": "1/160",
+      "pool_size": 64,
+      "prompts": 32,
+      "tau": "1/10"
+    },
+    "prompts": [
+      1,
+      64,
+      1048576
+    ],
+    "relative_margins": [
+      "1/16",
+      "1/64"
+    ],
+    "slice_matrix": "N=3..256, both taus and relative margins, both L values, each q, and distinct s in {8epsilon,16epsilon,1/4,1/2,1} with 8epsilon<=s<=q",
+    "slice_max_population": 256,
+    "slice_tail_masses": [
+      "1/4",
+      "1/2",
+      "1"
+    ],
+    "slice_taus": [
+      "1/8",
+      "1/32"
+    ],
+    "source_pins": 9,
+    "status": "Fixed after exploratory proof derivation and targeted checks, before the saved full matrix; not external preregistration",
+    "tau": "1/8",
+    "theorem": {
+      "delta_max": "1/4",
+      "lower_factor": 274877906944,
+      "relative_margin_max": "1/16",
+      "scope": "Every finite nonempty declared BoN grid; fixed fractional losses; global whole-family validity; all-safe almost-sure completeness; worst expected distinct-label cost over the supplied-margin class",
+      "separated_grid_upper_factor": 17,
+      "separation": 2,
+      "tau_max": "1/8",
+      "upper_factor": 65536
+    },
+    "title": "Universal finite-grid minimax geometry and cached likelihood cost",
+    "version": 1
+  },
+  "protocol_sha256": "8c7efa07f661e6832f815b299264cabedf3e7ddb012e799c38fa0bab48c0a129",
+  "schema_version": 1,
+  "source_sha256": {
+    "docs/all-grid-minimax-theorem.md": "e82d771d4a0019554b002c671d50375e5837ff0e88a4cce8d047214d4680395e",
+    "docs/cached-likelihood-audit.md": "27b858667f04854513bc6497335f16f043e6b30cf560d7abae4aef0cda947280",
+    "docs/finite-density-theorem.md": "9736d9aff1ebaad94bef45e114abbe88b2d01107f960268a47eafd39c91e54e5",
+    "docs/finite-saturation-theorem.md": "4f58d2198ca3aa6192e2c24bb9f40f4a052f29c7c6cd5f21a47b0f6abc90ffcc",
+    "docs/nonzero-minimax-theorem.md": "80319976f6ed4adce304e077425494fc1010119330c49f3129ffbff0688ad2ed",
+    "experiments/all_grid_minimax_protocol.json": "8c7efa07f661e6832f815b299264cabedf3e7ddb012e799c38fa0bab48c0a129",
+    "experiments/check_all_grid_minimax.py": "5ee1ca415b8a12336199b0e1f86651d9121ee849213ded2f628025a5c7343fcb",
+    "experiments/check_sharp_cost.py": "990a15f91d2d574b2edd76d6859ecec007b440af799f8e88baa614e0d1efcb6a",
+    "tests/test_all_grid_minimax.py": "8264289ca2a82c202ee1c1ec68804fe0838ac0ee32f6ada9382042ac17467c25"
+  }
+}

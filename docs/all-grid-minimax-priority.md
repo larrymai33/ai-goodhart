@@ -78,8 +78,8 @@ an assertion that their methods are irrelevant.
 The candidate contribution is the complete finite characterization for
 the specified rank family. The lower proof combines a safe-conditioned
 suffix prior for broad scales with a different, exactly safe tail prior
-for the saturation regime. Each relevant common prior must support all
-the alternatives whose costs are summed. The upper proof controls the
+for the saturation regime. Each sum of costs is established under one
+common safe prior, using its associated alternatives. The upper proof controls the
 total cost of representative residual audits through the finite winner
 geometry. Giving each component error delta is ordinary
 intersection–union reasoning for an all-pass certificate; it does not

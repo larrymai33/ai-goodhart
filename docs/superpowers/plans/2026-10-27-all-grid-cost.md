@@ -38,15 +38,15 @@ Keep the original fixed fractional-table objective and parameter range. No downl
 
 - [x] Write failing tests using direct binomial/subset oracles, exhaustive small-prefix minimization, low/high mixture endpoints, N=3 slice boundaries, and actual likelihood multiplier/expectation identities.
 - [x] Implement bounded exact arithmetic and canonical protocol validation. Use explicit runtime checks that survive optimized Python. Preserve the existing helper and all old modules.
-- [x] Run the focused tests normally and under optimized Python; independently review source and run the full repository suite (14 focused tests, 280 repository tests; source-path, typed-cache, and derived-scale regressions included).
-- [ ] Commit the protocol/spec/plan, then reviewed scientific sources, before the saved full calculation.
+- [x] Run the focused tests normally and under optimized Python; independently review source and run the full repository suite (16 focused tests, 282 repository tests; source-path, typed-cache, derived-scale, and float-rejection regressions included).
+- [x] Commit the protocol/spec/plan (`9dd4a13`), then reviewed scientific sources (`07bd896`), before the initial saved full calculation. Saved-output review caught float-producing integer divisions; corrected source freeze `2465848` precedes the final regenerated evidence.
 
 ## Task 3: reproducible evidence and public report
 
 **Files:** create `results/theory/all_grid_minimax.json` and `docs/all-grid-minimax-report.md`; update README, citation, roadmap, provenance, progress, and this plan.
 
-- [ ] Run the registered matrix, then reproduce to a separate fresh ignored path. Compare bytes and source-commit hashes; report only actual counts and profiles.
-- [ ] Explain what the theorem newly covers, the constructive algorithm's scope, and the scaling example. Retain the stronger original-instance v0.12 certificate and distinguish it from loose universal constants.
-- [ ] Independently reconcile public claims against proofs and the saved artifact.
+- [x] Run the registered matrix, then reproduce to a separate fresh ignored path. Compare bytes and source-commit hashes; report only actual counts and profiles (13,025 identical bytes, 27,600 family configurations).
+- [x] Explain what the theorem newly covers, the constructive algorithm's scope, and the scaling example. Retain the stronger original-instance v0.12 certificate and distinguish it from loose universal constants.
+- [x] Independently reconcile public claims against proofs and the saved artifact. Final review confirms byte-identical runs, all nine frozen source pins, no floats, and matching counts/profiles; three scope-wording clarifications are applied.
 - [ ] Verify all historical worktree/index pins, changed staged bytes, local links, storage, and clean Git state; commit and publish.
 - [ ] Verify public main, repository visibility, and the version tag. Keep the full goal active unless its actual external requirements become verified.
