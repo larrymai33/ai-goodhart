@@ -32,32 +32,33 @@ Files: `goodhart_audit/core.py`, `goodhart_audit/__init__.py`, `tests/test_core.
 
 Interfaces: `rank_weights(m: int, n: int) -> list[float]` (descending); `envelope_proposal(m: int, budgets: Sequence[int]) -> tuple[list[float], float]`; `full_envelope(m: int, max_budget: int|None=None) -> tuple[list[float], float]`; `estimate_risk(ranks: Sequence[int], losses: Sequence[float], proposal: Sequence[float], budgets: Sequence[int], delta: float=0.05) -> list[dict]` (ranks zero-based; dict keys budget, estimate, lower, upper, radius, max_weight); `partial_bounds(labels: Sequence[float|None], weights: Sequence[float]) -> tuple[float,float]`.
 
-- [ ] Write and observe failing tests for exhaustive subset probabilities, minimax ratio, harmonic bounds, support checks, constant loss and valid intervals.
-- [ ] Implement exact weights, grid/full envelope, sample-variance empirical Bernstein union bounds, partial identification.
-- [ ] Run `python -m unittest discover -s tests -v`; all tests pass.
+- [x] Write and observe failing tests for exhaustive subset probabilities, minimax ratio, harmonic bounds, support checks, constant loss and valid intervals.
+- [x] Implement exact weights, grid/full envelope, sample-variance empirical Bernstein union bounds, partial identification.
+- [x] Run `python -m unittest discover -s tests -v`; all tests pass.
 
 ## Task 2: Provenance-aware audit CLI
 
 Files: `goodhart_audit/io.py`, `goodhart_audit/__main__.py`, `tests/test_workflow.py`, `examples/pools.jsonl`.
 
-- [ ] Test deterministic plans, no hidden-label leaks, repeated draws, report generation, tied scores, invalid schemas, pool tampering, missing labels.
-- [ ] Implement validated JSONL, SHA-256 fingerprint, iid uniform-prompt/envelope-rank plan and label ingestion, summary reporting.
-- [ ] Exercise plan/edit-labels/report as a subprocess using a temporary directory and generated fixture.
+- [x] Test deterministic plans, no hidden-label leaks, repeated draws, report generation, tied scores, invalid schemas, pool tampering, missing labels.
+- [x] Implement validated JSONL, SHA-256 fingerprint, iid uniform-prompt/envelope-rank plan and label ingestion, summary reporting.
+- [x] Exercise plan/edit-labels/report as a subprocess using a temporary directory and generated fixture.
 
 ## Task 3: Synthetic research study
 
 Files: `experiments/run_study.py`, `experiments/protocol.json`, `results/*`, `tests/test_experiments.py`.
 
-- [ ] Freeze protocol before results; add analytic variance, sample size and seed controls, exact truth and four baseline proposals.
-- [ ] Test synthetic fixtures and metrics against hand-calculated cases.
-- [ ] Run multi-seed study, save aggregate results and per-run CSV, plot uncertainty, efficiency and envelope scaling.
-- [ ] Confirm outputs reproduce and stay under storage limit. Include counterexamples and negative results.
+- [x] Freeze protocol before results; add analytic variance, sample size and seed controls, exact truth and four baseline proposals.
+- [x] Test synthetic fixtures and metrics against hand-calculated cases.
+- [x] Run multi-seed study, save aggregate results and per-run CSV, plot uncertainty, efficiency and envelope scaling.
+- [x] Confirm outputs reproduce and stay under storage limit. Include counterexamples and negative results.
 
 ## Task 4: Research report and public release
 
 Files: `README.md`, `docs/theory.md`, `docs/related-work.md`, `docs/research-roadmap.md`, `docs/report.md`, `CITATION.cff`, `CONTRIBUTING.md`.
 
-- [ ] Complete proofs and independent prior-art check.
-- [ ] Write claims directly from measured results and document limitations, author/tool provenance and reproduction commands.
-- [ ] Obtain independent code/math review; fix material findings and rerun checks.
-- [ ] Verify no secrets, artifacts well below 2 GB, and public repo destination; commit and publish the authorized project.
+- [x] Complete proofs and independent prior-art check.
+- [x] Write claims directly from measured results and document limitations, author/tool provenance and reproduction commands.
+- [x] Obtain independent code/math review; fix material findings and rerun checks.
+- [x] Verify no secrets, artifacts well below 2 GB, and public repo destination.
+- [ ] Commit and publish the authorized project (release operation follows verification).

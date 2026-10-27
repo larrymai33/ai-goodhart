@@ -1,0 +1,7 @@
+# Preserve exact bytes: source and result checksums must survive Git checkouts.
+* -text whitespace=cr-at-eol
+*.png binary
+# Generated measurements/figures are reproducible artifacts, not source diffs.
+results/*.csv -diff linguist-generated=true
+results/*.svg -diff linguist-generated=true
+results/manifest.json linguist-generated=true

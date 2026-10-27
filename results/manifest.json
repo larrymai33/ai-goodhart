@@ -1,0 +1,199 @@
+{
+  "protocol": {
+    "title": "Offline rank-envelope audit stress test",
+    "version": 1,
+    "status": "Specified before running this experiment; not externally preregistered",
+    "evidence_type": "synthetic_fixed_finite_pools",
+    "seed": 20261026,
+    "prompts": 128,
+    "pool_size": 256,
+    "budgets": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "draw_counts": [
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "replicates": 200,
+    "delta": 0.05,
+    "risk_threshold": 0.1,
+    "scenarios": [
+      "rare_top",
+      "top_failure",
+      "interior_band",
+      "bottom_band",
+      "flat_risk",
+      "goodhart_turn",
+      "prompt_cluster",
+      "all_safe"
+    ],
+    "methods": [
+      "uniform",
+      "budget_mixture",
+      "dyadic_mixture",
+      "max_uniform",
+      "envelope"
+    ],
+    "primary_metrics": [
+      "max_curve_error",
+      "curve_mse",
+      "simultaneous_coverage",
+      "mean_width",
+      "false_certification",
+      "unique_labels"
+    ],
+    "secondary_metrics": [
+      "combined_coverage",
+      "combined_width",
+      "naive_coverage",
+      "naive_false_certification",
+      "certified_count"
+    ],
+    "controls": [
+      "All methods use the same fixed pools and budget grid.",
+      "Every replicate uses common random uniforms and prompt indices across proposals, and prefix-coupled draw counts; comparisons are paired.",
+      "Every requested draw count is analyzed at a fixed horizon, not a data-dependent stop.",
+      "The 95% band covers the nine risk budgets for one method/scenario/horizon. It is not a simultaneous guarantee across every experiment setting.",
+      "Unique labels are cost measurements only; we do not stop on a unique-label budget.",
+      "Naive normal intervals are a deliberately invalid reference diagnostic, not a proposed safe method.",
+      "No outputs are from a real LLM; high rank means higher constructed proxy score."
+    ]
+  },
+  "protocol_sha256": "3d63a7cdbff11cadb5fa69ae42483ebe4c16a1553394538e7cdf74df34a4e540",
+  "python": "3.11.0",
+  "numpy": "1.26.4",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "source_sha256": {
+    "goodhart_audit/core.py": "abd7c60d5652b387f89a29bf540343fdc8e69f4c9bd3beeb0e9bd5aff5b5551b",
+    "experiments/run_study.py": "dd8ca43e0d9a1d499b8f157acbfdbe98692606de9b913a27745b4d16a6db3209"
+  },
+  "pool_loss_sha256": {
+    "rare_top": "ac4c167e740853616828b9795355b5d805e3e3e4530215510c6451e4aa12bf88",
+    "top_failure": "acaafbe0268c6c5934ed339d6c4f287c6a84b0b0756c08361fa807dc22058798",
+    "interior_band": "a1cf3a3099d61a469286b0d325dd4de87e190274d53f38f81740597f001a1f93",
+    "bottom_band": "522e591a3ecac381a2b87299f2151915aefc164ea24ad9dd081e19d56fa9ffe5",
+    "flat_risk": "097a1ba9346763d30a1168d3b50bfb9572af36cc48d08c04adbd5012af16233c",
+    "goodhart_turn": "b1e6d8de902eb52b3e9098c82535550e894313f8c480b815ebc4f96c833574b7",
+    "prompt_cluster": "8038bb12d08001015076640c34012e475b3a70f9d22b774deff781314815e4c2",
+    "all_safe": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479"
+  },
+  "true_risk_curves": {
+    "rare_top": [
+      0.0001220703125,
+      0.00024414062499999967,
+      0.0004882812500000001,
+      0.0009765624999999996,
+      0.0019531250000000004,
+      0.00390625,
+      0.0078125,
+      0.015625,
+      0.03125
+    ],
+    "top_failure": [
+      0.00390625,
+      0.00781249999999999,
+      0.015625000000000003,
+      0.031249999999999986,
+      0.06250000000000001,
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "interior_band": [
+      0.125,
+      0.15637254901960776,
+      0.12644262367111103,
+      0.04647824066214118,
+      0.004248566117411101,
+      2.4564651074686366e-05,
+      1.9048629260465043e-10,
+      6.288435187407397e-25,
+      0.0
+    ],
+    "bottom_band": [
+      0.25,
+      0.06176470588235311,
+      0.003635027195653083,
+      1.0804387645378203e-05,
+      4.8470976998932714e-11,
+      3.146427872813167e-23,
+      5.251051600118902e-62,
+      0.0,
+      0.0
+    ],
+    "flat_risk": [
+      0.125,
+      0.12500000000000006,
+      0.12500000000000006,
+      0.12499999999999997,
+      0.12500000000000003,
+      0.12500000000000003,
+      0.125,
+      0.12499999999999999,
+      0.125
+    ],
+    "goodhart_turn": [
+      0.1427001953125,
+      0.122393918504902,
+      0.11133496837667192,
+      0.13751575291934245,
+      0.21792640581488754,
+      0.3388417058212093,
+      0.45403725124914196,
+      0.4983368243802386,
+      0.5
+    ],
+    "prompt_cluster": [
+      0.0625,
+      0.06250000000000003,
+      0.06250000000000003,
+      0.062499999999999986,
+      0.06250000000000001,
+      0.06250000000000001,
+      0.0625,
+      0.06249999999999999,
+      0.0625
+    ],
+    "all_safe": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "proposal_max_weights": {
+    "uniform": 256.0,
+    "budget_mixture": 256.0,
+    "dyadic_mixture": 9.0,
+    "max_uniform": 128.50196078431372,
+    "envelope": 3.3618517564159847
+  },
+  "outputs_sha256": {
+    "coverage.png": "49475391098a4c457727e05bfe5b7c82bbe0a818322facd16fefd3c175e90008",
+    "coverage.svg": "f00665bd96c6c40fa887cc324c950d41b6a4acba8715767da832be1bf0a1ba86",
+    "estimation_tradeoffs.png": "f08248c91b8f13d010c7d73a78c9c50c517d3ac245640a74b320fd50ff7bf4df",
+    "estimation_tradeoffs.svg": "166ee18ec10c9e2b1cbfcf13defd641e2584c300f1ed7dc8d725d5ba35582c64",
+    "per_budget.csv": "532d7a8bbab43343972c761461b61dac14d4c6a0ecc5bed218adb336603721e8",
+    "replicates.csv": "d3ab0eb319c6d26124b6d22f033142f1a563fce1d7e2e64e82d9a926fa903055",
+    "scaling.csv": "38acf5ee523b70126363650c128a791fedaffaf5d23770da936bef652afe2515",
+    "summary.csv": "251aba27d3c12bab36bd6dbaf229af0932c53d20d80623220720c366a5ee7be3",
+    "theory_and_risks.png": "eb5031150e0d72beb2a65050e1652dc9a37b9212cb07aaa7f1236dd9928cb105",
+    "theory_and_risks.svg": "92a800f984bcf4c9355d96e07d7b9510f83b9c0e2acacc8201d745bcc73598cf"
+  }
+}
