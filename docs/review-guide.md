@@ -6,6 +6,8 @@ The companion [seven-page research note](../paper/paper.pdf) has [editable Markd
 
 The v0.4 follow-up is the [zero-table cost theorem](zero-cost-theorem.md), with [exact finite checks and cost certificates](zero-cost-report.md). It analyzes an established independent-inclusion audit and a whole-family decision, rather than changing the earlier confidence-sequence engine.
 
+Version 0.4.1 makes that decision available through a [complete annotation workflow](zero-workflow.md). Review the [rational probability construction and proof](zero-workflow-numerics.md), [math implementation](../goodhart_audit/zero_math.py), [plan/report implementation](../goodhart_audit/zero.py), and their [math](../tests/test_zero_math.py) and [workflow](../tests/test_zero_workflow.py) tests. The code checks a conservative probability sandwich, uses exact integer rejection sampling, and verifies an externally recorded plan commitment. Its saved tape establishes replay consistency; independent randomness, correct labels, and commitment timing remain assumptions. The examples are hand-authored software fixtures, not another study.
+
 ## Claim-to-evidence map
 
 | Claim or question | Evidence to inspect | Boundary |

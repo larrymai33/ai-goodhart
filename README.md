@@ -4,7 +4,7 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.4 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.4.1 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
 
@@ -13,6 +13,8 @@ This research prototype studies that question for a fixed collection of scored c
 The factor is deliberately loose. For the existing geometry of 32 pools of 64 candidates, seven dyadic budgets, threshold 0.1, and error probability 0.05, exact rational certificates bound the design's expected zero-table cost within **1.398 times** the adaptive optimum. These are analytical bounds, not measured model performance. They concern a different decision and design from the published six-bet confidence-sequence engine. [Cost certificates and reproduction](docs/zero-cost-report.md).
 
 **Earlier standalone research note:** [seven-page PDF](paper/paper.pdf) · [Markdown source](paper/paper.md) · [review guide](docs/review-guide.md). It consolidates the frozen v0.3 evidence and substantial AI-assistance disclosure; the new cost theorem is in the linked follow-up note. The earlier scientific sources and results are preserved.
+
+**Use the cost theorem:** the [zero-only annotation workflow](docs/zero-workflow.md) creates a randomized query plan, commits its immutable content before annotation, and verifies a whole-family certificate when every selected loss is exactly zero. Its rational arithmetic and integer rejection sampler preserve the theorem's factor-160 guarantee under the stated assumptions. The [numerical proof](docs/zero-workflow-numerics.md) explains the implementation; hand-authored arithmetic fixtures exercise its outcomes without claiming model evidence. Run `python -S -m goodhart_audit.zero --help` with no installation.
 
 **New: sharper finite-pool theory and stronger baselines.** The [latest follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
 
@@ -83,7 +85,7 @@ python -m experiments.verify_design_results
 python -m goodhart_audit --help
 ```
 
-Experiment tests are skipped if NumPy is unavailable; core/workflow tests still run. To rerun the full study with existing NumPy/Matplotlib:
+The complete test suite includes reproduction tests that need installed NumPy and SciPy. To check the new zero-only modules with site-packages disabled, use `python -S -m unittest discover -s tests -p "test_zero*.py" -v`. To rerun the original full study with existing NumPy/Matplotlib:
 
 ```console
 python -m experiments.run_study --out artifacts/local/reproduction

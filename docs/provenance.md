@@ -1,5 +1,9 @@
 # Provenance and contribution disclosure
 
+Version 0.4.1 adds a zero-only plan/annotation/report workflow with the same substantial Codex assistance. Its design was committed as `b6d4c9f` before implementation. Separate agent contexts reviewed the rational probability construction, proof, workflow integrity, exact-label parsing, and resource limits. All 159 tests pass; 44 zero-cost and workflow tests also pass with site-packages disabled. End-to-end checks used clearly hand-authored arithmetic fixtures, not model outputs or a labeling-efficiency benchmark. Earlier measured code, result files, and source-pinned mathematical notes are unchanged.
+
+The user explicitly declined external outreach and reports being comfortable with probability proofs and Python. No external review request was sent. That background does not establish that the user has independently derived or extended the assisted work; no such personal contribution is claimed here.
+
 This initial release was commissioned by Larry Mai and developed with substantial Codex multi-agent assistance on 26 October 2026. The repository already existed with an MIT license naming Larry Mai.
 
 The v0.1 fixed-draw release is retained. The v0.2 anytime unique-label extension was implemented with the same substantial Codex assistance. Its verification includes 90 passing tests, scalar/vector conformance checks, source/output integrity checks, and a separate full rerun reproducing both result tables byte for byte. These checks were performed within this assisted development session; they are not independent human replication.

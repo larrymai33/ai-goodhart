@@ -8,6 +8,8 @@ The v0.3 follow-up strengthens the finite-pool theorem and corrects a material l
 
 The v0.4 [cost theorem](zero-cost-theorem.md) addresses a different, analytical gap: it compares a classical independent-inclusion audit's expected zero-table cost with all valid adaptive audits for the same whole-family decision. Its proof and exact cost certificates do not add model evidence or extend the earlier engine's guarantee. The user confirmed no additional local model assets are available; the offline constraint remains in force. Independent specialist review and human ownership of the argument remain necessary next milestones.
 
+The v0.4.1 [zero-only workflow](zero-workflow.md) now connects the cost theorem to actual plan creation, annotation, and reporting. Its rational implementation retains the proved cost factor; its hand-authored examples test usability only. This closes the implementation gap for that decision without resolving novelty, model evidence, or independent human ownership. The user has declined external outreach and reports comfort with probability proofs and Python. No outreach is part of the current work; self-reported background is not evidence that the project's arguments have been independently verified.
+
 ## Implemented v0.2 extension and remaining work
 
 The unique-label engine and `plan-unique` / `report-unique` workflow sample previously unqueried candidates without replacement and report confidence sequences across all declared budgets and labeled prefixes. The intended guarantee permits stopping at a unique-label quota or based on accumulated evidence, conditional on frozen pools, target masses, and fixed correct labels. The original `plan` / `report` workflow retains its fixed-time, with-replacement interpretation.

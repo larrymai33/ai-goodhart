@@ -1,5 +1,13 @@
 # Research releases
 
+## 0.4.1 — 26 October 2026
+
+Adds a complete standard-library zero-only annotation workflow for the v0.4 whole-family decision. Planning uses exact rational inclusion probabilities, fresh OS random bits, unbiased integer rejection, a recorded tape, and an external commitment. Reporting verifies immutable content and exact annotations before returning pending, not certified, or certified. A positive value as small as `1e-400` cannot silently become zero; incomplete annotations cannot certify. Existing outputs are never overwritten.
+
+The numerical proof shows that the conservative rational implementation retains the theorem's factor-160 expected zero-table cost guarantee. That guarantee remains conditional on independent uniform bits, correct fixed labels, and the original theorem restrictions. A recorded tape cannot establish its own randomness or prove that no other plan was tried.
+
+All 159 tests pass, including 44 zero-cost/zero-workflow checks with site-packages disabled. End-to-end hand-authored arithmetic examples exercise pending, zero, and positive-label outcomes; report replay is byte-identical. Review added regressions for aggregate input limits and selection-independent output preflight, preventing resource rejection from filtering random selections. Earlier saved research evidence and source pins remain unchanged. This is a usability release, not a new model study or an external novelty determination.
+
 ## 0.4.0 — 26 October 2026
 
 Adds a candidate finite-table cost approximation theorem for the established multi-target NEGEXP audit. For the declared structured budget grids, thresholds at most 1/8, and error probabilities at most 1/4, its expected distinct-label cost at the all-zero table is at most 160 times the unrestricted adaptive optimum. The proof includes finite census saturation and an explicit obstruction at thresholds approaching one.
