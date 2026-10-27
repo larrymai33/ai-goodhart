@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "title": "Sharp zero-table cost: exact finite bounds and dense-regime certificates",
+  "status": "Fixed after exploratory proof checks and before the saved run; not external preregistration",
+  "evidence_type": "deterministic_exact_arithmetic_checks",
+  "theorem": {
+    "budget_family": "Full prefix 1,...,N with 1<=N<=m",
+    "confidence_range": "0<delta<=1/4",
+    "limit": "tau tends to zero and rho=log(1/delta)*N/(P*m*tau) tends to zero",
+    "conclusion": "OPT_0 / (log(1/delta)*Z_mN/tau) and C_NEG / (log(1/delta)*Z_mN/tau) tend to one uniformly in the other parameters",
+    "objective": "Expected distinct unit-cost queries at the all-zero fixed-label table; validity against every fixed table and almost-sure zero-table certification"
+  },
+  "inverse_max_block_size": 64,
+  "inverse_deltas": ["1/4", "1/16", "1/256", "1/20", "1/1000"],
+  "large_inverse_cases": [
+    {"block_size": 10000, "bad_subset_size": 100, "delta": "1/4"},
+    {"block_size": 10000, "bad_subset_size": 100, "delta": "1/20"},
+    {"block_size": 1000000, "bad_subset_size": 1000, "delta": "1/4"},
+    {"block_size": 1000000, "bad_subset_size": 1000, "delta": "1/20"}
+  ],
+  "certificate_geometries": [
+    {"pool_size": 1, "maximum_budget": 1},
+    {"pool_size": 8, "maximum_budget": 8},
+    {"pool_size": 64, "maximum_budget": 16},
+    {"pool_size": 128, "maximum_budget": 128}
+  ],
+  "certificate_k": [8, 16, 32, 64, 128, 512, 2048],
+  "certificate_deltas": ["1/4", "1/20"],
+  "certificate_construction": "tau=1/k^3, eta=1/k, kappa=k, P=ceil(3*N*k^4/m); no P*m table is allocated",
+  "log_series_terms": 32,
+  "dyadic_rounding_bits": 80,
+  "claim_boundary": "Finite checks support the proof and implementation, not novelty, real-model usefulness, a nonzero-table cost guarantee, or practical optimality at the earlier tau=.1 study. Counts are symbolic analytical geometries, not sampled model data."
+}
