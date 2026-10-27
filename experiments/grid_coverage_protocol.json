@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "title": "Exact deterministic coverage between finite best-of-n budgets",
+  "status": "Specified after exploratory derivation and floating LP screens, before the saved exhaustive run; not external preregistration",
+  "evidence_type": "exact_arithmetic_and_synthetic_witnesses_not_model_data",
+  "pascal_max_pool": 64,
+  "chord_max_pool": 24,
+  "binary_subset_max_pool": 8,
+  "shortest_path_max_pool": 96,
+  "grid_levels": [["0", "0"], ["1/10", "1/10"], ["3/32", "1/10"], ["1/16", "1/8"]],
+  "profile_pools": [64, 128, 1024, 100000],
+  "original_pool": 64,
+  "original_prompts": 32,
+  "original_grid": [1, 2, 4, 8, 16, 32, 64],
+  "certified_level": "3/32",
+  "target_level": "1/10",
+  "fractional_witness": {"rank_1_mean": "3/32", "rank_2_mean": "189/1024", "other_means": "0"},
+  "binary_witness": {"positive_rank_1_prompts": 3, "positive_rank_2_prompts": 5, "other_labels": 0},
+  "source_pins": 6,
+  "claim_boundary": "Attributed convexity application; exact integer interpolation and witnesses. Grid minimality only under the displayed sufficient rule. No label-cost improvement, new generic convexity, actual-model evidence, automatic full-family auditor completeness, scientific priority, or fellowship outcome."
+}
