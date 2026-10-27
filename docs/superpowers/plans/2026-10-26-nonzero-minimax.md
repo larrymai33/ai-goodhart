@@ -24,11 +24,11 @@ No downloads, installs, study-model inference, external outreach, or changes to 
 
 ## Tasks
 
-- [ ] Write docs/nonzero-minimax-theorem.md with the complete reviewed argument, exact constants, prior-art comparison, and practical limitations.
-- [ ] Write tests/test_nonzero_minimax.py first; observe its failure before implementing experiments/check_nonzero_minimax.py.
-- [ ] Implement geometry checks, finite-profile and conditional-probability checks, and stage/cost bounds according to experiments/nonzero_minimax_protocol.json. Reuse exact_weights and log_interval from the unchanged experiments/check_sharp_cost.py. No expanded large populations.
-- [ ] Add meaningful tests for terminal support, enumeration-based conditional laws, strict alternative rounding, concentration summation-by-parts, overwrite rejection, source drift, and protocol mutation. Verify under -B -S and -O.
-- [ ] Independently review proof and checker; freeze sources before the saved run. Record protocol changes before running them.
+- [x] Write docs/nonzero-minimax-theorem.md with the complete reviewed argument, exact constants, prior-art comparison, and practical limitations.
+- [x] Write tests/test_nonzero_minimax.py first; observe its failure before implementing experiments/check_nonzero_minimax.py.
+- [x] Implement geometry checks, finite-profile and conditional-probability checks, and stage/cost bounds according to experiments/nonzero_minimax_protocol.json. Reuse exact_weights and log_interval from the unchanged experiments/check_sharp_cost.py. No expanded large populations.
+- [x] Add meaningful tests for terminal support, enumeration-based conditional laws, strict alternative rounding, concentration summation-by-parts, overwrite rejection, source drift, and protocol mutation. Verify under -B -S and -O.
+- [x] Independently review proof and checker; freeze sources before the saved run. Record protocol changes before running them.
 - [ ] Run the fixed protocol twice to different paths; compare bytes; write docs/nonzero-minimax-report.md from actual output.
 - [ ] Update navigation, provenance, and version only after verification; preserve older manuscript snapshots and manifests.
 - [ ] Verify all tests, old pins, links, storage, and staged Git blobs; publish and verify the public release while keeping the full goal active.
