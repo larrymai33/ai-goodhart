@@ -1,5 +1,13 @@
 # Research releases
 
+## 0.5.0 — 26 October 2026
+
+Extends the finite zero-table cost approximation to every declared budget grid containing 1, with factor 320 against the unrestricted adaptive optimum under the same threshold and confidence restrictions. The original factor 160 remains available on grids containing every power of four. The proof uses only declared witness targets and handles gaps between their disjoint blocks. A counterexample establishes failure of a bound uniform over all grids and confidence levels at fixed threshold when the baseline restriction is removed. It does not show failure at fixed confidence or for every grid without 1.
+
+Adds a source-pinned exact checker and 122,900 cost comparisons, covering every containing-1 grid through pool size 12 plus five larger cases. A second run reproduces the saved artifact byte for byte. All 171 tests pass, including a regression that rejects huge scientific exponents before rational conversion. The zero-only workflow accepts the extended domain; four earlier design records and two actual v0.4.1 report replays are unchanged.
+
+This is a theorem-scope extension using established auditing and geometric grouping techniques. Scientific priority, independent human validation, and real-model usefulness remain unestablished. Earlier source-pinned results are preserved.
+
 ## 0.4.1 — 26 October 2026
 
 Adds a complete standard-library zero-only annotation workflow for the v0.4 whole-family decision. Planning uses exact rational inclusion probabilities, fresh OS random bits, unbiased integer rejection, a recorded tape, and an external commitment. Reporting verifies immutable content and exact annotations before returning pending, not certified, or certified. A positive value as small as `1e-400` cannot silently become zero; incomplete annotations cannot certify. Existing outputs are never overwritten.

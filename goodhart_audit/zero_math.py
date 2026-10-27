@@ -2,8 +2,10 @@
 
 The probabilities are rational upper approximations to classical NEGEXP.
 Certified log intervals and a checked upper sandwich preserve the finite-pool
-factor-160 expected-cost proof. No numerical logarithms, exponentials, or
-pseudorandom seeds are used. See docs/zero-workflow-numerics.md.
+expected-cost proofs: factor 160 on grids containing every power of four
+through their maximum, or 320 on other grids containing budget 1. No numerical
+logarithms, exponentials, or pseudorandom seeds are used. See
+docs/zero-workflow-numerics.md and docs/sparse-grid-theorem.md.
 """
 
 from collections.abc import Sequence
@@ -107,10 +109,14 @@ def design_probabilities(m, budgets, P, tau, delta):
     if len(set(budgets)) != len(budgets):
         raise ValueError('budgets must be distinct')
     budgets = tuple(sorted(budgets))
+    if budgets[0] != 1:
+        raise ValueError('budgets must contain baseline budget 1')
+    cost_factor = 160
     required = 1
     while required <= budgets[-1]:
         if required not in budgets:
-            raise ValueError('budgets must contain every power of four through their maximum')
+            cost_factor = 320
+            break
         required *= 4
     tau = _parameter(tau, 'tau', F(1, 8))
     delta = _parameter(delta, 'delta', F(1, 4))
@@ -140,7 +146,7 @@ def design_probabilities(m, budgets, P, tau, delta):
         'rank_inclusion_probabilities': [_fraction_text(q) for q in probabilities],
         'expected_zero_cost': _fraction_text(expected_cost),
         'random_draw_width_sum': draw_width_sum,
-        'cost_factor': 160,
+        'cost_factor': cost_factor,
     }
     return record, probabilities
 

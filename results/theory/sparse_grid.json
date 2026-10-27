@@ -1,0 +1,1172 @@
+{
+  "additional_geometry_results": [
+    {
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "minimum_scaled_target_density": "3/4",
+          "rank_count": 48
+        },
+        {
+          "budget": 7,
+          "first_rank": 3,
+          "last_rank": 9,
+          "minimum_scaled_target_density": "67642575/207072064",
+          "rank_count": 7
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "minimum_scaled_target_density": "1",
+          "rank_count": 1
+        }
+      ],
+      "budgets": [
+        1,
+        3,
+        7,
+        19,
+        64
+      ],
+      "cost_checks": [
+        {
+          "block_scale": "3/16",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "1/16",
+          "envelope_cost_upper": "12170426815/69576213504",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "12170426815/13045540032"
+        },
+        {
+          "block_scale": "3/4",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "1/4",
+          "envelope_cost_upper": "12170426815/17394053376",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "12170426815/13045540032"
+        },
+        {
+          "block_scale": "3",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "1",
+          "envelope_cost_upper": "12170426815/4348513344",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "12170426815/13045540032"
+        },
+        {
+          "block_scale": "5",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "2",
+          "envelope_cost_upper": "9996170143/2174256672",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "9996170143/10871283360"
+        },
+        {
+          "block_scale": "9",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "4",
+          "envelope_cost_upper": "8909041807/1087128336",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "8909041807/9784155024"
+        },
+        {
+          "block_scale": "16",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "8",
+          "envelope_cost_upper": "1969020505/135891042",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "1969020505/2174256672"
+        },
+        {
+          "block_scale": "24",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "16",
+          "envelope_cost_upper": "6808539907/271782084",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "6808539907/6522770016"
+        },
+        {
+          "block_scale": "56",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "64",
+          "envelope_cost_upper": "64",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "8/7"
+        },
+        {
+          "block_scale": "56",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "256",
+          "envelope_cost_upper": "64",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "8/7"
+        },
+        {
+          "block_scale": "56",
+          "budgets": [
+            1,
+            3,
+            7,
+            19,
+            64
+          ],
+          "cost_scale": "1024",
+          "envelope_cost_upper": "64",
+          "pool_size": 64,
+          "prompts": 1,
+          "ratio": "8/7"
+        }
+      ],
+      "pool_size": 64,
+      "prompts": 1
+    },
+    {
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "minimum_scaled_target_density": "3/4",
+          "rank_count": 48
+        },
+        {
+          "budget": 63,
+          "first_rank": 1,
+          "last_rank": 1,
+          "minimum_scaled_target_density": "63/64",
+          "rank_count": 1
+        }
+      ],
+      "budgets": [
+        1,
+        63
+      ],
+      "cost_checks": [
+        {
+          "block_scale": "1/8",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "1/16",
+          "envelope_cost_upper": "63/512",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "63/64"
+        },
+        {
+          "block_scale": "1/2",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "1/4",
+          "envelope_cost_upper": "63/128",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "63/64"
+        },
+        {
+          "block_scale": "2",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "1",
+          "envelope_cost_upper": "63/32",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "63/64"
+        },
+        {
+          "block_scale": "4",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "2",
+          "envelope_cost_upper": "63/16",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "63/64"
+        },
+        {
+          "block_scale": "8",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "4",
+          "envelope_cost_upper": "63/8",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "63/64"
+        },
+        {
+          "block_scale": "12",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "8",
+          "envelope_cost_upper": "95/8",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "95/96"
+        },
+        {
+          "block_scale": "20",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "16",
+          "envelope_cost_upper": "79/4",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "79/80"
+        },
+        {
+          "block_scale": "68",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "64",
+          "envelope_cost_upper": "67",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "67/68"
+        },
+        {
+          "block_scale": "196",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "256",
+          "envelope_cost_upper": "256",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "64/49"
+        },
+        {
+          "block_scale": "196",
+          "budgets": [
+            1,
+            63
+          ],
+          "cost_scale": "1024",
+          "envelope_cost_upper": "256",
+          "pool_size": 64,
+          "prompts": 4,
+          "ratio": "64/49"
+        }
+      ],
+      "pool_size": 64,
+      "prompts": 4
+    },
+    {
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "minimum_scaled_target_density": "3/4",
+          "rank_count": 48
+        },
+        {
+          "budget": 7,
+          "first_rank": 3,
+          "last_rank": 9,
+          "minimum_scaled_target_density": "67642575/207072064",
+          "rank_count": 7
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "minimum_scaled_target_density": "1",
+          "rank_count": 1
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        7,
+        17,
+        64
+      ],
+      "cost_checks": [
+        {
+          "block_scale": "3/16",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "1/16",
+          "envelope_cost_upper": "1512832721/8697026688",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "3/4",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "1/4",
+          "envelope_cost_upper": "1512832721/2174256672",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "3",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "1",
+          "envelope_cost_upper": "1512832721/543564168",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "6",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "2",
+          "envelope_cost_upper": "1512832721/271782084",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "12",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "4",
+          "envelope_cost_upper": "1512832721/135891042",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "24",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "8",
+          "envelope_cost_upper": "1512832721/67945521",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "48",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "16",
+          "envelope_cost_upper": "3025665442/67945521",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1512832721/1630692504"
+        },
+        {
+          "block_scale": "160",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "64",
+          "envelope_cost_upper": "9928405096/67945521",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "1241050637/1358910420"
+        },
+        {
+          "block_scale": "512",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "256",
+          "envelope_cost_upper": "31535108824/67945521",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "3941888603/4348513344"
+        },
+        {
+          "block_scale": "1280",
+          "budgets": [
+            1,
+            2,
+            7,
+            17,
+            64
+          ],
+          "cost_scale": "1024",
+          "envelope_cost_upper": "89835260512/67945521",
+          "pool_size": 64,
+          "prompts": 32,
+          "ratio": "2807351891/2717820840"
+        }
+      ],
+      "pool_size": 64,
+      "prompts": 32
+    },
+    {
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 32,
+          "last_rank": 127,
+          "minimum_scaled_target_density": "96/127",
+          "rank_count": 96
+        },
+        {
+          "budget": 5,
+          "first_rank": 7,
+          "last_rank": 25,
+          "minimum_scaled_target_density": "358853/1129919",
+          "rank_count": 19
+        },
+        {
+          "budget": 23,
+          "first_rank": 2,
+          "last_rank": 5,
+          "minimum_scaled_target_density": "423027592/1271158875",
+          "rank_count": 4
+        },
+        {
+          "budget": 97,
+          "first_rank": 1,
+          "last_rank": 1,
+          "minimum_scaled_target_density": "97/127",
+          "rank_count": 1
+        }
+      ],
+      "budgets": [
+        1,
+        5,
+        23,
+        97,
+        127
+      ],
+      "cost_checks": [
+        {
+          "block_scale": "1/4",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "1/16",
+          "envelope_cost_upper": "29447235478469/161036507847600",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "1",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "1/4",
+          "envelope_cost_upper": "29447235478469/40259126961900",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "4",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "1",
+          "envelope_cost_upper": "29447235478469/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "8",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "2",
+          "envelope_cost_upper": "58894470956938/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "16",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "4",
+          "envelope_cost_upper": "117788941913876/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "32",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "8",
+          "envelope_cost_upper": "235577883827752/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "29447235478469/40259126961900"
+        },
+        {
+          "block_scale": "56",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "16",
+          "envelope_cost_upper": "390637513731704/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "48829689216463/70453472183325"
+        },
+        {
+          "block_scale": "168",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "64",
+          "envelope_cost_upper": "1284374130047216/10064781740475",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "160546766255902/211360416549975"
+        },
+        {
+          "block_scale": "448",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "256",
+          "envelope_cost_upper": "432516840847064/1118309082275",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "54064605105883/62625308607400"
+        },
+        {
+          "block_scale": "960",
+          "budgets": [
+            1,
+            5,
+            23,
+            97,
+            127
+          ],
+          "cost_scale": "1024",
+          "envelope_cost_upper": "1016",
+          "pool_size": 127,
+          "prompts": 8,
+          "ratio": "127/120"
+        }
+      ],
+      "pool_size": 127,
+      "prompts": 8
+    },
+    {
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 33,
+          "last_rank": 128,
+          "minimum_scaled_target_density": "3/4",
+          "rank_count": 96
+        }
+      ],
+      "budgets": [
+        1
+      ],
+      "cost_checks": [
+        {
+          "block_scale": "1/16",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "1/16",
+          "envelope_cost_upper": "1/16",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "1/4",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "1/4",
+          "envelope_cost_upper": "1/4",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "1",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "1",
+          "envelope_cost_upper": "1",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "2",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "2",
+          "envelope_cost_upper": "2",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "4",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "4",
+          "envelope_cost_upper": "4",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "8",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "8",
+          "envelope_cost_upper": "8",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "16",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "16",
+          "envelope_cost_upper": "16",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "64",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "64",
+          "envelope_cost_upper": "64",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "256",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "256",
+          "envelope_cost_upper": "256",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "1"
+        },
+        {
+          "block_scale": "288",
+          "budgets": [
+            1
+          ],
+          "cost_scale": "1024",
+          "envelope_cost_upper": "384",
+          "pool_size": 128,
+          "prompts": 3,
+          "ratio": "4/3"
+        }
+      ],
+      "pool_size": 128,
+      "prompts": 3
+    }
+  ],
+  "binary_support_tables_checked": 60,
+  "checks": {
+    "additional_geometries": 5,
+    "block_checks": 8160,
+    "cost_rank_terms": 1356180,
+    "cost_scale_checks": 122900,
+    "exhaustive_families": 4095,
+    "geometry_cases": 12290,
+    "maximum_observed_ratio": {
+      "display": "1.666666667",
+      "interpretation": "Finite-grid diagnostic maximum S/A, not a universal constant or exact NEGEXP/OPT0 ratio.",
+      "value": "5/3",
+      "witness": {
+        "budgets": [
+          1,
+          3
+        ],
+        "cost_scale": "1/16",
+        "pool_size": 3,
+        "prompts": 1
+      }
+    },
+    "minimum_scaled_target_density": "358853/1129919",
+    "prompt_cancellation": "The checked rank density |I| w_n(r) equals (P|I|)(w_n(r)/P).",
+    "rank_density_checks": 43542,
+    "representative_budget_checks": 24594
+  },
+  "claim_boundary": "Finite checks support implementation and algebra, not an unbounded proof, novelty, real-model usefulness, or exact optimality of NEGEXP. The missing-baseline separation varies confidence at fixed threshold.",
+  "dependencies": "Python standard library only",
+  "description": "Bounded exact checks for arbitrary budget grids containing budget 1.\n\nUses only the Python standard library. Finite checks support the implementation\nand algebra; they do not prove the unbounded theorem or establish novelty.\nThe cost expression checked is a deterministic upper bound on NEGEXP expected\nzero-table cost, not a sampled cost or the exact adaptive optimum. Counterexample\nconfidence levels are symbolic: no enormous powers of four are constructed.\n",
+  "missing_baseline_counterexamples": [
+    {
+      "binary_support_tables_checked": 4,
+      "budgets": [
+        9
+      ],
+      "competitive_ratio_lower": "65535/32768",
+      "competitive_ratio_lower_display": "1.999969482",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "10"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 1,
+      "minimum_positive_weight": "1/10",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 10,
+      "prompts": 1,
+      "support_size": 2,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 8,
+      "budgets": [
+        18
+      ],
+      "competitive_ratio_lower": "196605/65536",
+      "competitive_ratio_lower_display": "2.999954224",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "190"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 2,
+      "minimum_positive_weight": "1/190",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 20,
+      "prompts": 1,
+      "support_size": 3,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 16,
+      "budgets": [
+        27
+      ],
+      "competitive_ratio_lower": "65535/16384",
+      "competitive_ratio_lower_display": "3.999938965",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "4060"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 3,
+      "minimum_positive_weight": "1/4060",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 30,
+      "prompts": 1,
+      "support_size": 4,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 32,
+      "budgets": [
+        36
+      ],
+      "competitive_ratio_lower": "327675/65536",
+      "competitive_ratio_lower_display": "4.999923706",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "91390"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 4,
+      "minimum_positive_weight": "1/91390",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 40,
+      "prompts": 1,
+      "support_size": 5,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 0,
+      "budgets": [
+        72
+      ],
+      "competitive_ratio_lower": "589815/65536",
+      "competitive_ratio_lower_display": "8.999862671",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "28987537150"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 8,
+      "minimum_positive_weight": "1/28987537150",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 80,
+      "prompts": 1,
+      "support_size": 9,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 0,
+      "budgets": [
+        144
+      ],
+      "competitive_ratio_lower": "1114095/65536",
+      "competitive_ratio_lower_display": "16.999740601",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "4059949873964357469950"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 16,
+      "minimum_positive_weight": "1/4059949873964357469950",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 160,
+      "prompts": 1,
+      "support_size": 17,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 0,
+      "budgets": [
+        576
+      ],
+      "competitive_ratio_lower": "4259775/65536",
+      "competitive_ratio_lower_display": "64.999008179",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "119245396191540525888420884389078490694665098970087044229542437220309918531720454386730750"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 64,
+      "minimum_positive_weight": "1/119245396191540525888420884389078490694665098970087044229542437220309918531720454386730750",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 640,
+      "prompts": 1,
+      "support_size": 65,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    },
+    {
+      "binary_support_tables_checked": 0,
+      "budgets": [
+        2880
+      ],
+      "competitive_ratio_lower": "21036735/65536",
+      "competitive_ratio_lower_display": "320.995101929",
+      "delta_symbolic": {
+        "base": 4,
+        "negative_exponent": "1421255906525699300028029083876421078448752585901731857390542595834539370184277622851869850667845293860830981869296226791724713233136803940473147801669449171602171499013982477307379188504769601876183320816680565554739982674159181320144038106079445725165713584931180131213241045070860948887506655649882838735802058294762424437786942830801715969763441240642423401924085244815668345748678283625179366561678932902996376694550782239494507529435267854387000"
+      },
+      "fractional_label_scope": "Unsafe fractional labels must have positive rank-1 loss; positive rank-1 loss alone need not be unsafe.",
+      "individual_inclusion_lower": "65535/65536",
+      "interpretation": "The ratio is strictly greater than the reported rational lower bound. Confidence varies at fixed tau=1/8; this is not a fixed-confidence separation or failure of every grid without 1.",
+      "j": 320,
+      "minimum_positive_weight": "1/1421255906525699300028029083876421078448752585901731857390542595834539370184277622851869850667845293860830981869296226791724713233136803940473147801669449171602171499013982477307379188504769601876183320816680565554739982674159181320144038106079445725165713584931180131213241045070860948887506655649882838735802058294762424437786942830801715969763441240642423401924085244815668345748678283625179366561678932902996376694550782239494507529435267854387000",
+      "optimal_zero_cost_symbolic": "1 - delta_j",
+      "pool_size": 3200,
+      "prompts": 1,
+      "support_size": 321,
+      "tail_weight": "1/10",
+      "tau": "1/8",
+      "top_weight": "9/10"
+    }
+  ],
+  "protocol": {
+    "additional_geometries": [
+      {
+        "budgets": [
+          1,
+          3,
+          7,
+          19,
+          64
+        ],
+        "pool_size": 64,
+        "prompts": 1
+      },
+      {
+        "budgets": [
+          1,
+          63
+        ],
+        "pool_size": 64,
+        "prompts": 4
+      },
+      {
+        "budgets": [
+          1,
+          2,
+          7,
+          17,
+          64
+        ],
+        "pool_size": 64,
+        "prompts": 32
+      },
+      {
+        "budgets": [
+          1,
+          5,
+          23,
+          97,
+          127
+        ],
+        "pool_size": 127,
+        "prompts": 8
+      },
+      {
+        "budgets": [
+          1
+        ],
+        "pool_size": 128,
+        "prompts": 3
+      }
+    ],
+    "claim_boundary": "Finite checks support implementation and algebra, not an unbounded proof, novelty, real-model usefulness, or exact optimality of NEGEXP. The missing-baseline separation varies confidence at fixed threshold.",
+    "cost_scales": [
+      "1/16",
+      "1/4",
+      "1",
+      "2",
+      "4",
+      "8",
+      "16",
+      "64",
+      "256",
+      "1024"
+    ],
+    "counterexample_binary_enumeration_max_j": 4,
+    "counterexample_confidence": "delta_j = 4^(-binom(10*j,j)); represented symbolically to avoid exponential allocation",
+    "counterexample_j": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      16,
+      64,
+      320
+    ],
+    "evidence_type": "deterministic_exact_arithmetic_checks",
+    "exhaustive_max_pool_size": 12,
+    "prompt_counts": [
+      1,
+      2,
+      8
+    ],
+    "status": "Fixed before the saved run, after exploratory proof checks; not external preregistration",
+    "theorem": {
+      "budget_family_requirement": "Any subset of 1,...,m containing 1",
+      "decision": "One certificate for the entire originally declared family, or abstention",
+      "envelope_cost_factor": 8,
+      "factor": 320,
+      "lower_cost_denominator": 40,
+      "maximum_error_probability": "1/4",
+      "maximum_risk_threshold": "1/8",
+      "objective": "Expected distinct unit-cost queries at the all-zero fixed-label table"
+    },
+    "title": "Arbitrary budget grids with baseline 1: exact finite checks",
+    "version": 1
+  },
+  "protocol_sha256": "d7e4eab4019cdf8b942f3b257f03d8c5e250fea60241e728e8be6960ab67f24a",
+  "schema_version": 1,
+  "source_sha256": {
+    "docs/sparse-grid-theorem.md": "4e7fe8b059336fdfc3d933cc59cd9c4b70659fe226e0ac62d5e57466f2463c58",
+    "experiments/check_sparse_grid.py": "ae14899c470215c10a97d7d21b02a7ca560a3a7d6689b2e9d587dbdf512ef36d",
+    "experiments/sparse_grid_protocol.json": "d7e4eab4019cdf8b942f3b257f03d8c5e250fea60241e728e8be6960ab67f24a",
+    "tests/test_sparse_grid.py": "3ec47ba6729b6f3ab49ad873dc38f2e9bdc7f3cee33fa1a7fb11e49072b1be1a"
+  }
+}

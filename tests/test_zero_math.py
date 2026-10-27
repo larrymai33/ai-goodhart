@@ -29,14 +29,36 @@ class ZeroMathTests(unittest.TestCase):
         expected = tuple(max(row[r] for row in rows)/2 for r in range(6))
         self.assertEqual(tuple(map(F, record['rank_envelope_masses'])), expected)
         self.assertEqual(record['budgets'], [1, 4, 6])
+        self.assertEqual(record['cost_factor'], 160)
         self.assertEqual(tuple(map(F, record['rank_inclusion_probabilities'])), probabilities)
         self.assertEqual(F(record['expected_zero_cost']), 2*sum(probabilities))
         self.assertEqual(json.loads(json.dumps(record)), record)
+
+    def test_sparse_grids_use_only_declared_targets_and_extended_cost_factor(self):
+        for m, budgets in [(7, [7, 1, 3]), (64, [63, 1])]:
+            with self.subTest(m=m, budgets=budgets):
+                record, probabilities = self.module.design_probabilities(
+                    m, budgets, 2, F(1, 8), F(1, 4))
+                rows = [self.enumerated_weights(m, n) for n in budgets]
+                expected = tuple(max(row[r] for row in rows)/2 for r in range(m))
+                self.assertEqual(tuple(map(F, record['rank_envelope_masses'])), expected)
+                self.assertEqual(record['budgets'], sorted(budgets))
+                self.assertEqual(record['cost_factor'], 320)
+                self.assertEqual(F(record['expected_zero_cost']), 2*sum(probabilities))
+
+    def test_old_grid_condition_retains_the_sharper_factor(self):
+        for m, budgets in [(1, [1]), (3, [1, 3]), (7, [7, 4, 1]),
+                           (31, [1, 2, 4, 8, 16, 31])]:
+            with self.subTest(m=m, budgets=budgets):
+                record, _ = self.module.design_probabilities(m, budgets, 2, F(1, 8), F(1, 4))
+                self.assertEqual(record['cost_factor'], 160)
 
     def test_log_enclosures_and_probability_sandwich_against_decimal_oracle(self):
         cases = [(1, [1], 1, F(1, 8), F(1, 4)),
                  (8, [1, 2, 4, 8], 2, F(1, 8), F(1, 4)),
                  (64, [1, 2, 4, 8, 16, 32, 64], 32, F(1, 10), F(1, 20)),
+                 (7, [1, 3, 7], 8, F(1, 8), F(1, 4)),
+                 (64, [1, 63], 2, F(1, 10), F(1, 20)),
                  (4, [1, 4], 2, F(1, 10**70), F(1, 10**70)),
                  (4, [1, 4], 2, F(1, 8), F(1, 4)-F(1, 10**70))]
         with localcontext() as context:
@@ -124,7 +146,8 @@ class ZeroMathTests(unittest.TestCase):
     def test_theorem_restrictions_and_exact_parameter_types_are_enforced(self):
         args = dict(m=8, budgets=[1, 4, 8], P=2, tau=F(1, 8), delta=F(1, 4))
         variants = [('m', 0), ('m', True), ('P', 0), ('P', 2.0),
-                    ('budgets', []), ('budgets', [1, 8]), ('budgets', [1, 4, 9]),
+                    ('budgets', []), ('budgets', [2]), ('budgets', [2, 4, 8]),
+                    ('budgets', [1, 4, 9]),
                     ('budgets', [1, 4, 4]), ('budgets', [True, 4]), ('budgets', None),
                     ('tau', F(0)), ('tau', F(1, 2)), ('tau', 0.1), ('tau', True),
                     ('delta', F(0)), ('delta', F(1, 2)), ('delta', 0.05)]

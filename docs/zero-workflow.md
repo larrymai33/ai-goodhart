@@ -1,6 +1,6 @@
 # A zero-only annotation workflow
 
-`python -m goodhart_audit.zero` plans a finite-pool audit and verifies its annotations. It implements a conservative rational version of classical NEGEXP, attributed to [Aslam, Popa, and Rivest (2008), Sections 8 and 13.2](https://www.usenix.org/legacy/events/evt08/tech/full_papers/aslam/aslam_html/). The existing `python -m goodhart_audit` commands remain separate. The [finite-cost theorem](zero-cost-theorem.md) states the research claim and its restrictions.
+`python -m goodhart_audit.zero` plans a finite-pool audit and verifies its annotations. It implements a conservative rational version of classical NEGEXP, attributed to [Aslam, Popa, and Rivest (2008), Sections 8 and 13.2](https://www.usenix.org/legacy/events/evt08/tech/full_papers/aslam/aslam_html/). The existing `python -m goodhart_audit` commands remain separate. The [finite-cost theorem](zero-cost-theorem.md) and [arbitrary-grid extension](sparse-grid-theorem.md) state the research claims and their restrictions.
 
 The only positive decision is that **every declared budget's risk on these fixed pools is at most the declared threshold**, under the stated sampling and correct-label assumptions. The workflow does not estimate a risk curve or establish population safety. It does not verify that a human or model supplied correct annotations.
 
@@ -41,6 +41,20 @@ python -S -m goodhart_audit.zero report --pool examples/zero_mixed_pools.jsonl -
 
 At these parameters, top-ranked items have inclusion probability one under the rational design. The incorrect equation is therefore selected without retrying plans, and the mixed fixture does not certify. These two fixtures are predefined test cases, not a procedure for filtering real audit data until it passes.
 
+## An arbitrary sparse grid
+
+[zero_sparse_pools.jsonl](../examples/zero_sparse_pools.jsonl) contains eight hand-authored pools of seven correct equations. It permits a complete example with budgets `1,3,7`, which omits 4. It has the same software-fixture limitations as the earlier examples. Use fresh output paths and record the printed commitment before annotation:
+
+```powershell
+$sparseRubric = "Exact integer addition A + B = C: loss 0 iff A+B equals C, otherwise 1. Malformed equation is an input error."
+python -S -m goodhart_audit.zero plan --pool examples/zero_sparse_pools.jsonl --out artifacts/local/sparse-example/plan.json --budgets 1,3,7 --threshold 1/10 --delta 1/20 --rubric $sparseRubric
+$sparsePlanSha256 = "REPLACE_WITH_THE_EXTERNALLY_RECORDED_PLAN_COMMITMENT"
+python -S examples/annotate_zero_example.py --plan artifacts/local/sparse-example/plan.json --out artifacts/local/sparse-example/annotated.json
+python -S -m goodhart_audit.zero report --pool examples/zero_sparse_pools.jsonl --plan artifacts/local/sparse-example/annotated.json --plan-sha256 $sparsePlanSha256 --out artifacts/local/sparse-example/report.json
+```
+
+This plan records `cost_factor: 320`; the certificate covers exactly budgets 1, 3, and 7. It makes no claim about undeclared budgets.
+
 ## Reading an outcome
 
 | Observed selected labels | Interpretation |
@@ -56,7 +70,9 @@ A certificate for the entire family also covers any subset of that family. A fai
 
 ## Conditions to preserve
 
-Freeze the pools, ranking and tie rule, budget grid, threshold, error probability, and rubric before acquisition. The tool canonicalizes proxy scores in descending order and breaks ties by candidate ID. Pools must have equal size; the declared grid must include every power of four through its maximum. This implementation accepts `0 < threshold <= 1/8` and `0 < delta <= 1/4`.
+Freeze the pools, ranking and tie rule, budget grid, threshold, error probability, and rubric before acquisition. The tool canonicalizes proxy scores in descending order and breaks ties by candidate ID. Pools must have equal size; the declared grid must include budget 1. This implementation accepts `0 < threshold <= 1/8` and `0 < delta <= 1/4`.
+
+A sparse grid such as `1,3,7` is now allowed when each pool has at least seven candidates. The recorded cost factor is 320 for such grids, and remains 160 when the grid contains every power of four through its maximum. These are proved upper guarantees on expected zero-table cost, not estimates of the actual overhead. Only the originally declared targets are audited; the tool does not silently add intermediate budgets. Previously accepted plans retain their design metadata and can still be replayed against their original commitment.
 
 Annotations are fixed exact losses in `[0,1]`. Null denotes missing. A positive value, however small, prevents this zero-only certificate: `1e-400` remains positive in the report's exact decimal parser. Duplicate JSON keys, booleans, nonfinite numbers, out-of-range losses, and changes to immutable plan content are errors. The arithmetic helper accepts only fresh null-loss plans and writes binary labels; it is not a general annotation importer.
 

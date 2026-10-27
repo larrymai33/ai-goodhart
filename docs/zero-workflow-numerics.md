@@ -1,12 +1,12 @@
 # Exact probabilities for the zero-only workflow
 
-The companion workflow implements a conservative rational version of the classical NEGEXP audit. Its probabilities are exact rational numbers sampled with uniform-integer rejection. They preserve the validity and factor-160 cost guarantee in the [finite-pool cost theorem](zero-cost-theorem.md), despite generally differing from the ideal exponential probabilities. This is an implementation argument for an established design and the stated special-family theorem, not a new algorithm or a model evaluation.
+The companion workflow implements a conservative rational version of the classical NEGEXP audit. Its probabilities are exact rational numbers sampled with uniform-integer rejection. They preserve the validity and factor-160 cost guarantee on the structured grids in the [finite-pool cost theorem](zero-cost-theorem.md), despite generally differing from the ideal exponential probabilities. The [arbitrary-grid extension](sparse-grid-theorem.md) gives factor 320 for any other declared grid containing budget 1. This is an implementation argument for an established design and the stated special-family theorems, not a new algorithm or a model evaluation.
 
 The implementation is [zero_math.py](../goodhart_audit/zero_math.py). It uses only the Python standard library and does not change the earlier theorem checker, source-pinned proof, or saved evidence.
 
 ## Contract and notation
 
-There are P equal pools of m ranked candidates, with D=P*m distinct items. The declared budget family contains every power of four through its maximum, including budget 1. The threshold and error probability are exact fractions satisfying
+There are P equal pools of m ranked candidates, with D=P*m distinct items. The declared budget family contains budget 1. Its cost factor is 160 when it also contains every power of four through its maximum, and 320 otherwise. The threshold and error probability are exact fractions satisfying
 
 $$
 0<\tau\le\frac18,\qquad 0<\delta\le\frac14.
@@ -152,7 +152,7 @@ $$
 
 This finite sum is a rational number, serialized as `expected_zero_cost`. It is the implemented design's expectation, not a simulation estimate or a realized query count. On nonzero tables the workflow may abstain before every query is annotated; the cost theorem makes no optimality claim for those tables.
 
-Using the fourfold blocks from the original theorem, each item in block j has s_i<=4/D_j. The upper side of the sandwich gives
+For grids containing every power of four through their maximum, use the fourfold partition from the original theorem. Each item in block j has s_i<=4/D_j. The upper side of the sandwich gives
 
 $$
 C_{\mathrm{rat}}
@@ -160,6 +160,8 @@ C_{\mathrm{rat}}
 \le4\sum_j\min\{D_j,L/\tau\}
 =4A\le160\operatorname{OPT}_0.
 $$
+
+For a general declared grid containing 1, the new proof uses disjoint blocks that need not cover the population. It establishes sum_i min(1,L*s_i/tau)<=8A and OPT_0>=A/40. The same checked sandwich therefore gives C_rat<=320*OPT_0. The implementation records the applicable constant without adding undeclared targets or changing probabilities for previously supported inputs.
 
 The comparator, its uniform validity requirement, and its almost-sure finite certification on the zero table are unchanged. The rational design is itself admissible, so OPT_0<=C_rat. This does not establish exact optimality, the expected cost on other tables, or optimality of the earlier six-bet engine.
 

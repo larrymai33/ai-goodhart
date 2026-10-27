@@ -73,6 +73,27 @@ class ZeroWorkflowTests(unittest.TestCase):
         self.assertEqual(report["observed_query_count"], 0)
         self.assertGreater(Fraction(report["expected_zero_table_labels"]), 0)
 
+    def test_sparse_grid_certifies_its_declared_family_and_verifies_cost_metadata(self):
+        source = [{"prompt_id": f"s{i}", "candidates": [
+            {"candidate_id": f"c{rank}", "proxy": 7-rank, "text": f"Candidate {rank}"}
+            for rank in range(7)]} for i in range(2)]
+        with patch.object(zero.secrets, "randbits", return_value=0):
+            plan = zero.make_zero_plan(source, [7, 1, 3], "1/8", "1/4", "Fixed toy loss")
+        self.assertEqual(plan["budgets"], [1, 3, 7])
+        self.assertEqual(plan["design"]["cost_factor"], 320)
+        self.assertEqual(len(plan["queries"]), 14)
+        commitment = zero.plan_sha256(plan)
+        self.assertEqual(zero.zero_report(source, plan, commitment)["status"], "pending")
+        for query in plan["queries"]:
+            query["loss"] = 0
+        report = zero.zero_report(source, plan, commitment)
+        self.assertEqual(report["status"], "certified")
+        self.assertEqual(report["certified_budgets"], [1, 3, 7])
+        changed = deepcopy(plan)
+        changed["design"]["cost_factor"] = 160
+        with self.assertRaises(ValueError):
+            zero.zero_report(source, changed, zero.plan_sha256(changed))
+
     def test_changed_metadata_tape_queries_pool_and_commitment_are_rejected(self):
         plan = self.selected_plan()
         commitment = zero.plan_sha256(plan)
@@ -143,6 +164,7 @@ class ZeroWorkflowTests(unittest.TestCase):
                    (pools(), [1, 2], "1/8", "1/2", "rule"),
                    (pools(), [1, 2], "1/8", "1/4", ""),
                    (pools(), [True], "1/8", "1/4", "rule"),
+                   (pools(), [2], "1/8", "1/4", "rule"),
                    (pools(), [1, 1], "1/8", "1/4", "rule")]
         excessive = [{"prompt_id": "p", "candidates": [{"candidate_id": str(i), "proxy": i}
                                                             for i in range(1025)]}]
