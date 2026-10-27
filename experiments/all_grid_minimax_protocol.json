@@ -1,0 +1,77 @@
+{
+  "claim_boundary": "Finite checks support implementation and proof arithmetic, not the universal quantifiers by themselves. Constants are loose. No new production audit CLI, measured efficiency, new generic likelihood-ratio method, scientific priority, human verification, or fellowship outcome is claimed.",
+  "conditional_identity_matrix": "Every m=5..128 and 1<=a<m/4, all conditional ranks, using k0=floor(m/(a+1))",
+  "conditional_identity_max_pool": 128,
+  "evidence_type": "deterministic_exact_rational_checks_not_model_measurements",
+  "grid_matrix": "Every nonempty subset of {1,...,m}, m=1..10",
+  "grid_max_pool": 10,
+  "larger_grid_matrix": "Every singleton, the full grid, the dyadic grid, the interval {floor(m/4),...,m}, and {1,m},{1,max(1,m//3),m},{max(1,m//8),m}; deduplicate within each pool",
+  "larger_pools": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "log_interpretation": "These exact rational L values correspond to delta=exp(-L); no rounded delta is substituted. All are at least log(4).",
+  "log_inverse_deltas": [
+    "3/2",
+    "12"
+  ],
+  "maximum_derived_scale_bits": 1024,
+  "maximum_pool": 128,
+  "maximum_prompts": 1099511627776,
+  "maximum_rational_input_bits": 256,
+  "mixture_matrix": "All nonempty factor-2 and factor-4 separated subsets through pool size32, at every rank; include zero support and rank one",
+  "mixture_max_pool": 32,
+  "original_profile": {
+    "budgets": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "delta": "1/20",
+    "epsilon": "1/160",
+    "pool_size": 64,
+    "prompts": 32,
+    "tau": "1/10"
+  },
+  "prompts": [
+    1,
+    64,
+    1048576
+  ],
+  "relative_margins": [
+    "1/16",
+    "1/64"
+  ],
+  "slice_matrix": "N=3..256, both taus and relative margins, both L values, each q, and distinct s in {8epsilon,16epsilon,1/4,1/2,1} with 8epsilon<=s<=q",
+  "slice_max_population": 256,
+  "slice_tail_masses": [
+    "1/4",
+    "1/2",
+    "1"
+  ],
+  "slice_taus": [
+    "1/8",
+    "1/32"
+  ],
+  "source_pins": 9,
+  "status": "Fixed after exploratory proof derivation and targeted checks, before the saved full matrix; not external preregistration",
+  "tau": "1/8",
+  "theorem": {
+    "delta_max": "1/4",
+    "lower_factor": 274877906944,
+    "relative_margin_max": "1/16",
+    "scope": "Every finite nonempty declared BoN grid; fixed fractional losses; global whole-family validity; all-safe almost-sure completeness; worst expected distinct-label cost over the supplied-margin class",
+    "separated_grid_upper_factor": 17,
+    "separation": 2,
+    "tau_max": "1/8",
+    "upper_factor": 65536
+  },
+  "title": "Universal finite-grid minimax geometry and cached likelihood cost",
+  "version": 1
+}
