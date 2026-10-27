@@ -9,3 +9,4 @@ results/manifest.json linguist-generated=true
 results/**/*.csv -diff linguist-generated=true
 results/**/*.svg -diff linguist-generated=true
 results/**/manifest.json linguist-generated=true
+results/theory/zero_cost.json -diff linguist-generated=true

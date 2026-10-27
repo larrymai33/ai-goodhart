@@ -4,11 +4,15 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.3.1 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.4 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
 
-**Read the standalone research note:** [seven-page PDF](paper/paper.pdf) · [Markdown source](paper/paper.md) · [review guide](docs/review-guide.md). It consolidates the finite-pool proofs, attributed foundations, synthetic comparisons, limitations, and substantial AI-assistance disclosure. Version 0.3.1 adds this review package and a unified reproduction command; the v0.3 scientific results are unchanged.
+**New: a finite-table cost approximation theorem.** When every candidate's loss is zero, the classical multi-target NEGEXP audit uses at most **160 times** the optimal expected number of distinct labels among all valid adaptive audits in the stated class. The theorem requires equal fixed pools, a predeclared whole-family decision, a budget grid containing every power of four through its maximum, risk threshold at most 1/8, and error probability at most 1/4. It includes the transition toward a full census. [Complete proof and assumptions](docs/zero-cost-theorem.md).
+
+The factor is deliberately loose. For the existing geometry of 32 pools of 64 candidates, seven dyadic budgets, threshold 0.1, and error probability 0.05, exact rational certificates bound the design's expected zero-table cost within **1.398 times** the adaptive optimum. These are analytical bounds, not measured model performance. They concern a different decision and design from the published six-bet confidence-sequence engine. [Cost certificates and reproduction](docs/zero-cost-report.md).
+
+**Earlier standalone research note:** [seven-page PDF](paper/paper.pdf) · [Markdown source](paper/paper.md) · [review guide](docs/review-guide.md). It consolidates the frozen v0.3 evidence and substantial AI-assistance disclosure; the new cost theorem is in the linked follow-up note. The earlier scientific sources and results are preserved.
 
 **New: sharper finite-pool theory and stronger baselines.** The [latest follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
 
@@ -60,7 +64,7 @@ The valid bands covered all nine true risks in 200/200 repetitions in each setti
 
 Python 3.10+ is sufficient for the core, CLI, and result-integrity check. The synthetic runner additionally uses NumPy and Matplotlib if already installed. Nothing downloads models, datasets, packages, or other artifacts.
 
-Verify all saved evidence with the standard library, or rerun all numerical studies with already-installed NumPy and SciPy:
+Verify the v0.1-v0.3 saved evidence with the standard library, or rerun those numerical studies with already-installed NumPy and SciPy:
 
 ```console
 python -m experiments.reproduce --verify-only
@@ -68,6 +72,8 @@ python -m experiments.reproduce --out artifacts/local/full-reproduction
 ```
 
 Verification checks saved artifacts and source integrity; it does not recompute results or prove theorems. Full mode requires a new output directory, runs the tests, regenerates all three numerical studies and the exact theorem checker, and compares ten numerical artifacts byte for byte. It preserves published results and writes a diagnostic report. Figures and manifest bytes are excluded from regeneration/comparison; software-version differences may produce a reported mismatch. The [paper build](paper/README.md) is separate.
+
+The v0.4 cost theorem has a separate standard-library check and exact rational cost certificates. Its command and scope are documented in the [cost report](docs/zero-cost-report.md). The older reproduction command retains its ten-artifact comparison; it does not silently include this new follow-up.
 
 ```console
 python -m unittest discover -s tests -v

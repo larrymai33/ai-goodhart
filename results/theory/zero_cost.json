@@ -1,0 +1,1050 @@
+{
+  "schema_version": 1,
+  "description": "Exact finite checks and rational all-zero cost certificates, offline.\n\nUses only the standard library. Finite checks do not replace the proof in\ndocs/zero-cost-theorem.md or establish novelty. The cost certificates concern\nindependent NEGEXP inclusion, not the repository's anytime betting engine.\nNo labels, sampling runs, numerical logarithms, or numerical exponentials enter\nthe calculation. Decimal displays summarize the accompanying exact fractions.\n",
+  "protocol": {
+    "version": 1,
+    "title": "Finite-table all-zero certification cost: exact theorem checks",
+    "status": "Internally specified before saved check artifact; not external preregistration",
+    "evidence_type": "deterministic_exact_arithmetic_and_analytical_cost_certificates",
+    "theorem": {
+      "factor": 160,
+      "maximum_risk_threshold": "1/8",
+      "maximum_error_probability": "1/4",
+      "budget_family_requirement": "Contains every positive integer power 4^j up to its maximum, including 4^0=1",
+      "objective": "Expected distinct unit-cost queries on the all-zero fixed-label table",
+      "decision": "All declared target risks are at most a predeclared threshold, or abstain",
+      "comparator": "All nonanticipating adaptive audits uniformly valid over fixed labels in [0,1], with almost-sure finite certification at the all-zero table"
+    },
+    "block_check_max_pool_size": 128,
+    "block_family_types": [
+      "full",
+      "powers_four_plus_max",
+      "dyadic_plus_max"
+    ],
+    "hypergeometric_check_max_block_size": 256,
+    "risk_thresholds": [
+      "1/100",
+      "1/24",
+      "1/10",
+      "1/8"
+    ],
+    "error_probabilities": [
+      "1/4",
+      "1/20",
+      "1/1000"
+    ],
+    "cost_cases": [
+      {
+        "name": "small_single_pool",
+        "prompts": 1,
+        "pool_size": 8,
+        "max_budget": 8,
+        "family": "full",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "single_pool_64",
+        "prompts": 1,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "full",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "four_pools_64",
+        "prompts": 4,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "dyadic_plus_max",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "published_grid_geometry",
+        "prompts": 32,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "dyadic_plus_max",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "small_threshold",
+        "prompts": 32,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "dyadic_plus_max",
+        "tau": "1/100",
+        "delta": "1/20"
+      },
+      {
+        "name": "threshold_endpoint",
+        "prompts": 32,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "dyadic_plus_max",
+        "tau": "1/8",
+        "delta": "1/20"
+      },
+      {
+        "name": "larger_pool_limited_search",
+        "prompts": 16,
+        "pool_size": 256,
+        "max_budget": 64,
+        "family": "powers_four_plus_max",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "larger_pool_full_search",
+        "prompts": 16,
+        "pool_size": 256,
+        "max_budget": 256,
+        "family": "powers_four_plus_max",
+        "tau": "1/10",
+        "delta": "1/20"
+      },
+      {
+        "name": "stronger_confidence",
+        "prompts": 32,
+        "pool_size": 64,
+        "max_budget": 64,
+        "family": "dyadic_plus_max",
+        "tau": "1/10",
+        "delta": "1/1000"
+      }
+    ],
+    "high_threshold_pool_sizes": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "controls": [
+      "No labels, model calls, downloaded data, or random outcomes enter these calculations.",
+      "Cost certificates concern the stated independent-inclusion audit, not the existing anytime engine.",
+      "Use exact rational arithmetic for rank laws, lower cost bounds, and upper cost bounds.",
+      "A rational upper bound on log(1/delta) and an odd Taylor polynomial give a conservative cost bound; displayed decimals are rounded summaries.",
+      "The universal factor follows from proof, not exhaustive checking over a finite grid.",
+      "Preserve all earlier frozen sources and result files."
+    ]
+  },
+  "protocol_sha256": "f468e247a491b705c5e9a3e266a75c7a2b3827ed5d86100b17a675dee712313b",
+  "source_sha256": {
+    "experiments/check_zero_cost.py": "dc422abe9742c577af67eed1cd5f0a68b33caa12bec66d4dabb63e6f89bba957",
+    "tests/test_zero_cost.py": "5bafb80ec301f3b82d7d9e4a87e723ac6026e89e8e14b9cfb03d75472d86ae09",
+    "experiments/zero_cost_protocol.json": "9daf657c2fcb42436f4cf227d0eee3d1efa5cd75c1373fac253baf8592fda217",
+    "docs/zero-cost-theorem.md": "8c09c2a4d634c6a060795a6fd889da2d93fb361a7a15fc889df4ae20cb037280"
+  },
+  "runtime": {
+    "python": "3.11.0",
+    "dependencies": "Python standard library only"
+  },
+  "block_checks": {
+    "maximum_pool_size": 128,
+    "family_types": [
+      "full",
+      "powers_four_plus_max",
+      "dyadic_plus_max"
+    ],
+    "family_cases": 24768,
+    "block_checks": 74151,
+    "rank_checks": 2121792,
+    "minimum_block_size_times_target_mass": "823361148/2707770175",
+    "maximum_block_size_times_envelope_mass": "63/16",
+    "prompt_extension": "Multiplication by P cancels division by P exactly in both checked inequalities."
+  },
+  "hypergeometric_checks": {
+    "maximum_block_size": 256,
+    "convexity_checks": 5592320,
+    "log_factor_algebra_checks": 24558,
+    "rounding_checks": 249,
+    "unsafe_subset_size_checks": 1024,
+    "exact_inverse_checks": 3072,
+    "scope": "Exact finite identities and algebraic prerequisites; analytic log/exponential/Jensen steps remain proof obligations."
+  },
+  "cost_certificates": [
+    {
+      "name": "small_single_pool",
+      "prompts": 1,
+      "pool_size": 8,
+      "max_budget": 8,
+      "family": "full",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "items": 8,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 3,
+          "last_rank": 8,
+          "size": 6,
+          "minimum_target_mass": "1/8",
+          "unsafe_subset_size": 1,
+          "lower_cost": "57/10",
+          "crossing_integer": 6,
+          "miss_before_crossing": "1/6",
+          "miss_at_crossing": "0"
+        },
+        {
+          "budget": 4,
+          "first_rank": 1,
+          "last_rank": 2,
+          "size": 2,
+          "minimum_target_mass": "2/7",
+          "unsafe_subset_size": 1,
+          "lower_cost": "19/10",
+          "crossing_integer": 2,
+          "miss_before_crossing": "1/2",
+          "miss_at_crossing": "0"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "38/5",
+      "upper": "8",
+      "ratio_upper": "20/19",
+      "combined_ratio_upper": "20/19",
+      "display": {
+        "lower": "7.600000",
+        "upper": "8.000000",
+        "ratio_upper": "1.052632"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "single_pool_64",
+      "prompts": 1,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "full",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "items": 64,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 48,
+          "minimum_target_mass": "1/64",
+          "unsafe_subset_size": 7,
+          "lower_cost": "1969927/125860",
+          "crossing_integer": 16,
+          "miss_before_crossing": "2697/46483",
+          "miss_at_crossing": "23374/511313"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 12,
+          "minimum_target_mass": "1081/39711",
+          "unsafe_subset_size": 4,
+          "lower_cost": "441/80",
+          "crossing_integer": 6,
+          "miss_before_crossing": "7/99",
+          "miss_at_crossing": "1/33"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 3,
+          "minimum_target_mass": "4324/39711",
+          "unsafe_subset_size": 1,
+          "lower_cost": "57/20",
+          "crossing_integer": 3,
+          "miss_before_crossing": "1/3",
+          "miss_at_crossing": "0"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 1,
+          "minimum_target_mass": "1",
+          "unsafe_subset_size": 1,
+          "lower_cost": "19/20",
+          "crossing_integer": 1,
+          "miss_before_crossing": "1",
+          "miss_at_crossing": "0"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "12567993/503440",
+      "upper": "92484597955373322088767585014619785593852260744481775935/2887575203095044404489610632014421337399139673290309632",
+      "ratio_upper": "462422989776866610443837925073098927969261303722408879675/360430487639759419298373142736799055175224710193219633152",
+      "combined_ratio_upper": "462422989776866610443837925073098927969261303722408879675/360430487639759419298373142736799055175224710193219633152",
+      "display": {
+        "lower": "24.964232",
+        "upper": "32.028464",
+        "ratio_upper": "1.282974"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "four_pools_64",
+      "prompts": 4,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "dyadic_plus_max",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": 256,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 192,
+          "minimum_target_mass": "1/256",
+          "unsafe_subset_size": 26,
+          "lower_cost": "20816242559186465101/1066494781701849370",
+          "crossing_integer": 20,
+          "miss_before_crossing": "8203806013091149/151293653051387672",
+          "miss_at_crossing": "172279926274914129/3739114568270009608"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 48,
+          "minimum_target_mass": "1081/158844",
+          "unsafe_subset_size": 15,
+          "lower_cost": "5969437/809100",
+          "crossing_integer": 8,
+          "miss_before_crossing": "2697/46483",
+          "miss_at_crossing": "70122/1905803"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 12,
+          "minimum_target_mass": "1081/39711",
+          "unsafe_subset_size": 4,
+          "lower_cost": "441/80",
+          "crossing_integer": 6,
+          "miss_before_crossing": "7/99",
+          "miss_at_crossing": "1/33"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 4,
+          "minimum_target_mass": "1/4",
+          "unsafe_subset_size": 1,
+          "lower_cost": "19/5",
+          "crossing_integer": 4,
+          "miss_before_crossing": "1/4",
+          "miss_at_crossing": "0"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "12497824062268534165989091/345160371149986530106800",
+      "upper": "3132448360075626982802872452691957265526059738335803229/63990586218172729185365332565416539332944923507818496",
+      "ratio_upper": "8351849574927929626346630432099596723676947353264368787761990484294039325/6177721296781519397990966399142387429019374264276556333951099138952134656",
+      "combined_ratio_upper": "8351849574927929626346630432099596723676947353264368787761990484294039325/6177721296781519397990966399142387429019374264276556333951099138952134656",
+      "display": {
+        "lower": "36.208746",
+        "upper": "48.951706",
+        "ratio_upper": "1.351930"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "published_grid_geometry",
+      "prompts": 32,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "dyadic_plus_max",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": 2048,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 1536,
+          "minimum_target_mass": "1/2048",
+          "unsafe_subset_size": 205,
+          "lower_cost": "917673575880137726343308990340990545248/44161094471292188551657700191905489275",
+          "crossing_integer": 21,
+          "miss_before_crossing": "43083994606138720538202634333566331/770778344749967140816414199856337808",
+          "miss_at_crossing": "2455787692549907070677550157013280867/50804346549606529803377562042704700736"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 384,
+          "minimum_target_mass": "1081/1270752",
+          "unsafe_subset_size": 118,
+          "lower_cost": "62007319650468/7673391970475",
+          "crossing_integer": 9,
+          "miss_before_crossing": "26011498205/507034562256",
+          "miss_at_crossing": "1118494422815/31774165901376"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 96,
+          "minimum_target_mass": "1081/317688",
+          "unsafe_subset_size": 30,
+          "lower_cost": "6197189/805200",
+          "crossing_integer": 8,
+          "miss_before_crossing": "1342/20539",
+          "miss_at_crossing": "79178/1827971"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 32,
+          "minimum_target_mass": "1/32",
+          "unsafe_subset_size": 4,
+          "lower_cost": "7302/455",
+          "crossing_integer": 17,
+          "miss_before_crossing": "91/1798",
+          "miss_at_crossing": "273/7192"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "25287894300699730910058069870294248099692354704461/480705713793907245220309610165038668871707982800",
+      "upper": "366178265627641353399638794698013719620892328206228568563175/4980003381843074476121871641570976757047105727072466632704",
+      "ratio_upper": "1018940357010919163993759113785562943319018261242052981246225675030977920544560809875486962517578804375/728986055948266120436620612907737224005633410228989198693330850234129304127327002032490283133694902272",
+      "combined_ratio_upper": "1018940357010919163993759113785562943319018261242052981246225675030977920544560809875486962517578804375/728986055948266120436620612907737224005633410228989198693330850234129304127327002032490283133694902272",
+      "display": {
+        "lower": "52.605770",
+        "upper": "73.529722",
+        "ratio_upper": "1.397750"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "small_threshold",
+      "prompts": 32,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "dyadic_plus_max",
+      "tau": "1/100",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": 2048,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 1536,
+          "minimum_target_mass": "1/2048",
+          "unsafe_subset_size": 21,
+          "lower_cost": "502366614950809793034093281984882021368/2476263254342923492319468240656955955",
+          "crossing_integer": 203,
+          "miss_before_crossing": "4787442291729652085150971931936781513/94433188181134369259634666325236636416",
+          "miss_at_crossing": "16673505912575684848284419487090170097/334148204333244691226399588535452713472"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 384,
+          "minimum_target_mass": "1081/1270752",
+          "unsafe_subset_size": 12,
+          "lower_cost": "181695869086048713/2172991815449420",
+          "crossing_integer": 84,
+          "miss_before_crossing": "32703526822513771/638019955605313184",
+          "miss_at_crossing": "1847043043132007/37530585623841952"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 96,
+          "minimum_target_mass": "1081/317688",
+          "unsafe_subset_size": 3,
+          "lower_cost": "18898/315",
+          "crossing_integer": 60,
+          "miss_before_crossing": "777/14288",
+          "miss_at_crossing": "357/7144"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 32,
+          "minimum_target_mass": "1/32",
+          "unsafe_subset_size": 1,
+          "lower_cost": "152/5",
+          "crossing_integer": 31,
+          "miss_before_crossing": "1/16",
+          "miss_at_crossing": "1/32"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "405592904562052143526183366134535084187755098845481607/1076179956917063636749643305603646185949311494059220",
+      "upper": "72168359228558211637890692865569782461933123290216422198483/155625105682596077378808488799093023657722053971014582272",
+      "ratio_upper": "1741237147461325175237650653646931654702005355368647886356715357093111881160876313938117716778277234916065/1415129554223398563323280156244729491882166974089853551775504426118108551557673312436046611350160593125376",
+      "combined_ratio_upper": "1741237147461325175237650653646931654702005355368647886356715357093111881160876313938117716778277234916065/1415129554223398563323280156244729491882166974089853551775504426118108551557673312436046611350160593125376",
+      "display": {
+        "lower": "376.882046",
+        "upper": "463.732114",
+        "ratio_upper": "1.230444"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "threshold_endpoint",
+      "prompts": 32,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "dyadic_plus_max",
+      "tau": "1/8",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": 2048,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 1536,
+          "minimum_target_mass": "1/2048",
+          "unsafe_subset_size": 257,
+          "lower_cost": "5058604178373640599710658175272576/310535272645697211347295956008729",
+          "crossing_integer": 17,
+          "miss_before_crossing": "22957860623611856091823436436443/436647258461615817297988008945632",
+          "miss_at_crossing": "1526093577243251275998578958906711/34931780676929265383839040715650560"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 384,
+          "minimum_target_mass": "1081/1270752",
+          "unsafe_subset_size": 147,
+          "lower_cost": "4167309856956/673507252145",
+          "crossing_integer": 7,
+          "miss_before_crossing": "57729193041/1070406298096",
+          "miss_at_crossing": "211673707817/6422437788576"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 96,
+          "minimum_target_mass": "1081/317688",
+          "unsafe_subset_size": 37,
+          "lower_cost": "20745264/3481885",
+          "crossing_integer": 6,
+          "miss_before_crossing": "131747/1608528",
+          "miss_at_crossing": "169389/3485144"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 32,
+          "minimum_target_mass": "1/32",
+          "unsafe_subset_size": 5,
+          "lower_cost": "51674/3825",
+          "crossing_integer": 14,
+          "miss_before_crossing": "2907/50344",
+          "miss_at_crossing": "153/3596"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "329439625021229195895479999372912422185601442/7854081180762349628556182139779906416346475",
+      "upper": "293766058039328850482940571630985251253409885588991777067/4863284552581127418087765274971656989303814186594205696",
+      "ratio_upper": "690469896451302532254262021322146608841277792208455603526632287398657800532035571861671814775/479460973847982533773441558880554189547418488641242815493197093690277733207538454197755183104",
+      "combined_ratio_upper": "690469896451302532254262021322146608841277792208455603526632287398657800532035571861671814775/479460973847982533773441558880554189547418488641242815493197093690277733207538454197755183104",
+      "display": {
+        "lower": "41.945024",
+        "upper": "60.404867",
+        "ratio_upper": "1.440096"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "larger_pool_limited_search",
+      "prompts": 16,
+      "pool_size": 256,
+      "max_budget": 64,
+      "family": "powers_four_plus_max",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "items": 4096,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 65,
+          "last_rank": 256,
+          "size": 3072,
+          "minimum_target_mass": "1/4096",
+          "unsafe_subset_size": 410,
+          "lower_cost": "50173885363275464954351177639543377057359097238/2406504400466846578499383875228244691479078875",
+          "crossing_integer": 21,
+          "miss_before_crossing": "16434664198310171755605548416192890575954685/291192415086597317967826562177463623853451136",
+          "miss_at_crossing": "3101455915138248127022132779684401207262305555/63479946488878215316986190554687070000052347648"
+        },
+        {
+          "budget": 4,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 768,
+          "minimum_target_mass": "3629/8739632",
+          "unsafe_subset_size": 241,
+          "lower_cost": "403022270545319184/50849091655363525",
+          "crossing_integer": 8,
+          "miss_before_crossing": "42198416311505/596511669421824",
+          "miss_at_crossing": "210992081557525/4364859427211616"
+        },
+        {
+          "budget": 16,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 192,
+          "minimum_target_mass": "2078110150934644439/1356676753536453610800",
+          "unsafe_subset_size": 66,
+          "lower_cost": "263981171/37827625",
+          "crossing_integer": 7,
+          "miss_before_crossing": "21321025/278358816",
+          "miss_at_crossing": "3438875/69589704"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 4,
+          "size": 64,
+          "minimum_target_mass": "3629/546227",
+          "unsafe_subset_size": 16,
+          "lower_cost": "91622022/9529015",
+          "crossing_integer": 10,
+          "miss_before_crossing": "104819165/1721286532",
+          "miss_at_crossing": "74326317/1721286532"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "113596629971438310241833628577615135575610650266140453533756477609/2503853741750176912273925689609160363530836202349529426469701375",
+      "upper": "31509805622288828705764693208882113625844133505719753199100330601297301417751090869597671208679747617396568019058633539466889955081/452296171166769885887319365394405586768734066518060603964618118451206955767120085372298261498903426779618182991079014400000000000",
+      "ratio_upper": "577989220116455075041290105808494499621870322921909875295076319411185897284495157387167941043654353975035600746116230936636450734384781639665875395761910181860822792063933271393147/376403295061968692066621281482925816292015988336335027338842645298926381979019094952194516766943908855504201123086901160547298694485220481169282981976250567355041983338905600000000",
+      "combined_ratio_upper": "577989220116455075041290105808494499621870322921909875295076319411185897284495157387167941043654353975035600746116230936636450734384781639665875395761910181860822792063933271393147/376403295061968692066621281482925816292015988336335027338842645298926381979019094952194516766943908855504201123086901160547298694485220481169282981976250567355041983338905600000000",
+      "display": {
+        "lower": "45.368716",
+        "upper": "69.666311",
+        "ratio_upper": "1.535558"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "larger_pool_full_search",
+      "prompts": 16,
+      "pool_size": 256,
+      "max_budget": 256,
+      "family": "powers_four_plus_max",
+      "tau": "1/10",
+      "delta": "1/20",
+      "budgets": [
+        1,
+        4,
+        16,
+        64,
+        256
+      ],
+      "items": 4096,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 65,
+          "last_rank": 256,
+          "size": 3072,
+          "minimum_target_mass": "1/4096",
+          "unsafe_subset_size": 410,
+          "lower_cost": "50173885363275464954351177639543377057359097238/2406504400466846578499383875228244691479078875",
+          "crossing_integer": 21,
+          "miss_before_crossing": "16434664198310171755605548416192890575954685/291192415086597317967826562177463623853451136",
+          "miss_at_crossing": "3101455915138248127022132779684401207262305555/63479946488878215316986190554687070000052347648"
+        },
+        {
+          "budget": 4,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 768,
+          "minimum_target_mass": "3629/8739632",
+          "unsafe_subset_size": 241,
+          "lower_cost": "403022270545319184/50849091655363525",
+          "crossing_integer": 8,
+          "miss_before_crossing": "42198416311505/596511669421824",
+          "miss_at_crossing": "210992081557525/4364859427211616"
+        },
+        {
+          "budget": 16,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 192,
+          "minimum_target_mass": "2078110150934644439/1356676753536453610800",
+          "unsafe_subset_size": 66,
+          "lower_cost": "263981171/37827625",
+          "crossing_integer": 7,
+          "miss_before_crossing": "21321025/278358816",
+          "miss_at_crossing": "3438875/69589704"
+        },
+        {
+          "budget": 64,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 48,
+          "minimum_target_mass": "3629/546227",
+          "unsafe_subset_size": 16,
+          "lower_cost": "1969927/287680",
+          "crossing_integer": 7,
+          "miss_before_crossing": "37758/511313",
+          "miss_at_crossing": "23374/511313"
+        },
+        {
+          "budget": 256,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 16,
+          "minimum_target_mass": "1/16",
+          "unsafe_subset_size": 2,
+          "lower_cost": "12",
+          "crossing_integer": 12,
+          "miss_before_crossing": "1/12",
+          "miss_at_crossing": "1/20"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 3,
+        "positive_series_degree": 32,
+        "positive_series_sum": "4367542156050128604216935549/217447119922795642880000000"
+      },
+      "lower": "4329378311721480875977575613859123526128600448366642036277895531/79290766685804711719708680917855647335959187011563524638328000",
+      "upper": "35270922834435600130521805860029829498929745689982420005968390053812059912253095623170780340579653809871933119252605763466889955081/452296171166769885887319365394405586768734066518060603964618118451206955767120085372298261498903426779618182991079014400000000000",
+      "ratio_upper": "320128635684396198663282458639731168492599943060057354254358276492002696542557029590554358078271470123369412860931369160731313735759200444194685020811729056018552929219165399007/224147310547350482559869129626164162636154274342285208404472153144083263454399733139489793210374439286533758933237806311897903131149227999391553044297473800198835247513600000000",
+      "combined_ratio_upper": "320128635684396198663282458639731168492599943060057354254358276492002696542557029590554358078271470123369412860931369160731313735759200444194685020811729056018552929219165399007/224147310547350482559869129626164162636154274342285208404472153144083263454399733139489793210374439286533758933237806311897903131149227999391553044297473800198835247513600000000",
+      "display": {
+        "lower": "54.601292",
+        "upper": "77.981918",
+        "ratio_upper": "1.428206"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    },
+    {
+      "name": "stronger_confidence",
+      "prompts": 32,
+      "pool_size": 64,
+      "max_budget": 64,
+      "family": "dyadic_plus_max",
+      "tau": "1/10",
+      "delta": "1/1000",
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "items": 2048,
+      "blocks": [
+        {
+          "budget": 1,
+          "first_rank": 17,
+          "last_rank": 64,
+          "size": 1536,
+          "minimum_target_mass": "1/2048",
+          "unsafe_subset_size": 205,
+          "lower_cost": "22183494254762406055078378143407683259296288907435873287628907776496962915636/467500532238630251053779841801772140716868863191303575907360904264211613625",
+          "crossing_integer": 48,
+          "miss_before_crossing": "91219616046562000205615578888150661603291485500742161152655786197894949/85552208671228642098141419620873491808705794770195345303550473207189319040",
+          "miss_at_crossing": "273658848139686000616846736664451984809874456502226483457967358593684847/297633735307148243187225639755795862857857309375749694292024893938095551520"
+        },
+        {
+          "budget": 4,
+          "first_rank": 5,
+          "last_rank": 16,
+          "size": 384,
+          "minimum_target_mass": "1081/1270752",
+          "unsafe_subset_size": 118,
+          "lower_cost": "826027280664568113129/45043609705531071250",
+          "crossing_integer": 19,
+          "miss_before_crossing": "3053804047832615/2720638890127503948",
+          "miss_at_crossing": "3053804047832615/4015136426559138891"
+        },
+        {
+          "budget": 16,
+          "first_rank": 2,
+          "last_rank": 4,
+          "size": 96,
+          "minimum_target_mass": "1081/317688",
+          "unsafe_subset_size": 30,
+          "lower_cost": "339640993717/20457615750",
+          "crossing_integer": 17,
+          "miss_before_crossing": "54553642/42234500283",
+          "miss_at_crossing": "136384105/168938001132"
+        },
+        {
+          "budget": 64,
+          "first_rank": 1,
+          "last_rank": 1,
+          "size": 32,
+          "minimum_target_mass": "1/32",
+          "unsafe_subset_size": 4,
+          "lower_cost": "21851/875",
+          "crossing_integer": 25,
+          "miss_before_crossing": "7/3596",
+          "miss_at_crossing": "7/7192"
+        }
+      ],
+      "log_upper_certificate": {
+        "integer_bound": 7,
+        "positive_series_degree": 32,
+        "positive_series_sum": "24036484863492343242036370645807789/21918437062365142038085632000000"
+      },
+      "lower": "73630197822194828067445648620860231806308650374466759839517260613331028202020206453684259/685797065400187453810650675288882698096712893117758476749688634832644038271224487336875",
+      "upper": "11009795099532911761169268020052846346532075933976232074727/72002190860228898536182234122790941391232622816600784896",
+      "ratio_upper": "36805960573439189368259800509670148422901650285317419261765035144640789481653867621378275081249170347018111162910511013632195700292086106875/25843121903599353617317750367490654635247584606837849771317214856749583534513039774730788432091260012968403039513822739232366942218981736448",
+      "combined_ratio_upper": "36805960573439189368259800509670148422901650285317419261765035144640789481653867621378275081249170347018111162910511013632195700292086106875/25843121903599353617317750367490654635247584606837849771317214856749583534513039774730788432091260012968403039513822739232366942218981736448",
+      "display": {
+        "lower": "107.364411",
+        "upper": "152.909168",
+        "ratio_upper": "1.424207"
+      },
+      "interpretation": "Exact rational bounds, not exact OPT or exact NEGEXP cost; decimal displays are rounded."
+    }
+  ],
+  "high_threshold_counterexamples": [
+    {
+      "pool_size": 2,
+      "tau": "3/4",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "3/2",
+      "competitive_ratio_lower": "3/2",
+      "competitive_ratio_lower_display": "1.500000",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 4,
+      "tau": "7/8",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "11/6",
+      "competitive_ratio_lower": "11/6",
+      "competitive_ratio_lower_display": "1.833333",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 8,
+      "tau": "15/16",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "59/28",
+      "competitive_ratio_lower": "59/28",
+      "competitive_ratio_lower_display": "2.107143",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 16,
+      "tau": "31/32",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "8643/3640",
+      "competitive_ratio_lower": "8643/3640",
+      "competitive_ratio_lower_display": "2.374451",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 32,
+      "tau": "63/64",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "45671/17360",
+      "competitive_ratio_lower": "45671/17360",
+      "competitive_ratio_lower_display": "2.630818",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 64,
+      "tau": "127/128",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "178828533677/61966315152",
+      "competitive_ratio_lower": "178828533677/61966315152",
+      "competitive_ratio_lower_display": "2.885899",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    },
+    {
+      "pool_size": 128,
+      "tau": "255/256",
+      "delta": "1/4",
+      "binary_unsafe_iff_contains_top_rank": true,
+      "optimal_cost": "3/4",
+      "envelope_normalizer": "57317694914023739/18250804222728000",
+      "competitive_ratio_lower": "57317694914023739/18250804222728000",
+      "competitive_ratio_lower_display": "3.140557",
+      "reason": "A missing top rank bounds every risk by 1-1/m; concavity gives C_NEG >= (1-delta)*Z."
+    }
+  ],
+  "claim_boundary": "Finite exact checks and geometry-specific rational certificates support the implementation; they do not prove the unrestricted theorem or establish priority."
+}

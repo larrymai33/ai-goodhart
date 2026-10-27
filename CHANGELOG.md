@@ -1,5 +1,13 @@
 # Research releases
 
+## 0.4.0 — 26 October 2026
+
+Adds a candidate finite-table cost approximation theorem for the established multi-target NEGEXP audit. For the declared structured budget grids, thresholds at most 1/8, and error probabilities at most 1/4, its expected distinct-label cost at the all-zero table is at most 160 times the unrestricted adaptive optimum. The proof includes finite census saturation and an explicit obstruction at thresholds approaching one.
+
+Adds exact finite checks and rational geometry-specific cost brackets. The proposed contribution is the rank-family comparison, not a new generic auditing algorithm. The theorem does not bound costs on nonzero tables or establish optimality of the existing confidence-sequence engine. Earlier measured sources, results, and the v0.3 paper are preserved; the new follow-up has separate reproduction commands and source pins.
+
+For the published 2,048-item geometry, the rational certificates bound expected NEGEXP cost within 1.398 times the adaptive optimum on the zero table. All 131 tests pass, including guards against disabled assertions, altered theorem metadata, and a protocol snapshot race. Finite arithmetic checks support the implementation; the universal result depends on the written proof, and its priority remains unestablished.
+
 ## 0.3.1 — 26 October 2026
 
 Consolidates the unchanged v0.3 research into a [standalone seven-page note](paper/paper.pdf), editable source, and a [claim-to-evidence review guide](docs/review-guide.md). The note includes complete finite-pool proofs, attributed foundations, negative synthetic comparisons, and assistance disclosure. No new experiment or external novelty determination is claimed.

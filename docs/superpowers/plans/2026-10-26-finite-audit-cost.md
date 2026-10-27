@@ -8,10 +8,12 @@ The candidate advance is instead a finite rank-family cost approximation theorem
 
 The independent-inclusion NEGEXP design and its multi-target maximum are prior art (Aslam, Popa, and Rivest). Generic lower-bound coupling, fractional audit covering, and multiscale reasoning are also established. The contribution candidate is the finite rank-block analysis and its cost comparison, including finite census saturation. No algorithmic novelty, practical near-optimality, real-model performance, or scientific priority is established by this plan.
 
-- [ ] Write the full proof, including the bounded-loss coupling, rank-block inequalities, hypergeometric convexity, integer-boundary treatment, and a counterexample outside the threshold regime.
-- [ ] Independently review the proof and compare its actual statement against the closest primary sources.
-- [ ] Add a standalone standard-library checker with tests written first. Preserve all measured sources and saved results from earlier releases.
-- [ ] Verify finite blocks with exact rational arithmetic. Derive additional exact rational lower/upper cost certificates for a fixed set of score-only illustrations, without model outputs or stochastic loss scenarios.
-- [ ] Generate and independently reproduce the saved check artifact, inspect all reported claims, and update the research entry point and attribution before public publication.
+- [x] Write the full proof, including the bounded-loss coupling, rank-block inequalities, hypergeometric convexity, integer-boundary treatment, and a counterexample outside the threshold regime.
+- [x] Independently review the proof and compare its actual statement against the closest primary sources.
+- [x] Add a standalone standard-library checker with tests written first. Preserve all measured sources and saved results from earlier releases.
+- [x] Verify finite blocks with exact rational arithmetic. Derive additional exact rational lower/upper cost certificates for a fixed set of score-only illustrations, without model outputs or stochastic loss scenarios.
+- [x] Generate and independently reproduce the saved check artifact, inspect all reported claims, and update the research entry point and attribution before public publication.
 
 Exact finite checks support implementation and examples; the written argument establishes the universal claim. A successful source check alone is not a proof. The new theorem does not assert a cost bound for the existing six-bet confidence-sequence engine or on nonzero label tables.
+
+Completion evidence: 131 tests pass; earlier saved-evidence checks pass; the new source-pinned result regenerates byte for byte under standard-library-only execution. Separate agent contexts reviewed the mathematics, implementation safeguards, and all nine conservatively rounded cost rows. This is assisted internal review, not external human validation. Public scientific priority, human ownership, and the overall fellowship goal remain unverified.

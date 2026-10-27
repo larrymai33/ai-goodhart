@@ -88,3 +88,7 @@ Query families included best-of-N with “unbiased estimator,” “finite sampl
 No direct match for the finite without-replacement rank-family TV identity and the stated uniform harmonic bounds was found in this search. This leaves a provisional special-family claim, not a novelty certification. Further checks should include citation tracing, older order-statistics and universal-coding literature, mathematically equivalent formulations, and independent specialist review.
 
 Until those checks and real-data work exist, describe the artifact as a reproducible statistical audit study with a proposed special-family analysis. Do not call it a new general safety guarantee, evidence of frontier-model safety, or a demonstrated improvement in human-aligned behavior.
+
+### Finite-table cost follow-up
+
+The [zero-table cost theorem](zero-cost-theorem.md) adds a separate rank-family approximation claim. Its [attribution ledger](zero-cost-theorem.md#8-attribution-and-claim-boundary) covers classical multi-target NEGEXP, subset-audit optimization, auditing-game approximations, and adaptive zero-path lower bounds. The proposed distinction is the uniform finite rank-block cost comparison, including census saturation, rather than a new design or generic proof technique. The bounded search did not establish priority; equivalent consequences of earlier results still require specialist review.
