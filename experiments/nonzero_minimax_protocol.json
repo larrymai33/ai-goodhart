@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "Nonzero finite-table minimax certification for arbitrary best-of-N grids",
+  "status": "Fixed after exploratory proof and small-grid checks, before the saved broader calculation; not external preregistration",
+  "evidence_type": "deterministic_exact_arithmetic_checks",
+  "theorem": {
+    "objective": "One globally delta-valid, all-safe-complete auditor; worst-case expected distinct labels over fixed tables with max R_n <= tau-epsilon",
+    "range": "0<tau<=1/8; 0<epsilon<=tau/16; 0<delta<=1/4",
+    "lower_replication": "P>=log(1/delta)/epsilon^2; not required for the upper bound",
+    "lower_constant": 12000,
+    "upper_constant": 49152,
+    "stage_constant": 4096,
+    "scope": "Arbitrary nonempty declared grids use their exact Z; global certification does not provide selectable simultaneous confidence bands"
+  },
+  "ratio_max_pool_size": 48,
+  "grid_max_pool_size": 10,
+  "conditional_prompt_counts": [16, 32, 64, 128],
+  "conditional_count_range": "1<=k<=P/8; k<q_count<=3P/16; 0<=t<=floor(k/2); 0<=s<=t",
+  "certificate_taus": ["1/8", "1/16"],
+  "relative_margins": ["1/16", "1/64"],
+  "certificate_deltas": ["1/4", "1/20"],
+  "replication_multipliers": [1, 4],
+  "stages": 16,
+  "profile_construction": "P=ceil(multiplier*log_upper(1/delta)/epsilon^2); pP=floor(P*(tau-epsilon)); (q-p)P=ceil(8*P*epsilon); b=floor(pP/2)",
+  "practical_case": {"prompts": 32, "pool_size": 64, "budgets": [1, 2, 4, 8, 16, 32, 64], "tau": "1/10", "epsilon": "1/160", "delta": "1/20"},
+  "log_series_terms": 32,
+  "dyadic_rounding_bits": 80,
+  "claim_boundary": "Finite arithmetic supports implementation, not the probabilistic concentration theorem, novelty, practical savings, real-model usefulness, or independent human ownership. The existing CLI and frozen paper snapshots remain unchanged."
+}
