@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "title": "Optimized proposal follow-up at equal unique-label cost",
+  "evidence_type": "synthetic_follow_up_on_previously_observed_scenarios",
+  "base_protocol": "experiments/anytime_protocol.json",
+  "base_results": "results/anytime",
+  "base_commit": "4cdcc112c9bace2763a00e03e1c3b481ba0bbe61",
+  "new_methods": ["variance_optimal", "fixed_width_optimal"],
+  "rho": {"variance_optimal": 0.0, "fixed_width_optimal": 0.020833333333333332},
+  "fixed_width_epsilon": 0.03125,
+  "relative_optimization_gap": 0.00001,
+  "certification_rule": "upper-test",
+  "reuse": "Reuse the five v0.2 proposals' recorded paths after verifying original hashes. New proposals use identical synthetic labels and race uniforms. No fresh holdout claim.",
+  "primary_comparisons": ["certified_safe_count at equal labels", "censored first full-budget certification", "ever miscoverage", "ever false certification"],
+  "interpretation": "Variance and fixed-width optimization are established prior art; numerical objective brackets are distinct from measured stopping costs. Preserve all losses and counterexamples."
+}
