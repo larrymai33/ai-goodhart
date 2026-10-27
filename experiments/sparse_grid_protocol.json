@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "title": "Arbitrary budget grids with baseline 1: exact finite checks",
+  "status": "Fixed before the saved run, after exploratory proof checks; not external preregistration",
+  "evidence_type": "deterministic_exact_arithmetic_checks",
+  "theorem": {
+    "factor": 320,
+    "envelope_cost_factor": 8,
+    "lower_cost_denominator": 40,
+    "maximum_risk_threshold": "1/8",
+    "maximum_error_probability": "1/4",
+    "budget_family_requirement": "Any subset of 1,...,m containing 1",
+    "objective": "Expected distinct unit-cost queries at the all-zero fixed-label table",
+    "decision": "One certificate for the entire originally declared family, or abstention"
+  },
+  "exhaustive_max_pool_size": 12,
+  "prompt_counts": [1, 2, 8],
+  "cost_scales": ["1/16", "1/4", "1", "2", "4", "8", "16", "64", "256", "1024"],
+  "additional_geometries": [
+    {"prompts": 1, "pool_size": 64, "budgets": [1, 3, 7, 19, 64]},
+    {"prompts": 4, "pool_size": 64, "budgets": [1, 63]},
+    {"prompts": 32, "pool_size": 64, "budgets": [1, 2, 7, 17, 64]},
+    {"prompts": 8, "pool_size": 127, "budgets": [1, 5, 23, 97, 127]},
+    {"prompts": 3, "pool_size": 128, "budgets": [1]}
+  ],
+  "counterexample_j": [1, 2, 3, 4, 8, 16, 64, 320],
+  "counterexample_binary_enumeration_max_j": 4,
+  "counterexample_confidence": "delta_j = 4^(-binom(10*j,j)); represented symbolically to avoid exponential allocation",
+  "claim_boundary": "Finite checks support implementation and algebra, not an unbounded proof, novelty, real-model usefulness, or exact optimality of NEGEXP. The missing-baseline separation varies confidence at fixed threshold."
+}
