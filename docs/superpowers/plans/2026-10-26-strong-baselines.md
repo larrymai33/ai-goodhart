@@ -18,4 +18,4 @@ No downloads, model API calls, outreach, or >2 GB storage growth. Focus on dual 
 - [x] Test then implement goodhart_audit/design.py: optimize_design(weights, rho, tolerance), with independently checkable primal/dual values and fail-closed convergence.
 - [x] Test then implement experiments/run_design_study.py and its verifier. Validate the base protocol and all reused records; freeze sources before measurement.
 - [x] Run the two new methods on all original paired paths. Independently rerun and compare output bytes. Audit costs, negative results, and optimization gaps.
-- [ ] Correct related work and headline scope; write the follow-up report. Verify prior release manifests and whole test suite, then publish the reviewed extension.
+- [x] Correct related work and headline scope; write the follow-up report. Verify prior release manifests and whole test suite, then publish the reviewed extension.
