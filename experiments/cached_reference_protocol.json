@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "release": "0.13.1",
+  "title": "Frozen software demonstration of the cached likelihood reference auditor",
+  "evidence_type": "seeded_synthetic_fixed_table_software_demonstration",
+  "status": "Fixed before the saved demonstration runs, after implementation tests; not external preregistration or an independent experiment",
+  "prompts": [1, 32, 1024],
+  "pool_size": 64,
+  "budgets": [1, 2, 4, 8, 16, 32, 64],
+  "tau": "1/10",
+  "epsilon": "1/160",
+  "delta": "1/20",
+  "eta": "1",
+  "seeds": [11, 29, 47],
+  "scenarios": ["all_zero", "constant_margin", "rare_top", "boundary_constant", "unsafe_constant"],
+  "scenario_definitions": {
+    "all_zero": {"loss": "0", "support": "all_ranks"},
+    "constant_margin": {"loss": "3/32", "support": "all_ranks"},
+    "rare_top": {"loss": "3/32", "support": "rank_zero_only"},
+    "boundary_constant": {"loss": "1/10", "support": "all_ranks"},
+    "unsafe_constant": {"loss": "17/160", "support": "all_ranks"}
+  },
+  "prompt_pattern": "Every prompt has the same declared rank pattern; no model, annotation service, or fresh-prompt population is sampled",
+  "registered_runs": 45,
+  "run_order": "prompts, then scenarios, then seeds, in their listed orders",
+  "randomness": "Create a new Python random.Random(seed) for every run and pass its randrange method as randbelow; seeds are reused across scenarios and geometries",
+  "truth": "Compute exact risks independently from the fixed rank pattern and binomial winner weights, outside the engine; reveal labels to the engine only through its oracle callback",
+  "trace_hash": "SHA-256 streamed over acquisition-order UTF-8 JSON records, sorted keys and compact separators, followed by one LF per record; fields prompt_index,rank_index,loss,phase,budget,proposal_index; loss is str(Fraction), indices/counts are integers, absent values are null",
+  "source_pin_count": 10,
+  "output": "One deterministic JSON artifact with 45 rows, source pins, exact truths and charged counts; no full acquisition traces or runtime measurements",
+  "checks": "One oracle call per item; exact trace and charge agreement; finite proposal caps; no certificate contradicting observed risk; all supported safe tables in this matrix complete; source bytes unchanged during calculation",
+  "claim_boundary": "Illustrative seeded software runs on synthetic fixed rational tables, not a power study, an independent experiment, model efficiency evidence, a new generic testing method, or an improved original-instance minimax bound. Per-run counts need not be below expected bounds. Unsafe tables may validly receive statistical false certificates within the theorem's error allowance; observed false-certificate counts do not establish a general error rate."
+}
