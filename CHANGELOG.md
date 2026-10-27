@@ -1,5 +1,13 @@
 # Research releases
 
+## 0.6.0 — 26 October 2026
+
+Adds a candidate sharp zero-table cost theorem: for the full prefix of budgets, classical NEGEXP attains the unrestricted adaptive optimum to leading order as the threshold tends to zero and log(1/delta)*N/(P*m*tau) tends to zero, with delta at most 1/4. A finite hypergeometric bound and geometric envelope-value bins give the matching lower bound uniformly in growing target families. The design, envelope coefficient, and generic lower-bound ingredients are attributed to prior work; priority remains unestablished.
+
+Adds 10,400 exact small-block inverse comparisons, four larger comparisons, and 56 conservative analytical cost certificates. The 93,438-byte source-pinned artifact reproduces byte for byte. All 182 tests pass, including eleven focused standard-library tests. Review corrected decimal-display rounding with a failing-then-passing regression. Symbolic population counts are never expanded into item tables; CLI behavior and caps are unchanged.
+
+Records why a fixed-reference extension and a nonzero-instance impossibility direction were set aside as established ideas. The sharp theorem does not establish practical optimality at the earlier threshold 0.1, nonzero-table efficiency, model evidence, or independent human validation. Earlier source-pinned results are preserved.
+
 ## 0.5.0 — 26 October 2026
 
 Extends the finite zero-table cost approximation to every declared budget grid containing 1, with factor 320 against the unrestricted adaptive optimum under the same threshold and confidence restrictions. The original factor 160 remains available on grids containing every power of four. The proof uses only declared witness targets and handles gaps between their disjoint blocks. A counterexample establishes failure of a bound uniform over all grids and confidence levels at fixed threshold when the baseline restriction is removed. It does not show failure at fixed confidence or for every grid without 1.

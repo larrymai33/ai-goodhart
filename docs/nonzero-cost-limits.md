@@ -1,0 +1,23 @@
+# What zero-table competitiveness does not imply
+
+The project's cost theorems evaluate expected distinct queries at an all-zero table, while requiring validity against every fixed loss table. Extending this to arbitrary safe tables raises an established distinction between testing an unknown table and checking a candidate reference. The observations below delimit the research claim; they are not new auditing methods or general impossibility discoveries.
+
+## A fixed reference gives a classical comparison audit
+
+Suppose a fixed, untrusted reference vector z in [0,1] is available and every reference target risk is below the threshold. For target n, write its positive margin as M_n=tau-R_n(z). The classical comparison construction normalizes each item's possible upward discrepancy by that margin and takes a maximum across targets:
+
+`s_ref(i) = max_n a_n(i)*(1-z_i)/M_n`.
+
+Independent inclusion with probability `1-exp(-L*s_ref(i))`, followed by certification only if every queried true loss is at most its reference, is valid. Any unsafe actual table must have enough positive discrepancy capacity to make the miss probability at most delta. The reference need not be correct for validity; the acquired labels still must be fixed and correct. Margin-normalized discrepancy maxima and their use with NEGEXP already appear in [Stark (2009), Section 2](https://arxiv.org/html/0905.1422), building on [Aslam, Popa, and Rivest (2008)](https://www.usenix.org/legacy/events/evt08/tech/full_papers/aslam/aslam_html/).
+
+Let OPT_z minimize expected distinct queries at z over auditors that, holding the public reference fixed, remain valid for every actual table and certify z almost surely in finite time. If every reference risk is at most eta*tau, with eta<1, this design's reference-table cost is at most the ordinary zero-reference NEGEXP cost divided by 1-eta. Also OPT_z>=OPT_0: simulate any reference auditor using transformed queried losses `z_i+(1-z_i)*u_i`. This maps the zero table to z and maps every unsafe u to an unsafe table, because the transformed values are at least u. Thus a reference-table cost factor follows directly from the zero-table factor. It is a transfer corollary, not an additional rank-family theorem.
+
+The limitation is power under upward discrepancies. With one uniform target, z_i=tau/2 and y_i=3*tau/4 for every item, all true risks remain safe but every inspected label exceeds its reference. The no-exceedance rule certifies only on an empty sample. A census fallback restores eventual certification on safe tables, without supplying a useful efficiency guarantee for this mismatch. Existing weighted-sampling work already uses inaccurate side information through predictable control variates that can continue inference after discrepancies: [Shekhar et al. (2023), Section 4, Theorem 2](https://proceedings.mlr.press/v216/shekhar23a.html).
+
+## A pointwise optimum can encode a matching guess
+
+For a strictly safe table y, with every target risk below the threshold, minimizing expected cost over all globally valid auditors favors different auditors at different y. One competitor can hardcode y as an untrusted reference and still remain valid when that guess is wrong. Adding a census after disagreement makes it complete on every safe table without increasing cost at its matching reference. This uses no trusted free labels, but the pointwise infimum benefits from instance-specific guesses that a single unknown-table algorithm cannot simultaneously possess.
+
+The resulting testing-versus-verification gap is established in randomized decision-tree complexity. [Grossman, Komargodski, and Naor (ITCS 2020), Definitions 2.4 and 2.7 and Lemma 3.5](https://drops.dagstuhl.de/opus/volltexte/2020/11741/pdf/LIPIcs-ITCS-2020-56.pdf) show that Majority is not randomized instance optimizable; a candidate labeled certificate can make verification much cheaper than ordinary querying. In auditing, the familiar inverse-margin distinction between polling and comparison is discussed in [Stark's ONEAudit](https://arxiv.org/html/2303.03335).
+
+This prevents treating the current zero-table result as a ready-made promise of universal efficiency on all near-threshold safe tables. It does not invalidate the proved zero-table comparison or imply that every practical adaptive audit is inefficient. A meaningful broader comparison would need a motivated objective, such as evaluating cost only at one common fixed public reference, or taking worst-case cost over a permutation class. Sharing reference metadata alone does not remove the obstruction: a pointwise competitor can still embed another matching guess. Changing a benchmark alone would not establish a research contribution.

@@ -4,9 +4,11 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.5 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.6 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
+
+**Sharp zero-table cost.** For the full budget prefix `{1,...,N}`, classical multi-target NEGEXP attains the optimal leading expected distinct-label cost among all valid adaptive audits that almost surely certify the zero table: `OPT_0 ~ C_NEG ~ log(1/delta)*Z_mN/tau`. This holds jointly as `tau -> 0` and `log(1/delta)*N/(P*m*tau) -> 0`, with `0 < delta <= 1/4`. The matching lower bound is uniform in growing budget families. The [proof](docs/sharp-cost-theorem.md) and [exact-check report](docs/sharp-cost-report.md) explain the conditions, finite certificates, confidence boundary, and attribution. This is an asymptotic mathematical result, not practical optimality at ordinary thresholds or new model evidence.
 
 **Finite-table cost guarantees.** When every candidate's loss is zero, classical multi-target NEGEXP uses at most **320 times** the optimal expected number of distinct labels among all valid adaptive audits in the stated class, for any declared budget grid containing **1**. The bound improves to **160** when every power of four through the maximum is declared. Both require equal fixed pools, a predeclared whole-family decision, risk threshold at most 1/8, and error probability at most 1/4. They include finite census effects. [Arbitrary-grid proof](docs/sparse-grid-theorem.md) · [Original sharper bound](docs/zero-cost-theorem.md).
 
@@ -18,7 +20,7 @@ The factor is deliberately loose. For the existing geometry of 32 pools of 64 ca
 
 **Use the cost theorem:** the [zero-only annotation workflow](docs/zero-workflow.md) creates a randomized query plan, commits its immutable content before annotation, and verifies a whole-family certificate when every selected loss is exactly zero. Its rational arithmetic and integer rejection sampler preserve the applicable factor-160 or factor-320 guarantee under the stated assumptions. The [numerical proof](docs/zero-workflow-numerics.md) explains the implementation; hand-authored arithmetic fixtures exercise its outcomes without claiming model evidence. Run `python -S -m goodhart_audit.zero --help` with no installation.
 
-**New: sharper finite-pool theory and stronger baselines.** The [latest follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
+**Earlier finite-pool theory and stronger baselines.** The [v0.3 follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
 
 The anytime implementation queries each candidate at most once and supports stopping after any labeled prefix. The [workflow](docs/anytime-report.md) and [attributed proof](docs/anytime-theory.md) describe its established weighted-without-replacement foundation. The combined comparison has 5,600 method paths from 800 independent scenario–replicate streams, including 4,000 previously published paths. It is a synthetic follow-up on known scenarios, not a fresh holdout.
 
@@ -80,6 +82,8 @@ Verification checks saved artifacts and source integrity; it does not recompute 
 The v0.4 cost theorem has a separate standard-library check and exact rational cost certificates. Its command and scope are documented in the [cost report](docs/zero-cost-report.md). The older reproduction command retains its ten-artifact comparison; it does not silently include this new follow-up.
 
 The v0.5 arbitrary-grid extension also has a separate exact checker: `python -B -S -m experiments.check_sparse_grid --out artifacts/local/sparse-grid-reproduction.json`. Use a new output path. Its source pins, finite scope, and saved artifact are documented in the [extension report](docs/sparse-grid-report.md).
+
+The v0.6 sharp-cost theorem uses `python -B -S -m experiments.check_sharp_cost --out artifacts/local/sharp-cost-reproduction.json`, again with a new path. It checks exact hypergeometric bounds and conservative cost certificates on symbolic populations without allocating their candidate tables. The [report](docs/sharp-cost-report.md) distinguishes those arithmetic checks from the unbounded proof. The [nonzero-table note](docs/nonzero-cost-limits.md) records why two plausible extensions were set aside as established ideas.
 
 ```console
 python -m unittest discover -s tests -v
