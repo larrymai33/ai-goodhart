@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "research_evidence_commit": "e589045",
+  "scope": "Distributed paper and rendering sources; supporting published evidence manifests. PDF hashes identify this artifact, not a byte-identical rebuild guarantee.",
+  "sha256": {
+    "paper/paper.md": "b446932cfcd87b9b6c4f18f45ecbccb321419f2e48f747ac70de03499de58f4b",
+    "paper/build_pdf.py": "6a44d819472b2161c71b9097de1de4d18b2cbfa7a7233400f3284ea5e09bf586",
+    "paper/paper.pdf": "05c1481cf418c9c6889a02c0c202e4a3686b89d0efb29d41e25d19f54922d2e8",
+    "results/manifest.json": "5fdb11c1b41294b6ebcea7e7ca89a55f4226b01f856fa1f695efbfa9ea53dcec",
+    "results/anytime/manifest.json": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
+    "results/design/manifest.json": "24c4289507ae533acb6289aa96024598a560c9ae4db8c9fabb448c581e3fdbf0",
+    "results/theory/sharp_envelope.json": "e2090da8ae9261a3506f8615521284e3bb77943f70987733b5be69f136320052"
+  },
+  "render_environment": {
+    "python": "3.11.0",
+    "matplotlib": "3.7.1",
+    "pillow": "12.3.0",
+    "reportlab": "4.4.9"
+  },
+  "pages": 7,
+  "external_peer_review": false
+}

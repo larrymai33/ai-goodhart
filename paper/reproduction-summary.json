@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "status": "reproduced",
+  "reproduction_status": "exact_match",
+  "figures_rerun": false,
+  "manifest_bytes_compared": false,
+  "comparison_scope": "manifest-listed CSVs, designs.json, and sharp-envelope JSON bytes",
+  "verification_scope": "Saved-artifact and source integrity checks; verification alone is not numerical recomputation or mathematical proof.",
+  "current_environment": {
+    "python": "3.11.0",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "numpy": "1.26.4",
+    "scipy": "1.10.1"
+  },
+  "recorded_environments": {
+    "fixed": {
+      "python": "3.11.0",
+      "numpy": "1.26.4",
+      "platform": "Windows-10-10.0.22631-SP0"
+    },
+    "anytime": {
+      "python": "3.11.0",
+      "numpy": "1.26.4",
+      "platform": "Windows-10-10.0.22631-SP0"
+    },
+    "design": {
+      "python": "3.11.0",
+      "numpy": "1.26.4",
+      "scipy": "1.10.1",
+      "platform": "Windows-10-10.0.22631-SP0"
+    },
+    "sharp": {
+      "dependencies": "Python standard library and local goodhart_audit.core",
+      "python_implementation": "CPython",
+      "python_version": "3.11.0"
+    }
+  },
+  "provenance": "Execution within the same AI-assisted development session, not independent human replication.",
+  "driver_sha256": "995924a2ec13343325eb03874d45562e4f46d37f8ab5d24004b1a611ce228ea9",
+  "checks": [
+    {
+      "name": "output_preflight",
+      "status": "passed"
+    },
+    {
+      "name": "verify_published_fixed",
+      "status": "passed"
+    },
+    {
+      "name": "verify_published_anytime",
+      "status": "passed"
+    },
+    {
+      "name": "verify_published_design",
+      "status": "passed"
+    },
+    {
+      "name": "verify_published_sharp_sources",
+      "status": "passed"
+    },
+    {
+      "name": "installed_dependencies",
+      "status": "passed"
+    },
+    {
+      "name": "full_test_suite",
+      "status": "passed",
+      "tests_run": 115
+    },
+    {
+      "name": "rerun_fixed",
+      "status": "passed"
+    },
+    {
+      "name": "rerun_anytime",
+      "status": "passed"
+    },
+    {
+      "name": "rerun_design",
+      "status": "passed"
+    },
+    {
+      "name": "rerun_sharp",
+      "status": "passed"
+    },
+    {
+      "name": "verify_reproduced_fixed",
+      "status": "passed"
+    },
+    {
+      "name": "verify_reproduced_anytime",
+      "status": "passed"
+    },
+    {
+      "name": "verify_reproduced_design",
+      "status": "passed"
+    },
+    {
+      "name": "verify_reproduced_sharp_sources",
+      "status": "passed"
+    },
+    {
+      "name": "exact_artifact_comparison",
+      "status": "passed"
+    }
+  ],
+  "checksum_pairs": [
+    {
+      "label": "fixed/per_budget.csv",
+      "published_sha256": "532d7a8bbab43343972c761461b61dac14d4c6a0ecc5bed218adb336603721e8",
+      "reproduced_sha256": "532d7a8bbab43343972c761461b61dac14d4c6a0ecc5bed218adb336603721e8",
+      "equal": true
+    },
+    {
+      "label": "fixed/replicates.csv",
+      "published_sha256": "d3ab0eb319c6d26124b6d22f033142f1a563fce1d7e2e64e82d9a926fa903055",
+      "reproduced_sha256": "d3ab0eb319c6d26124b6d22f033142f1a563fce1d7e2e64e82d9a926fa903055",
+      "equal": true
+    },
+    {
+      "label": "fixed/scaling.csv",
+      "published_sha256": "38acf5ee523b70126363650c128a791fedaffaf5d23770da936bef652afe2515",
+      "reproduced_sha256": "38acf5ee523b70126363650c128a791fedaffaf5d23770da936bef652afe2515",
+      "equal": true
+    },
+    {
+      "label": "fixed/summary.csv",
+      "published_sha256": "251aba27d3c12bab36bd6dbaf229af0932c53d20d80623220720c366a5ee7be3",
+      "reproduced_sha256": "251aba27d3c12bab36bd6dbaf229af0932c53d20d80623220720c366a5ee7be3",
+      "equal": true
+    },
+    {
+      "label": "anytime/replicates.csv",
+      "published_sha256": "4ef261421b6e0078bdf9c5aa3664c25dd8c229f7405778108e041dfb10947619",
+      "reproduced_sha256": "4ef261421b6e0078bdf9c5aa3664c25dd8c229f7405778108e041dfb10947619",
+      "equal": true
+    },
+    {
+      "label": "anytime/summary.csv",
+      "published_sha256": "7c3967e8044bdc5268dc00615b4e0c8f2f6c27e5afdf6378ee3de2835dc66560",
+      "reproduced_sha256": "7c3967e8044bdc5268dc00615b4e0c8f2f6c27e5afdf6378ee3de2835dc66560",
+      "equal": true
+    },
+    {
+      "label": "design/replicates.csv",
+      "published_sha256": "88d131a08f063f617ce741dcd102b4c923cf04bfa6454a58329ad3f8dcc7bc60",
+      "reproduced_sha256": "88d131a08f063f617ce741dcd102b4c923cf04bfa6454a58329ad3f8dcc7bc60",
+      "equal": true
+    },
+    {
+      "label": "design/summary.csv",
+      "published_sha256": "d66ae975ccf89b07d1a3bc404308a81f8f56b805fcc194c8b4149d6d300404f3",
+      "reproduced_sha256": "d66ae975ccf89b07d1a3bc404308a81f8f56b805fcc194c8b4149d6d300404f3",
+      "equal": true
+    },
+    {
+      "label": "design/designs.json",
+      "published_sha256": "c08e7490087c7b29fa4cc34bae18617a62d19062da17ef9015e57143cc7c0a00",
+      "reproduced_sha256": "c08e7490087c7b29fa4cc34bae18617a62d19062da17ef9015e57143cc7c0a00",
+      "equal": true
+    },
+    {
+      "label": "sharp-envelope.json",
+      "published_sha256": "e2090da8ae9261a3506f8615521284e3bb77943f70987733b5be69f136320052",
+      "reproduced_sha256": "e2090da8ae9261a3506f8615521284e3bb77943f70987733b5be69f136320052",
+      "equal": true
+    }
+  ]
+}

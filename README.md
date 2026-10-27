@@ -4,9 +4,11 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.3 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.3.1 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
+
+**Read the standalone research note:** [seven-page PDF](paper/paper.pdf) · [Markdown source](paper/paper.md) · [review guide](docs/review-guide.md). It consolidates the finite-pool proofs, attributed foundations, synthetic comparisons, limitations, and substantial AI-assistance disclosure. Version 0.3.1 adds this review package and a unified reproduction command; the v0.3 scientific results are unchanged.
 
 **New: sharper finite-pool theory and stronger baselines.** The [latest follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
 
@@ -57,6 +59,15 @@ The valid bands covered all nine true risks in 200/200 repetitions in each setti
 ## Run without installation
 
 Python 3.10+ is sufficient for the core, CLI, and result-integrity check. The synthetic runner additionally uses NumPy and Matplotlib if already installed. Nothing downloads models, datasets, packages, or other artifacts.
+
+Verify all saved evidence with the standard library, or rerun all numerical studies with already-installed NumPy and SciPy:
+
+```console
+python -m experiments.reproduce --verify-only
+python -m experiments.reproduce --out artifacts/local/full-reproduction
+```
+
+Verification checks saved artifacts and source integrity; it does not recompute results or prove theorems. Full mode requires a new output directory, runs the tests, regenerates all three numerical studies and the exact theorem checker, and compares ten numerical artifacts byte for byte. It preserves published results and writes a diagnostic report. Figures and manifest bytes are excluded from regeneration/comparison; software-version differences may produce a reported mismatch. The [paper build](paper/README.md) is separate.
 
 ```console
 python -m unittest discover -s tests -v

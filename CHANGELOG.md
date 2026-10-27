@@ -1,5 +1,11 @@
 # Research releases
 
+## 0.3.1 — 26 October 2026
+
+Consolidates the unchanged v0.3 research into a [standalone seven-page note](paper/paper.pdf), editable source, and a [claim-to-evidence review guide](docs/review-guide.md). The note includes complete finite-pool proofs, attributed foundations, negative synthetic comparisons, and assistance disclosure. No new experiment or external novelty determination is claimed.
+
+Adds one offline reproduction command. Verification checks saved source/artifact integrity, including an explicit release checksum for the theorem table. Full mode runs the test suite and all numerical studies in a new directory, compares ten artifacts, and fails on any mismatch. Figures and manifest bytes are outside this rerun comparison. All 115 tests pass, including two theorem-table tampering regressions; the complete command reproduces all ten numerical artifacts byte for byte in the recorded environment.
+
 ## 0.3.0 — 26 October 2026
 
 Adds a sharp uniform finite-without-replacement envelope remainder, a second-order joint-limit profile, and a reproducible exact-arithmetic check. Corrects the initial abstract-only comparison with Fitas v2: the continuous normalizer and envelope design were already prior work.
