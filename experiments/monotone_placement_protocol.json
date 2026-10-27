@@ -1,0 +1,82 @@
+{
+  "arithmetic": "Exact rational placement constraints and independently implemented rolling Pascal/integer Bellman values, null-completion masses, costs, errors, and per-state checksums. No floating-point decision arithmetic or expanded actual population tables.",
+  "blind_mixture_arithmetic": {
+    "expected_upper": "9671/5",
+    "immediate_certificate_probability": "1/20",
+    "interpretation": "All allowed error is spent on blind immediate certification; this is an admissible comparison, not evidence-based efficiency.",
+    "scope_delta": "1/20",
+    "zero_error_cost": 2036
+  },
+  "claim_boundary": "A lower-certificate improvement within a registered monotone prior-placement family, not a new Bellman algorithm, an optimal auditor, a globally optimal prior or multiplier, a model study, scientific priority, or independent human review. Zero-error and positive-error objectives are explicitly distinct; all older source-pinned files remain unchanged.",
+  "clean_witness": {
+    "added_unknown_ones": 13,
+    "fixed_bottom_ones": 112,
+    "head_zeros": 288,
+    "integer_certificate_left": 5,
+    "integer_certificate_right": 6524,
+    "multiplier": 4096,
+    "null_unknown_ones": 80,
+    "strict_expected_cost_lower": 1100,
+    "unknown_population": 1648
+  },
+  "decimal_digits": 9,
+  "evidence_type": "deterministic_exact_arithmetic_and_integer_dynamic_program",
+  "frontier_definition": "For k=0..192 set b=192-k, fix the first H cells to zero and final b cells to one, and choose the smallest H with N=2048-H-b>=k+13 and fixed-bottom mass plus the first k unknown weights <=3/32 for every original target. Verify H-1 is infeasible whenever H>0.",
+  "frontier_null_counts": {
+    "first": 0,
+    "last": 192
+  },
+  "geometry": {
+    "added_unknown_ones": 13,
+    "budgets": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "delta": "1/20",
+    "epsilon": "1/160",
+    "pool_size": 64,
+    "prompts": 32,
+    "tau": "1/10",
+    "total_items": 2048,
+    "total_null_ones": 192
+  },
+  "latent_matrix": "larger=1..12, smaller=1..larger, q=0..smaller: C(larger,smaller)C(smaller,q)=C(larger,q)C(larger-q,smaller-q)",
+  "latent_max_population": 12,
+  "maximum_integer_bits": 8192,
+  "maximum_multiplier": 8192,
+  "maximum_population": 2048,
+  "multipliers": [
+    2048,
+    4096
+  ],
+  "progress": "Informational stderr progress every 16 completed frontier geometries once calculation exceeds 60 seconds; elapsed time is not stored in results.",
+  "registered_frontier_evaluations": 386,
+  "selection": "Largest exact dual lower bound among only the 193 maximal-unknown-population frontiers and two registered multipliers; no optimality claim over other priors or all multipliers",
+  "sorting_matrix": "M=1..7, all decreasing rows from combinations_with_replacement({0,1,2},M), all assignments in {fixed-zero,unknown,fixed-one}^M, and all k=0..number-of-unknowns. Check sorting head zeros and bottom ones does not increase the worst k-subset risk.",
+  "sorting_max_items": 7,
+  "sorting_weight_alphabet": [
+    0,
+    1,
+    2
+  ],
+  "state_checksum": "Same length-prefixed unsigned-big-endian SHA-256 state encoding as the frozen finite-decision checker; compare common-size cases in tests without mutating its population cap.",
+  "status": "Fixed after exploratory mathematics and prior-pair screens, before the saved registered calculation; not external preregistration",
+  "title": "Monotone placement and a stronger lower certificate for the original whole-grid decision",
+  "version": 1,
+  "zero_error_arithmetic": {
+    "adversarial_tail_ones": 192,
+    "constant_fractional_loss": "3/32",
+    "deterministic_exact": 2036,
+    "omitted_last_rank_cells": 12,
+    "randomized_lower": 2034,
+    "required_observed_zeros_binary": 1844,
+    "scope_delta": "0",
+    "unseen_feasible": 14,
+    "unseen_infeasible": 15
+  }
+}
