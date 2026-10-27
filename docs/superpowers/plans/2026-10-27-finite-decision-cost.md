@@ -25,14 +25,14 @@ No downloads, installs, model inference, or outreach. Workspace under 2 GB. Pres
 ## Proof and protocol
 
 - [x] Screen unrestricted-grid directions and identify the concrete original-decision certificate. Retain exploratory singleton and ballot work only in ignored notes.
-- [ ] Write `docs/finite-decision-theorem.md` and `docs/finite-decision-priority.md`; independently review the common-safe geometry, policy reduction, recursion, and attribution.
-- [ ] Commit this specification, plan, and `experiments/finite_decision_protocol.json` before the saved production calculation. Record that exploration preceded the freeze.
+- [x] Write `docs/finite-decision-theorem.md` and `docs/finite-decision-priority.md`; independently review the common-safe geometry, policy reduction, recursion, and attribution. Root and a separate agent found no substantive proof issue. A separately written normalized rational recurrence exactly matched the exploratory integer value at lambda 2,048.
+- [x] Commit this specification, plan, and `experiments/finite_decision_protocol.json` before the saved production calculation (`f914279`). Record that exploration preceded the freeze.
 
 ## Checker and evidence
 
-- [ ] Write failing tests in `tests/test_finite_decision.py`, then implement `experiments/check_finite_decision.py`. The main entry point accepts the exact frozen protocol and a fresh output path. The integer recurrence returns exact Lagrangian/cost/error values; invalid input and provenance changes abort before publication.
-- [ ] Cross-check tiny cases by explicit prior-table/stopping-policy enumeration; check null completeness and the cost/error identity. Verify zero-count and zero-observation cases, protocol bounds, source drift, output preservation, and runtime guards under `-O`.
-- [ ] Independently review the checker, run focused standard-library/optimized tests and the full suite, and commit reviewed sources before the saved calculation.
+- [x] Write failing tests in `tests/test_finite_decision.py`, then implement `experiments/check_finite_decision.py`. The main entry point accepts the exact frozen protocol and a fresh output path. The integer recurrence returns exact Lagrangian/cost/error values; invalid input and provenance changes abort before publication.
+- [x] Cross-check tiny cases by explicit prior-table/stopping-policy enumeration; check null completeness and the cost/error identity. Verify zero-count and zero-observation cases, protocol bounds, source drift, output preservation, and runtime guards under `-O`. All 13 focused tests pass normally with site packages disabled and under optimized Python; the full installed-environment suite has 254 passing tests.
+- [x] Independently review the checker, run focused standard-library/optimized tests and the full suite, and commit reviewed sources before the saved calculation. Independent normalized posterior calculations matched the integer values, chosen policy costs/errors, and complete state checksums on four targeted cases; general-delta rounding and provenance guards passed review without required fixes.
 - [ ] Generate `results/theory/finite_decision.json`, rerun to a fresh ignored path, and require identical bytes. Report only exact observed bounds and matrix counts.
 
 ## Public integration
