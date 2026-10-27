@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "title": "Anytime best-of-N audits at equal unique-label cost",
+  "status": "Specified before measurements; not externally preregistered",
+  "evidence_type": "synthetic_fixed_finite_pools",
+  "seed": 20261027,
+  "prompts": 32,
+  "pool_size": 64,
+  "budgets": [1, 2, 4, 8, 16, 32, 64],
+  "label_checkpoints": [32, 128, 512, 1024],
+  "max_labels": 1024,
+  "replicates": 100,
+  "delta": 0.05,
+  "risk_threshold": 0.1,
+  "bet_fractions": [1.0, 0.5, 0.25, 0.125, 0.0625, 0.03125],
+  "scenarios": ["rare_top", "top_failure", "interior_band", "bottom_band", "flat_risk", "goodhart_turn", "prompt_cluster", "all_safe"],
+  "methods": ["uniform", "budget_mixture", "dyadic_mixture", "max_uniform", "envelope"],
+  "primary_outcomes": ["ever_miscoverage", "ever_false_certification", "certified_count", "first_full_budget_certified"],
+  "controls": [
+    "One queried candidate per draw; every candidate distinct.",
+    "Every method uses the same fractional betting mixture, target-wise predictable scale and deterministic identification bounds.",
+    "Confidence statements are simultaneous over all observed times and all target budgets within a single run.",
+    "Identical exponential-race uniforms couple acquisition methods within a scenario-replicate.",
+    "Acquisition sees ranks, identities and proposal masses, not any loss labels.",
+    "Uncertified full-budget targets remain censored; the maximum sample size is not recorded as successful certification.",
+    "Evaluation truth is used only to score coverage, errors and safety-status diagnostics.",
+    "No real-model outputs and no population-generalization claim."
+  ]
+}
