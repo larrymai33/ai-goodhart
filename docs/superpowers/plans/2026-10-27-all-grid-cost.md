@@ -48,5 +48,5 @@ Keep the original fixed fractional-table objective and parameter range. No downl
 - [x] Run the registered matrix, then reproduce to a separate fresh ignored path. Compare bytes and source-commit hashes; report only actual counts and profiles (13,025 identical bytes, 27,600 family configurations).
 - [x] Explain what the theorem newly covers, the constructive algorithm's scope, and the scaling example. Retain the stronger original-instance v0.12 certificate and distinguish it from loose universal constants.
 - [x] Independently reconcile public claims against proofs and the saved artifact. Final review confirms byte-identical runs, all nine frozen source pins, no floats, and matching counts/profiles; three scope-wording clarifications are applied.
-- [ ] Verify all historical worktree/index pins, changed staged bytes, local links, storage, and clean Git state; commit and publish.
-- [ ] Verify public main, repository visibility, and the version tag. Keep the full goal active unless its actual external requirements become verified.
+- [x] Verify all historical worktree/index pins, changed staged bytes, local links, storage, and clean Git state; commit and publish (`c2e0979`, fourteen manifests, 95 pins, 155 links, about 55 MB).
+- [x] Verify public main and repository visibility. Keep the full goal active unless its actual external requirements become verified. The annotated `v0.13.0` tag is created after this publication-record commit and checked before the final task response.
