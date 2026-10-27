@@ -1,5 +1,23 @@
 # Provenance and contribution disclosure
 
+Version 0.14.1 consolidates the existing all-grid finite-cost result and its
+complete project-specific proof dependencies into a current
+[manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the
+narrative and appendices, expanded the already-used maximal-inequality
+derivation, built the local renderer, and updated the source map and review
+guide. Separate agent contexts checked proof correspondence and code; every
+PDF page was visually inspected. All 373 software tests pass, including seven
+new formatter regressions that also pass under optimized standard-library
+Python. These checks do not constitute independent human review. Earlier
+scientific files and PDFs remain byte-preserved; no new measurement or theorem
+is claimed. The [weighted-query follow-up](weighted-query-followup.md) adds
+primary slide evidence for established heavy-item/residual sampling and
+deterministic tail truncation, while leaving the final journal comparison open.
+Larry reports having personally checked none of the project so far. No
+downloads, installations, model calls, or outreach occurred. Research ownership,
+scientific priority, field impact, and fellowship competitiveness remain
+unestablished.
+
 Version 0.14 adds a concrete finite-checkpoint upper construction for the original seven-budget decision. Codex developed the schedule, exact all-head-bin cost calculation, real-loss proof, rational callback engine, tests, and report. Separate agent contexts reviewed the proof, implementation, and claims, including independent observed-subset arithmetic. Classical convex-order, majorization, expected-shortfall, and error-spending tools are attributed. The result improves the upper bound by about 9.376 labels through a disclosed blind mixture; it is not a new generic test, an optimal schedule, or a large practical efficiency claim.
 
 Protocol `0624c7e` followed exploratory searches and preceded the saved full calculation. Reviewed source freeze `46c0250` pins eight scientific files. Two runs reproduce all 848,201 bytes exactly. All 366 repository tests pass, with 22 focused tests also passing under optimized standard-library Python. The [report](finite-checkpoint-report.md) separates universal proofs, finite arithmetic, and eleven illustrative traces. The default callback disables blind certification; explicit mixed mode has the stated `9/199` empty-query event. The executable's rational domain is narrower than the all-real mathematical construction. No downloads, installations, model calls, or outreach occurred. Scientific priority, model usefulness, independent human research ownership, field impact, and fellowship competitiveness remain unestablished.

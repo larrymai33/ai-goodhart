@@ -1,5 +1,32 @@
 # Research progress
 
+Release checks for the v0.14.1 manuscript verify all 144 source/document
+pins across eighteen manifests, including staged Git object bytes, and
+270 local links. The frozen main proof sources, renderer, and earlier PDFs
+match the v0.14 base exactly. Workspace storage including Git and temporary
+renders is below 150 MB, well within the 2 GB limit.
+
+The v0.14.1 consolidation prepares a 31-page current manuscript containing
+the all-grid finite-cost theorem, cached upper construction, dyadic matching
+rate, and complete project-specific proof dependencies. The source map pins
+the four main proof sources at the v0.14 scientific base; the original notes,
+results, and PDFs are preserved. Separate agent contexts reviewed proof
+correspondence, equations, code, and layout. All 373 repository tests pass
+in 20.462 seconds; seven formatter regressions also pass under optimized
+standard-library Python. Every final PDF page was visually inspected directly
+or verified pixel-identical to an inspected draft. The 186 display blocks
+retain a 12-point base size. No new theorem or scientific measurement is
+claimed.
+
+New primary-slide evidence explicitly attributes heavy-item residual sampling
+and deterministic tail truncation to the 2010 weighted-query talk. The final
+journal-paper comparison remains open. The current review guide prioritizes
+the all-grid characterization over older restricted results. Larry has
+personally checked none of the work so far; no independent human review,
+field impact, or fellowship competitiveness is established. No downloads,
+installations, inference calls, or outreach occurred. The broader goal remains
+active.
+
 The v0.14 finite-checkpoint update was published as `4f9b509cbdf1d9f71236ca0ae65a934a197cab25`. Remote main matched that commit, the GitHub connector returned the new report, and repository visibility remained public. All 119 source/document/artifact pins across seventeen manifests and staged changed-file bytes were verified, along with 148 local links. Total workspace storage remains about 58 MB including Git and local reproductions. The bounded cost-improvement phase is complete; the broader research and fellowship goal remains active.
 
 The v0.14 finite-checkpoint phase improves the original seven-budget upper bound from 1934.2 to `383040/199`, about 1924.824 expected labels. The [report](finite-checkpoint-report.md) discloses the modest 9.376-label reduction and initial blind-certification probability `9/199`. The evidence branch has error at most `1/200` and uniform margin-class expected cost at most 2016; it buys every head, suffix, and fallback label. A complete real-loss proof and a bounded rational callback reference have distinct domains. Default program mode disables the blind branch. The previous lower certificate remains unchanged.

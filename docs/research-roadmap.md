@@ -1,5 +1,17 @@
 # Research roadmap
 
+Current review artifact, 2026-10-27: v0.14.1 consolidates the all-grid theorem,
+cached upper construction, dyadic matching rate, and complete proof dependencies
+in a [standalone manuscript](../paper/finite-cost/manuscript.pdf). The
+[review guide](review-guide.md) now starts with those results. This is an
+exposition and dependency-audit milestone, not another scientific extension.
+The [weighted-query follow-up](weighted-query-followup.md) attributes the
+older deterministic tail cap as well as residual sampling. A proof-level
+comparison with the final journal article, independent human verification,
+and evidence of model usefulness remain unresolved. Further research should
+address a structural or application-relevant gap; more small constant
+refinements alone would not establish the user's intended impact.
+
 Latest finite-instance result, 2026-10-27: v0.14 [scheduled checkpoints](finite-checkpoint-report.md) reduce the original seven-budget upper bound from 1934.2 to `383040/199`, approximately 1924.824 expected distinct labels. This modest improvement retains a disclosed `9/199` blind-certification branch. Its default evidence callback has a separate error `1/200` and uniform cost at most 2016, with charged census completion. The real-loss proof and exact all-bin calculation are reproduced; the rational executable has narrower input scope. The remaining gap to the lower certificate is large. Useful evidence-based original-instance constants, label-oracle realism, real-model evidence, priority, and independent human ownership remain substantive gaps; more small constant refinements alone would not establish field impact.
 
 Latest supporting analysis, 2026-10-27: v0.13.2 [coverage between budgets](grid-coverage-report.md) derives an exact transfer from established convexity. It exhibits two original-geometry tables that are safe on the dyadic grid but unsafe at an omitted budget, and gives a ten-endpoint sufficient grid. Endpoint count is not label cost, and a supplied efficiency margin is not a certified premise. The original seven-budget cost benchmark is unchanged. The next research target is a rigorously charged finite-population stopping construction that improves that benchmark; label-oracle realism, real-model evidence, priority, and independent human ownership remain open.

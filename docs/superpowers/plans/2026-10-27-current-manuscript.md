@@ -23,16 +23,16 @@ primary-source attribution; legible displays and no clipped math.
 
 ## Work
 
-- [ ] Assemble a current main narrative in `paper/finite-cost/main.md`,
+- [x] Assemble a current main narrative in `paper/finite-cost/main.md`,
   covering model, main statements, intuition, cached construction, corollary,
   finite example, evidence, limitations, and references.
-- [ ] Assemble complete proof appendices and a source correspondence in
+- [x] Assemble complete proof appendices and a source correspondence in
   `paper/finite-cost/appendices.md` and `paper/finite-cost/source-map.md`.
   Independently audit every dependency and reference.
-- [ ] Add a bounded local build wrapper, with necessary regression checks
+- [x] Add a bounded local build wrapper, with necessary regression checks
   for any new math/display transformations. Render the new PDF, inspect all
   pages and repair clipping, unreadable equations, or broken references.
-- [ ] Write build/integrity instructions and a manifest; update current
+- [x] Write build/integrity instructions and a manifest; update current
   review guide, README, provenance, and progress. Verify preserved evidence,
   artifact metadata, local links, and staged bytes.
 - [ ] Publish the consolidation, verify remote main/tag and public artifacts,

@@ -4,7 +4,9 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.14 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.14.1 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
+
+**Current manuscript:** [Finite label costs for certifying best-of-N risk (PDF)](paper/finite-cost/manuscript.pdf) · [searchable source](paper/finite-cost/manuscript.md) · [proof/source map](paper/finite-cost/source-map.md) · [build and integrity](paper/finite-cost/README.md) · [review guide](docs/review-guide.md). The paper consolidates the all-grid finite-cost theorem, cached likelihood upper bound, matching dyadic rate, and their complete project-specific proof dependencies. It also states the limits of the original finite example. This release adds no scientific measurement or new theorem. Substantial Codex assistance is disclosed; Larry has not yet personally checked the research, and no independent human review or field impact is established. The [weighted-query follow-up](docs/weighted-query-followup.md) strengthens attribution of heavy-item sampling and deterministic tail truncation while leaving the final journal-paper comparison open.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
 
