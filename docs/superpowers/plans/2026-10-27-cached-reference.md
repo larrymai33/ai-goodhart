@@ -26,10 +26,10 @@ No downloads, installations, model inference, outreach, or extra service depende
 
 **Files:** create `goodhart_audit/cached_math.py`, `tests/test_cached_math.py`, `docs/cached-reference-numerics.md`.
 
-- [ ] Independently review the design mathematics before implementation; resolve interface and proof findings.
-- [ ] Write failing tests for log enclosures, roots, drift/rounding, cap inequalities, exact weights, resource/type validation, and both mode decisions.
-- [ ] Implement the immutable design and verify focused tests normally and under optimized Python.
-- [ ] Review design arithmetic independently and write the complete numerical implementation proof.
+- [x] Independently review the design mathematics before implementation; resolve interface and proof findings.
+- [x] Write failing tests for log enclosures, square-root enclosures, drift/rounding, cap inequalities, exact weights, resource/type validation, and both mode decisions.
+- [x] Implement the immutable design and verify focused tests normally and under optimized Python.
+- [x] Review design arithmetic independently and write the complete numerical implementation proof. Separate contexts checked edge parameters, high-precision enclosures, cap endpoints, and scope.
 
 ## Task 2: callback auditor
 
@@ -37,9 +37,9 @@ No downloads, installations, model inference, outreach, or extra service depende
 
 **Interfaces:** consume `CachedDesign` from the exact design factory and expose the `audit` callback API specified in the design. Final field names are agreed by root and both implementers before code integration.
 
-- [ ] Write failing tests for exact ticket endpoints, repeated-item fresh coins, one-call-per-label, whole-family decisions, exact support completion, boundary/cap fallback, and malformed callbacks.
-- [ ] Implement the bounded engine and immutable trace, then run focused normal/optimized tests.
-- [ ] Independently review proof-to-code correspondence and test meaningful stopping/sampling invariants.
+- [x] Write failing tests for exact ticket endpoints, repeated-item fresh coins, one-call-per-label, whole-family decisions, exact support completion, boundary/cap fallback, and malformed callbacks.
+- [x] Implement the bounded engine and immutable trace, then run focused normal/optimized tests (36 tests across numerical design, engine, and independent exact recurrence/actual-path checks).
+- [x] Independently review proof-to-code correspondence and test meaningful stopping/sampling invariants. A reproduced later-budget contradiction now overrides an earlier statistical pass even before full support is known; the failing-then-passing actual-design regression is preserved.
 
 ## Task 3: frozen demonstration and public scope
 
