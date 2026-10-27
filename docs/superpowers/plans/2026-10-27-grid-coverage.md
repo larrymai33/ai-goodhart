@@ -37,5 +37,5 @@ Attribute convexity; qualify grid optimality and dyadic sharpness precisely.
 - [x] Run the fixed exact matrix twice, compare bytes, and verify source pins.
   Write `docs/grid-coverage-report.md`, update README/roadmap/provenance/progress,
   and check the complete test suite and all earlier evidence pins.
-- [ ] Review claims and staged bytes, publish the bounded research update,
+- [x] Review claims and staged bytes, publish the bounded research update,
   and verify remote state. Keep the broader goal active.
