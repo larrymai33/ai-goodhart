@@ -4,13 +4,13 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.2 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.3 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
 
-[Research report](docs/report.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
+[Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
 
-**New: anytime unique-label audits.** The follow-up implementation queries each candidate at most once and supports inspecting results or stopping after any labeled prefix. Its [study and workflow](docs/anytime-report.md) compare five proposals at equal unique-label cost, using an established weighted-without-replacement betting construction. See [the attributed proof](docs/anytime-theory.md).
+**New: sharper finite-pool theory and stronger baselines.** The [latest follow-up](docs/design-report.md) adds attributed variance-optimal and fixed-width proposals, correcting the initial comparison's omission. In the rare-top scenario, the variance proposal certifies the largest budget after median 129 unique labels versus 163 for the envelope. Other proposals are faster for that single target; whole-family comparisons also have counterexamples.
 
-Across 4,000 synthetic method paths, the rank envelope helped some whole-curve audits and lost others. In one rare-top-failure scenario, the largest budget was certified after median 163 unique labels versus 200.5 for a dyadic mixture; top-focused proposals were faster for that single budget. These are scoped simulation findings, not a universal cost claim.
+The anytime implementation queries each candidate at most once and supports stopping after any labeled prefix. The [workflow](docs/anytime-report.md) and [attributed proof](docs/anytime-theory.md) describe its established weighted-without-replacement foundation. The combined comparison has 5,600 method paths from 800 independent scenario–replicate streams, including 4,000 previously published paths. It is a synthetic follow-up on known scenarios, not a fresh holdout.
 
 ![Envelope scaling and constructed risk curves](results/theory_and_risks.png)
 
@@ -24,13 +24,15 @@ For every budget $n=1,\ldots,N\le m$, audit ranks using the classical normalized
 
 $$q^*(r)=\frac{\max_{n\le N}w_n(r)}{Z_{m,N}},\qquad Z_{m,N}=\sum_r\max_{n\le N}w_n(r).$$
 
-The BoN-specific analysis in this project establishes
+The finite without-replacement analysis establishes
 
 $$Z_{m,N}=1+\sum_{n=2}^{N}\operatorname{TV}(w_n,w_{n-1}),$$
 
-$$1+\sum_{n=2}^{N}\frac{(n-1)^{n-1}}{n^n}\le Z_{m,N}\le H_N.$$
+$$0\le Z_{m,N}-L_N\le\frac{N-L_N}{m+1}<1.$$
 
-Thus the optimal **largest importance weight** grows as Θ(log N), uniformly over $m\ge N$, compared with $N$ for uniform-rank auditing. This is not a minimax label-complexity theorem or a claim of minimum variance on every loss table. The general minimax-envelope identity is established NML/Shtarkov theory; rank-based BoN evaluation and empirical Bernstein bounds are also established. See the [proof and attribution](docs/theory.md).
+Here $L_N=1+\sum_{n=2}^{N}(n-1)^{n-1}/n^n$ is the established continuous-rank normalizer. Thus $Z_{m,N}=(\log N)/e+O(1)$ uniformly over $m\ge N$, including $m=N$. The [new proof](docs/sharp-envelope.md) also gives the second-order correction as $N/m$ varies.
+
+This bounds the optimal **largest importance weight**, compared with $N$ for uniform-rank auditing. It is not a minimax label-complexity theorem or universal variance claim. The continuous normalizer and score-based envelope audits already appear in [Fitas (2026, v2)](https://arxiv.org/html/2608.21496v2); the general minimax identity is classical NML theory. The initial abstract-only literature comparison missed that overlap and has been corrected. The proposed mathematical distinction is the finite-pool remainder and joint-limit profile, with novelty still subject to external review.
 
 ## What the experiments show
 
@@ -60,6 +62,7 @@ Python 3.10+ is sufficient for the core, CLI, and result-integrity check. The sy
 python -m unittest discover -s tests -v
 python -m experiments.verify_results
 python -m experiments.verify_anytime_results
+python -m experiments.verify_design_results
 python -m goodhart_audit --help
 ```
 
@@ -78,6 +81,12 @@ The additional anytime study uses 32 prompts × 64 candidates per scenario. Repr
 
     python -m experiments.run_anytime_study --out artifacts/local/anytime-reproduction
     python -m experiments.verify_anytime_results --results artifacts/local/anytime-reproduction
+
+The optimized-proposal follow-up additionally needs existing SciPy. Its verifier and theorem check use only the standard library. Choose a new output directory for each run:
+
+    python -m experiments.run_design_study --out artifacts/local/design-reproduction
+    python -m experiments.verify_design_results --results artifacts/local/design-reproduction
+    python -m experiments.check_sharp_envelope --out artifacts/local/sharp-envelope-reproduction.json
 
 ## Audit your own fixed pools
 

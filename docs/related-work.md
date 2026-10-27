@@ -68,10 +68,18 @@ is an instance of established theory. Z is a Shtarkov sum. The project should sa
 
 - [Chen et al., Conformal Tail Risk Control for Large Language Model Alignment, 2025](https://arxiv.org/abs/2502.20285), develops calibration with guarantees for distortion risk measures. Generic risk-controlled LLM alignment is already a substantial literature.
 - [Wachi, Tanabe, and Akimoto, Safety Hacking in Constrained Best-of-N Inference-time Scaling, 2026 preprint](https://arxiv.org/html/2608.22915v1), studies how selection can amplify unsafe outputs accepted by a proxy safety filter. Rare unsafe tails under increased search are not a new motivation.
-- [Fitas, The geometry of AI validation: Exact certification limits for iid best-of-N search, 2026 preprint](https://arxiv.org/abs/2608.21496), addresses structural ambiguity in extrapolating reliability between search budgets. Its abstract was inspected; this is a boundary-setting reference, not a full technical comparison.
+- [Fitas, The geometry of AI validation: From structural blindness to reusable audits, 2026, v2](https://arxiv.org/html/2608.21496v2), directly studies envelope acquisition, variance-optimal design, and reusable BoN audits. Section S2 gives the exact continuous-rank integer-budget normalizer used below. The initial release's abstract-only comparison missed this overlap and is superseded by this full-text check. The remaining proposed distinction is the finite without-replacement analysis, not the continuous formula or envelope principle.
 - [Landesberg, When LLM Judge Scores Look Good but Best-of-N Decisions Fail, 2026 preprint](https://arxiv.org/abs/2603.12520), distinguishes global score agreement from within-prompt selection quality and tie behavior. Its abstract was inspected. A scorer's overall correlation alone is not a sufficient validation target.
 
 ## Search scope and remaining uncertainty
+
+### Follow-up correction, 26 October 2026
+
+[Sarkar and Baichoo, Cheap to Draw, Expensive to Trust: Certifying Test-Time Scaling Curves, 2026, section 7.6](https://arxiv.org/html/2609.40190v1), optimizes a variance-plus-range objective for sufficient fixed-width Bernstein costs and supplies a primal–dual representation. Its broader analysis includes simultaneous BoN inference and adaptive cost bounds. The follow-up implements its objective as an attributed comparator. The fixed-width objective does not itself optimize our distinct-label threshold stopping rule.
+
+[Aslam, Popa, and Rivest, On Auditing Elections When Precincts Have Different Sizes, 2008, section 12](https://www.usenix.org/legacy/events/evt08/tech/full_papers/aslam/aslam_html/), already formulates optimal randomized auditing as a linear program over subsets that hit every dangerous corruption set. Replacing those sets by finite-pool loss sets gives a related all-zero audit benchmark. Neither that generic formulation nor a generic multiscale lower-bound argument is claimed as a contribution here.
+
+The [finite-pool follow-up](sharp-envelope.md) bounds the difference from the established continuous normalizer uniformly, including when the maximum budget equals the pool size. This bounded literature check found no exact match for that remainder statement; it does not establish priority. The [optimized-baseline follow-up](design-report.md) corrects the initial comparison's omission of variance and fixed-width designs.
 
 The search used general web discovery followed by primary paper pages, author-hosted papers, or conference/journal sources. Relevant passages were checked for the rank estimator, the recent BoN evaluation methods, NML, and sensitivity sampling. Several adjacent works were assessed only through abstracts or extracted sections, as identified above. No external paper, repository, dataset, or model file was saved locally.
 

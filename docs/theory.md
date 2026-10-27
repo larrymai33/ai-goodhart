@@ -2,6 +2,8 @@
 
 This note separates established ingredients from the result derived for this project. The rank-weight estimator is established prior work; normalized maximum likelihood gives the general minimax envelope construction; empirical Bernstein concentration is also standard. The specific result here is an exact total-variation decomposition and logarithmic bounds for the envelope of the finite-population best-of-n rank laws. This is a mathematical contribution candidate, not a claim that a literature search has established novelty.
 
+**Follow-up:** [the sharp finite-pool note](sharp-envelope.md) strengthens the bounds to a uniform remainder relative to the continuous normalizer. A full-text check of [Fitas (2026, v2), section S2](https://arxiv.org/html/2608.21496v2) confirms that the continuous formula in (13) is prior work. The initial abstract-only comparison was incomplete; see the corrected [related-work discussion](related-work.md).
+
 ## 1. Target, ordering, and assumptions
 
 Fix a dataset of `P >= 1` prompt pools, each containing `m >= 1` candidates. Within each pool, rank candidates by their proxy score, with **rank 1 best** and rank `m` worst. Scores, rankings, and the pool are fixed before the audit. Resolve ties using a declared deterministic total order that is part of the policy. Let `y[i,r] in [0,1]` be the fixed gold loss of candidate `r` for prompt `i`; binary bad-event labels are the main example.
@@ -223,7 +225,7 @@ $$
 \tag{13}
 $$
 
-The last equality also follows from the same unimodality and TV decomposition for the continuous densities. The sum in (13) is `(log N)/e + O(1)` as `N -> infinity`, since its `n`th term is `1/(en)+O(1/n^2)`. Equation (13) takes `m -> infinity` with `N` fixed; we do not use it to assert an unproved joint-limit constant when `N` grows with `m`. The nonasymptotic inequalities (7) hold in that regime without qualification.
+The last equality also follows from the same unimodality and TV decomposition for the continuous densities. The sum in (13) is `(log N)/e + O(1)` as `N -> infinity`, since its `n`th term is `1/(en)+O(1/n^2)`. Equation (13) itself takes `m -> infinity` with `N` fixed. The subsequent [finite-pool remainder proof](sharp-envelope.md) separately establishes the joint-limit leading coefficient when `N` grows with `m`; it is not inferred merely by exchanging these limits.
 
 ## 4. Fixed-sample simultaneous confidence bounds
 

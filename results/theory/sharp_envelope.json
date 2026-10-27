@@ -1,0 +1,168 @@
+{
+  "constants": {
+    "G_at_one_approximation": 0.3610324320470819,
+    "c0_approximation": 0.9931529908756396,
+    "diagonal_constant_approximation": 1.3541854229227215,
+    "method": "c0 approximated by L_cutoff-log(cutoff)/e; other values use exact limiting identities",
+    "status": "floating-point approximations, not certified decimal enclosures"
+  },
+  "description": "Offline reproduction of docs/sharp-envelope.md numerical evidence",
+  "diagonal_table": [
+    {
+      "Z_minus_log_budget_over_e": 1.3501485049618793,
+      "continuous_normalizer_L": 1.840303236885664,
+      "finite_correction_Z_minus_L": 0.3569189853365584,
+      "finite_normalizer_Z": 2.1972222222222224,
+      "max_budget": 10,
+      "pool_size": 10,
+      "sharp_correction_upper": 0.741790614828576
+    },
+    {
+      "Z_minus_log_budget_over_e": 1.3558145467703493,
+      "continuous_normalizer_L": 2.687301191800484,
+      "finite_correction_Z_minus_L": 0.3626607894905516,
+      "finite_normalizer_Z": 3.0499619812910357,
+      "max_budget": 100,
+      "pool_size": 100,
+      "sharp_correction_upper": 0.9634920674079159
+    },
+    {
+      "Z_minus_log_budget_over_e": 1.354557944666932,
+      "continuous_normalizer_L": 3.5343741503208146,
+      "finite_correction_Z_minus_L": 0.3614049461271467,
+      "finite_normalizer_Z": 3.8957790964479613,
+      "max_budget": 1000,
+      "pool_size": 1000,
+      "sharp_correction_upper": 0.9954701556939852
+    },
+    {
+      "Z_minus_log_budget_over_e": 1.3542434588180021,
+      "continuous_normalizer_L": 4.381447859993646,
+      "finite_correction_Z_minus_L": 0.3610904678657292,
+      "finite_normalizer_Z": 4.742538327859375,
+      "max_budget": 10000,
+      "pool_size": 10000,
+      "sharp_correction_upper": 0.9994619090230983
+    },
+    {
+      "Z_minus_log_budget_over_e": 1.3541933783305513,
+      "continuous_normalizer_L": 5.228521577178113,
+      "finite_correction_Z_minus_L": 0.3610403874541541,
+      "finite_normalizer_Z": 5.589561964632267,
+      "max_budget": 100000,
+      "pool_size": 100000,
+      "sharp_correction_upper": 0.9999377154070741
+    },
+    {
+      "Z_minus_log_budget_over_e": 1.3541864284613068,
+      "continuous_normalizer_L": 6.075595294437698,
+      "finite_correction_Z_minus_L": 0.3610334375856672,
+      "finite_normalizer_Z": 6.436628732023365,
+      "max_budget": 1000000,
+      "pool_size": 1000000,
+      "sharp_correction_upper": 0.9999929244117811
+    }
+  ],
+  "exact_sweep": {
+    "all_passed": true,
+    "arithmetic": "fractions.Fraction; no floating-point tolerances",
+    "attained_case": {
+      "finite_correction_exact": "1/4",
+      "max_budget": 2,
+      "pool_size": 2,
+      "sharp_bound_exact": "1/4"
+    },
+    "budget_rule": "every integer 2 <= n <= m",
+    "checks_per_pair": [
+      "CDF-crossing expression equals an independent exact product form",
+      "ell_n <= v_mn",
+      "(m-n+1) v_mn <= m ell_n",
+      "n v_mn <= 1",
+      "v_mn-ell_n <= (1-ell_n)/(m+1)"
+    ],
+    "passed_pairs": 19900,
+    "pool_sizes": {
+      "maximum": 200,
+      "minimum": 2
+    },
+    "scope": "Finite arithmetic checks are not a universal mathematical proof."
+  },
+  "profile_table": [
+    {
+      "budget_pool_ratio": 0.1,
+      "continuous_normalizer_L": 4.381447859993646,
+      "finite_correction_Z_minus_L": 0.01913114052920939,
+      "finite_correction_minus_profile": 6.668207448434771e-06,
+      "finite_normalizer_Z": 4.400579000522855,
+      "limiting_profile_G_approximation": 0.019124472321760955,
+      "max_budget": 10000,
+      "pool_size": 100000,
+      "sharp_correction_upper": 0.09995518596954037
+    },
+    {
+      "budget_pool_ratio": 0.25,
+      "continuous_normalizer_L": 4.718532382321703,
+      "finite_correction_Z_minus_L": 0.05100593068909465,
+      "finite_correction_minus_profile": 7.45192225382052e-06,
+      "finite_normalizer_Z": 4.769538313010798,
+      "limiting_profile_G_approximation": 0.05099847876684083,
+      "max_budget": 25000,
+      "pool_size": 100000,
+      "sharp_correction_upper": 0.24995031517302504
+    },
+    {
+      "budget_pool_ratio": 0.5,
+      "continuous_normalizer_L": 4.97352697974646,
+      "finite_correction_Z_minus_L": 0.11603498488580755,
+      "finite_correction_minus_profile": 7.955404772108654e-06,
+      "finite_normalizer_Z": 5.089561964632267,
+      "limiting_profile_G_approximation": 0.11602702948103544,
+      "max_budget": 50000,
+      "pool_size": 100000,
+      "sharp_correction_upper": 0.4999452652775498
+    },
+    {
+      "budget_pool_ratio": 1.0,
+      "continuous_normalizer_L": 5.228521577178113,
+      "finite_correction_Z_minus_L": 0.3610403874541541,
+      "finite_correction_minus_profile": 7.955407072213205e-06,
+      "finite_normalizer_Z": 5.589561964632267,
+      "limiting_profile_G_approximation": 0.3610324320470819,
+      "max_budget": 100000,
+      "pool_size": 100000,
+      "sharp_correction_upper": 0.9999377154070741
+    }
+  ],
+  "protocol": {
+    "constant_approximation_cutoff": 1000000,
+    "continuous_evaluation": "1 + fsum(exp((n-1)*log1p(-1/n))/n)",
+    "diagonal_pool_sizes": [
+      10,
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "exact_max_pool_size": 200,
+    "finite_evaluation": "unmodified goodhart_audit.core.full_envelope",
+    "profile_budget_divisors": [
+      10,
+      4,
+      2,
+      1
+    ],
+    "profile_pool_size": 100000,
+    "randomness": "none"
+  },
+  "runtime": {
+    "dependencies": "Python standard library and local goodhart_audit.core",
+    "python_implementation": "CPython",
+    "python_version": "3.11.0"
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "experiments/check_sharp_envelope.py": "dd5c574e58ecf9a0a6e1680fb5432179ba97a2ca72900aba6dbfee00e31fb63f",
+    "goodhart_audit/core.py": "abd7c60d5652b387f89a29bf540343fdc8e69f4c9bd3beeb0e9bd5aff5b5551b"
+  }
+}

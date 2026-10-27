@@ -1,0 +1,215 @@
+{
+  "protocol": {
+    "version": 1,
+    "title": "Anytime best-of-N audits at equal unique-label cost",
+    "status": "Specified before measurements; not externally preregistered",
+    "evidence_type": "synthetic_fixed_finite_pools",
+    "seed": 20261027,
+    "prompts": 32,
+    "pool_size": 64,
+    "budgets": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "label_checkpoints": [
+      32,
+      128,
+      512,
+      1024
+    ],
+    "max_labels": 1024,
+    "replicates": 100,
+    "delta": 0.05,
+    "risk_threshold": 0.1,
+    "bet_fractions": [
+      1.0,
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.03125
+    ],
+    "scenarios": [
+      "rare_top",
+      "top_failure",
+      "interior_band",
+      "bottom_band",
+      "flat_risk",
+      "goodhart_turn",
+      "prompt_cluster",
+      "all_safe"
+    ],
+    "methods": [
+      "uniform",
+      "budget_mixture",
+      "dyadic_mixture",
+      "max_uniform",
+      "envelope",
+      "variance_optimal",
+      "fixed_width_optimal"
+    ],
+    "primary_outcomes": [
+      "ever_miscoverage",
+      "ever_false_certification",
+      "certified_count",
+      "first_full_budget_certified"
+    ],
+    "controls": [
+      "One queried candidate per draw; every candidate distinct.",
+      "Every method uses the same fractional betting mixture, target-wise predictable scale and deterministic identification bounds.",
+      "Confidence statements are simultaneous over all observed times and all target budgets within a single run.",
+      "Identical exponential-race uniforms couple acquisition methods within a scenario-replicate.",
+      "Acquisition sees ranks, identities and proposal masses, not any loss labels.",
+      "Uncertified full-budget targets remain censored; the maximum sample size is not recorded as successful certification.",
+      "Evaluation truth is used only to score coverage, errors and safety-status diagnostics.",
+      "No real-model outputs and no population-generalization claim."
+    ]
+  },
+  "protocol_sha256": "68e85755aef7c840c32c7d4237e03b476050b49cd032fc1264e9f8a01783a575",
+  "followup_protocol": {
+    "version": 1,
+    "title": "Optimized proposal follow-up at equal unique-label cost",
+    "evidence_type": "synthetic_follow_up_on_previously_observed_scenarios",
+    "base_protocol": "experiments/anytime_protocol.json",
+    "base_results": "results/anytime",
+    "base_commit": "4cdcc112c9bace2763a00e03e1c3b481ba0bbe61",
+    "base_manifest_sha256": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
+    "new_methods": [
+      "variance_optimal",
+      "fixed_width_optimal"
+    ],
+    "rho": {
+      "variance_optimal": 0.0,
+      "fixed_width_optimal": 0.020833333333333332
+    },
+    "fixed_width_epsilon": 0.03125,
+    "relative_optimization_gap": 1e-05,
+    "certification_rule": "upper-test",
+    "reuse": "Reuse the five v0.2 proposals' recorded paths after verifying original hashes. New proposals use identical synthetic labels and race uniforms. No fresh holdout claim.",
+    "primary_comparisons": [
+      "certified_safe_count at equal labels",
+      "censored first full-budget certification",
+      "ever miscoverage",
+      "ever false certification"
+    ],
+    "interpretation": "Variance and fixed-width optimization are established prior art; numerical objective brackets are distinct from measured stopping costs. Preserve all losses and counterexamples."
+  },
+  "followup_protocol_sha256": "2437e583b977426e58b1770fce2b6ba40ece1022296c39d6d98fe5c2d0d8cf11",
+  "base_manifest_sha256": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
+  "source_sha256": {
+    "goodhart_audit/core.py": "abd7c60d5652b387f89a29bf540343fdc8e69f4c9bd3beeb0e9bd5aff5b5551b",
+    "goodhart_audit/anytime.py": "4fc21f1b1d7df27ab89e0c7bfaa16b9e0ea1634ebf2e73f8b205e571ce6232a9",
+    "goodhart_audit/unique_io.py": "914d50182f759d671acf27d77a410466ac16f32d20954b7d57d70713a5b4178e",
+    "experiments/run_study.py": "dd8ca43e0d9a1d499b8f157acbfdbe98692606de9b913a27745b4d16a6db3209",
+    "experiments/run_anytime_study.py": "028a78665bed8a25b466fd027d557f990d65bc28e8025ae2a51bbdf78686c0ad",
+    "goodhart_audit/design.py": "22b2f98c1184f5a6e06c72a6ac0422e89186acc3c4e398fb215b892091ff63ee",
+    "experiments/run_design_study.py": "47ee03d2e69fafdd6296ebd0ebd399ced1283e91741acb4f062d230f17f25a5f",
+    "experiments/verify_anytime_results.py": "ea8fbd0a81d2ee5353ac6f093e131f4c348f4bcc6c8b573075f11648a5c4f279",
+    "experiments/verify_design_results.py": "d778169d753b5b5dbd1d1c417357ce8e8f9d495baf642384ff587952e42548be",
+    "experiments/anytime_protocol.json": "74a636c08c5e31b636ffe3ab080d11d951a7585ebd1dd280e52fae0f4fbea770",
+    "results\\anytime\\manifest.json": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
+    "results\\anytime\\replicates.csv": "4ef261421b6e0078bdf9c5aa3664c25dd8c229f7405778108e041dfb10947619",
+    "results\\anytime\\summary.csv": "7c3967e8044bdc5268dc00615b4e0c8f2f6c27e5afdf6378ee3de2835dc66560"
+  },
+  "outputs_sha256": {
+    "replicates.csv": "88d131a08f063f617ce741dcd102b4c923cf04bfa6454a58329ad3f8dcc7bc60",
+    "summary.csv": "d66ae975ccf89b07d1a3bc404308a81f8f56b805fcc194c8b4149d6d300404f3",
+    "designs.json": "c08e7490087c7b29fa4cc34bae18617a62d19062da17ef9015e57143cc7c0a00"
+  },
+  "python": "3.11.0",
+  "numpy": "1.26.4",
+  "scipy": "1.10.1",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "true_risks": {
+    "rare_top": [
+      0.00048828125,
+      0.0009765625000000004,
+      0.001953125,
+      0.003906250000000001,
+      0.007812500000000002,
+      0.015625,
+      0.03125
+    ],
+    "top_failure": [
+      0.015625,
+      0.031250000000000014,
+      0.0625,
+      0.12500000000000003,
+      0.25000000000000006,
+      0.5,
+      1.0
+    ],
+    "interior_band": [
+      0.125,
+      0.1567460317460317,
+      0.12482372642340914,
+      0.041438882588084994,
+      0.00230718887962752,
+      6.151967725597685e-07,
+      0.0
+    ],
+    "bottom_band": [
+      0.25,
+      0.05952380952380949,
+      0.002864445619601621,
+      2.90770880208107e-06,
+      2.0469700319454483e-15,
+      0.0,
+      0.0
+    ],
+    "flat_risk": [
+      0.125,
+      0.12499999999999999,
+      0.125,
+      0.125,
+      0.12500000000000003,
+      0.125,
+      0.125
+    ],
+    "goodhart_turn": [
+      0.15087890625,
+      0.13030133928571427,
+      0.11879732434023318,
+      0.14704609228859256,
+      0.23780802989703564,
+      0.38467261953803644,
+      0.5
+    ],
+    "prompt_cluster": [
+      0.0625,
+      0.06249999999999999,
+      0.0625,
+      0.0625,
+      0.06250000000000001,
+      0.0625,
+      0.0625
+    ],
+    "all_safe": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "loss_table_sha256": {
+    "rare_top": "d5990a0fe875a0aa109edb831f0e95b8f0a3a46b9b78daeaea9ce05c32c7201f",
+    "top_failure": "a734edcedf23a7dd9fc23d31e524eed77011faf19f7dadf427b12cdfe6048318",
+    "interior_band": "81b1bfe6824115067a1db0638914f49afdcec18da2c22a9856c780dd7171dbc8",
+    "bottom_band": "c0c96ebf4a942640fd037eae356234f83a727928c622d0a941d85ebde79ff542",
+    "flat_risk": "4d0c0c184cef6bc8e60729a81ab4e11f65019e458ba82bbf27d40bf852cdc799",
+    "goodhart_turn": "16219099a97b29cce3689ad530b370c670a382eb75b0bbb4da64d2dc08beb2ba",
+    "prompt_cluster": "a83dc6fe833d792f6a2d8ba0aecdfc6c2fe4dfdb7f6ba4cdc043a08fc7ae9c9a",
+    "all_safe": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+  },
+  "reused_method_paths": 4000,
+  "new_method_paths": 1600,
+  "evaluation_scope": "Frozen v0.2 upper-test rule; previously observed synthetic scenarios, not a new holdout."
+}

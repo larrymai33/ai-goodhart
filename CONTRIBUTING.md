@@ -12,4 +12,6 @@ The anytime study has a separate protocol and outputs. Reproduce it with `python
 
 Numerical changes to the sequential engine require meaningful endpoint, tiny-mass, and scalar/vector conformance checks. Acquisition and betting scales must be predictable from prior observations. Do not repair an endpoint by inspecting the current label; that can invalidate the martingale argument even if a simulation appears to pass.
 
+The optimized-design follow-up uses existing SciPy in addition to NumPy. Run `python -m experiments.run_design_study --out artifacts/local/design-reproduction` with a new directory, then `python -m experiments.verify_design_results --results artifacts/local/design-reproduction`. Preserve numerical primal–dual gaps separately from measured label costs; a smaller objective need not imply a faster threshold certificate. The verifier is standard-library-only. Reproduce the finite-pool theorem tables with `python -m experiments.check_sharp_envelope --out artifacts/local/sharp-envelope-reproduction.json`.
+
 If reporting a reproducibility issue, include Python/NumPy versions, the command, the protocol, and the smallest input that reproduces it. Cite the exact assumption challenged by a mathematical counterexample.

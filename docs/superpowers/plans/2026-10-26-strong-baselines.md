@@ -14,8 +14,8 @@
 
 No downloads, model API calls, outreach, or >2 GB storage growth. Focus on dual feasibility, missing support, endpoint/numerical failures, reuse provenance, and prior-art scope. Optimizers never receive labels. User delegation covers routine design choices.
 
-- [ ] Derive and independently review the finite-pool theorem; add exact rational checks and documentation.
-- [ ] Test then implement goodhart_audit/design.py: optimize_design(weights, rho, tolerance), with independently checkable primal/dual values and fail-closed convergence.
-- [ ] Test then implement experiments/run_design_study.py and its verifier. Validate the base protocol and all reused records; freeze sources before measurement.
-- [ ] Run the two new methods on all original paired paths. Independently rerun and compare output bytes. Audit costs, negative results, and optimization gaps.
+- [x] Derive and independently review the finite-pool theorem; add exact rational checks and documentation.
+- [x] Test then implement goodhart_audit/design.py: optimize_design(weights, rho, tolerance), with independently checkable primal/dual values and fail-closed convergence.
+- [x] Test then implement experiments/run_design_study.py and its verifier. Validate the base protocol and all reused records; freeze sources before measurement.
+- [x] Run the two new methods on all original paired paths. Independently rerun and compare output bytes. Audit costs, negative results, and optimization gaps.
 - [ ] Correct related work and headline scope; write the follow-up report. Verify prior release manifests and whole test suite, then publish the reviewed extension.

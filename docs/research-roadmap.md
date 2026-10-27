@@ -4,6 +4,8 @@ Status: offline research artifact, 2026-10-26. The v0.1 fixed-draw artifact is r
 
 The research question is narrow: how should scarce fixed labels be acquired to estimate every specified best-of-N risk on a recorded candidate pool? The proposed answer specializes classical envelope sampling to winner-rank distributions. [The related-work note](related-work.md) explains which ideas are established and which special-family claims remain provisional.
 
+The v0.3 follow-up strengthens the finite-pool theorem and corrects a material literature-comparison omission. Continuous-rank envelope and optimized audit proposals were already addressed by closer prior work. The [sharp remainder](sharp-envelope.md) is the narrower proposed mathematical distinction. The [new comparison](design-report.md) adds variance-optimal and fixed-width proposals and shows why the envelope cannot be treated as the best default for every objective. The next empirical advance must address evidence beyond previously observed synthetic scenarios; adding more favorable examples would not resolve that gap.
+
 ## Implemented v0.2 extension and remaining work
 
 The unique-label engine and `plan-unique` / `report-unique` workflow sample previously unqueried candidates without replacement and report confidence sequences across all declared budgets and labeled prefixes. The intended guarantee permits stopping at a unique-label quota or based on accumulated evidence, conditional on frozen pools, target masses, and fixed correct labels. The original `plan` / `report` workflow retains its fixed-time, with-replacement interpretation.
