@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "title": "Finite-table all-zero certification cost: exact theorem checks",
+  "status": "Internally specified before saved check artifact; not external preregistration",
+  "evidence_type": "deterministic_exact_arithmetic_and_analytical_cost_certificates",
+  "theorem": {
+    "factor": 160,
+    "maximum_risk_threshold": "1/8",
+    "maximum_error_probability": "1/4",
+    "budget_family_requirement": "Contains every positive integer power 4^j up to its maximum, including 4^0=1",
+    "objective": "Expected distinct unit-cost queries on the all-zero fixed-label table",
+    "decision": "All declared target risks are at most a predeclared threshold, or abstain",
+    "comparator": "All nonanticipating adaptive audits uniformly valid over fixed labels in [0,1], with almost-sure finite certification at the all-zero table"
+  },
+  "block_check_max_pool_size": 128,
+  "block_family_types": ["full", "powers_four_plus_max", "dyadic_plus_max"],
+  "hypergeometric_check_max_block_size": 256,
+  "risk_thresholds": ["1/100", "1/24", "1/10", "1/8"],
+  "error_probabilities": ["1/4", "1/20", "1/1000"],
+  "cost_cases": [
+    {"name": "small_single_pool", "prompts": 1, "pool_size": 8, "max_budget": 8, "family": "full", "tau": "1/10", "delta": "1/20"},
+    {"name": "single_pool_64", "prompts": 1, "pool_size": 64, "max_budget": 64, "family": "full", "tau": "1/10", "delta": "1/20"},
+    {"name": "four_pools_64", "prompts": 4, "pool_size": 64, "max_budget": 64, "family": "dyadic_plus_max", "tau": "1/10", "delta": "1/20"},
+    {"name": "published_grid_geometry", "prompts": 32, "pool_size": 64, "max_budget": 64, "family": "dyadic_plus_max", "tau": "1/10", "delta": "1/20"},
+    {"name": "small_threshold", "prompts": 32, "pool_size": 64, "max_budget": 64, "family": "dyadic_plus_max", "tau": "1/100", "delta": "1/20"},
+    {"name": "threshold_endpoint", "prompts": 32, "pool_size": 64, "max_budget": 64, "family": "dyadic_plus_max", "tau": "1/8", "delta": "1/20"},
+    {"name": "larger_pool_limited_search", "prompts": 16, "pool_size": 256, "max_budget": 64, "family": "powers_four_plus_max", "tau": "1/10", "delta": "1/20"},
+    {"name": "larger_pool_full_search", "prompts": 16, "pool_size": 256, "max_budget": 256, "family": "powers_four_plus_max", "tau": "1/10", "delta": "1/20"},
+    {"name": "stronger_confidence", "prompts": 32, "pool_size": 64, "max_budget": 64, "family": "dyadic_plus_max", "tau": "1/10", "delta": "1/1000"}
+  ],
+  "high_threshold_pool_sizes": [2, 4, 8, 16, 32, 64, 128],
+  "controls": [
+    "No labels, model calls, downloaded data, or random outcomes enter these calculations.",
+    "Cost certificates concern the stated independent-inclusion audit, not the existing anytime engine.",
+    "Use exact rational arithmetic for rank laws, lower cost bounds, and upper cost bounds.",
+    "A rational upper bound on log(1/delta) and an odd Taylor polynomial give a conservative cost bound; displayed decimals are rounded summaries.",
+    "The universal factor follows from proof, not exhaustive checking over a finite grid.",
+    "Preserve all earlier frozen sources and result files."
+  ]
+}
