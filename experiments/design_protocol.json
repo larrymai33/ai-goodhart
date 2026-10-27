@@ -5,6 +5,7 @@
   "base_protocol": "experiments/anytime_protocol.json",
   "base_results": "results/anytime",
   "base_commit": "4cdcc112c9bace2763a00e03e1c3b481ba0bbe61",
+  "base_manifest_sha256": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
   "new_methods": ["variance_optimal", "fixed_width_optimal"],
   "rho": {"variance_optimal": 0.0, "fixed_width_optimal": 0.020833333333333332},
   "fixed_width_epsilon": 0.03125,
