@@ -13,7 +13,7 @@
   "tail_max_pool_size": 64,
   "tail_epsilons": ["1/4", "1/16", "1/64"],
   "grid_max_pool_size": 10,
-  "grid_k": [4, 8, 16],
+  "grid_k": [4, 16, 64],
   "certificate_geometries": [
     {"pool_size": 1, "budgets": [1]},
     {"pool_size": 8, "budgets": [8]},
