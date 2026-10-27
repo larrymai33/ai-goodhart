@@ -35,7 +35,7 @@ primary-source attribution; legible displays and no clipped math.
 - [x] Write build/integrity instructions and a manifest; update current
   review guide, README, provenance, and progress. Verify preserved evidence,
   artifact metadata, local links, and staged bytes.
-- [ ] Publish the consolidation, verify remote main/tag and public artifacts,
+- [x] Publish the consolidation, verify remote main/tag and public artifacts,
   and keep the broader research/fellowship goal active.
 
 ## Decisions

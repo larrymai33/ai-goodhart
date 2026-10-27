@@ -1,5 +1,14 @@
 # Research progress
 
+The current manuscript was published in implementation commit
+`ddbbfb48da68738dcc34ade373003aa0ada63557`. Remote main matched that
+commit, the GitHub connector returned the new README and manifest, and
+repository visibility remained public. The 31-page PDF is 3,213,503 bytes,
+SHA-256 `06c8b271a9d2e28b47350d46a671213265804acf4a6085b891b1d9ab8005f5aa`.
+All final pages are pixel-identical to the visually reviewed versions after
+whitespace cleanup. The bounded manuscript phase is complete; the broader
+research and fellowship objective remains active and unverified.
+
 Release checks for the v0.14.1 manuscript verify all 144 source/document
 pins across eighteen manifests, including staged Git object bytes, and
 270 local links. The frozen main proof sources, renderer, and earlier PDFs
