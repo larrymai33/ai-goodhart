@@ -31,4 +31,6 @@ No downloads, installs, study-model inference, external outreach, or changes to 
 - [x] Independently review proof and checker; freeze sources before the saved run. Record protocol changes before running them.
 - [x] Run the fixed protocol twice to different paths; compare bytes; write docs/nonzero-minimax-report.md from actual output.
 - [x] Update navigation, provenance, and version only after verification; preserve older manuscript snapshots and manifests.
-- [ ] Verify all tests, old pins, links, storage, and staged Git blobs; publish and verify the public release while keeping the full goal active.
+- [x] Verify all tests, old pins, links, storage, and staged Git blobs; publish and verify the public release while keeping the full goal active.
+
+Published implementation: `ca4929c46e76e97d6611b2b0fb75542ee664c141`. Remote main matched the commit and the GitHub connector returned the new theorem. The version tag follows this verified implementation and publication record. The overall research-impact goal remains active; no practical benefit or independent human contribution has been verified.
