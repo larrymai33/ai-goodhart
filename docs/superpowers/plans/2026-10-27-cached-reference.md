@@ -1,0 +1,51 @@
+# Cached Reference Auditor Implementation Plan
+
+> **For agentic workers:** Use superpowers:subagent-driven-development or superpowers:executing-plans for assigned tasks. Root coordinates the shared checkout, freezes, and publication.
+
+**Goal:** Make the v0.13 cached audit construction executable with a conservative expected distinct-label guarantee and a finite virtual-proposal cap.
+
+**Architecture:** An immutable exact design supplies integer sampling masses and conservative log increments. A callback engine shares labels across independent budget streams and uses a fully charged prefix/census fallback. New proofs and evidence accompany the implementation without editing earlier pinned sources.
+
+**Tech Stack:** Installed Python standard library, exact integers/Fractions, Markdown/JSON.
+
+**Spec:** [cached reference design](../specs/2026-10-27-cached-reference-design.md).
+
+## Global constraints
+
+No downloads, installations, model inference, outreach, or extra service dependencies. Keep storage below 2 GB and preserve old pinned files. No novel-method, measured-model-efficiency, field-impact, or human-ownership claim. Resource caps and complete API are specified in the design.
+
+## Review focus
+
+- Rounded likelihood must remain below true likelihood, with cost drift and tail bounds computed for the implemented process.
+- A fallback may acquire labels outside previous proposals; every such label is charged, and all-safe completeness includes the boundary.
+- Cached proposals require fresh auxiliary coins, exact sampling, and separate virtual/physical counts.
+- Input validation and design rejection occur before oracle calls; malformed oracle values cannot yield certificates.
+- The factor-17 label must be conditional on verified grid/parameter conditions; generic validity and bounded-rational implementation scope remain distinct.
+
+## Task 1: exact design and numerical proof
+
+**Files:** create `goodhart_audit/cached_math.py`, `tests/test_cached_math.py`, `docs/cached-reference-numerics.md`.
+
+- [ ] Independently review the design mathematics before implementation; resolve interface and proof findings.
+- [ ] Write failing tests for log enclosures, roots, drift/rounding, cap inequalities, exact weights, resource/type validation, and both mode decisions.
+- [ ] Implement the immutable design and verify focused tests normally and under optimized Python.
+- [ ] Review design arithmetic independently and write the complete numerical implementation proof.
+
+## Task 2: callback auditor
+
+**Files:** create `goodhart_audit/cached.py`, `tests/test_cached.py`.
+
+**Interfaces:** consume `CachedDesign` from the exact design factory and expose the `audit` callback API specified in the design. Final field names are agreed by root and both implementers before code integration.
+
+- [ ] Write failing tests for exact ticket endpoints, repeated-item fresh coins, one-call-per-label, whole-family decisions, exact support completion, boundary/cap fallback, and malformed callbacks.
+- [ ] Implement the bounded engine and immutable trace, then run focused normal/optimized tests.
+- [ ] Independently review proof-to-code correspondence and test meaningful stopping/sampling invariants.
+
+## Task 3: frozen demonstration and public scope
+
+**Files:** create a deterministic demonstration protocol, runner, saved result, and `docs/cached-reference-report.md`; update README, citation, provenance, progress, and roadmap.
+
+- [ ] Specify scenarios, comparisons, counts, and source pins before saved runs; commit reviewed sources before running.
+- [ ] Run the complete repository tests and reproduce the saved demonstration byte for byte.
+- [ ] Reconcile every cost/validity claim with the implemented process and actual artifacts. Include the unsuccessful original-instance screen and classical attribution.
+- [ ] Verify old/new worktree and Git-byte pins, links, storage, and public publication; keep the full goal active.
