@@ -1,0 +1,4416 @@
+{
+  "all_safe_matrix_runs_certified": true,
+  "claim_boundary": "Illustrative seeded software runs on synthetic fixed rational tables, not a power study, an independent experiment, model efficiency evidence, a new generic testing method, or an improved original-instance minimax bound. Per-run counts need not be below expected bounds. Unsafe tables may validly receive statistical false certificates within the theorem's error allowance; observed false-certificate counts do not establish a general error rate.",
+  "dependencies": "Python standard library only",
+  "description": "Frozen synthetic software demonstration of the cached reference auditor.\n\nThe fixed seeds illustrate execution and charged label counts; they do not\nestimate power, prove a false-certificate rate, or measure any real model.\n",
+  "evidence_type": "seeded_synthetic_fixed_table_software_demonstration",
+  "observed_false_certificates": 0,
+  "protocol": {
+    "budgets": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "checks": "One oracle call per item; exact trace and charge agreement; finite proposal caps; no certificate contradicting observed risk; all supported safe tables in this matrix complete; source bytes unchanged during calculation",
+    "claim_boundary": "Illustrative seeded software runs on synthetic fixed rational tables, not a power study, an independent experiment, model efficiency evidence, a new generic testing method, or an improved original-instance minimax bound. Per-run counts need not be below expected bounds. Unsafe tables may validly receive statistical false certificates within the theorem's error allowance; observed false-certificate counts do not establish a general error rate.",
+    "delta": "1/20",
+    "epsilon": "1/160",
+    "eta": "1",
+    "evidence_type": "seeded_synthetic_fixed_table_software_demonstration",
+    "output": "One deterministic JSON artifact with 45 rows, source pins, exact truths and charged counts; no full acquisition traces or runtime measurements",
+    "pool_size": 64,
+    "prompt_pattern": "Every prompt has the same declared rank pattern; no model, annotation service, or fresh-prompt population is sampled",
+    "prompts": [
+      1,
+      32,
+      1024
+    ],
+    "randomness": "Create a new Python random.Random(seed) for every run and pass its randrange method as randbelow; seeds are reused across scenarios and geometries",
+    "registered_runs": 45,
+    "release": "0.13.1",
+    "run_order": "prompts, then scenarios, then seeds, in their listed orders",
+    "scenario_definitions": {
+      "all_zero": {
+        "loss": "0",
+        "support": "all_ranks"
+      },
+      "boundary_constant": {
+        "loss": "1/10",
+        "support": "all_ranks"
+      },
+      "constant_margin": {
+        "loss": "3/32",
+        "support": "all_ranks"
+      },
+      "rare_top": {
+        "loss": "3/32",
+        "support": "rank_zero_only"
+      },
+      "unsafe_constant": {
+        "loss": "17/160",
+        "support": "all_ranks"
+      }
+    },
+    "scenarios": [
+      "all_zero",
+      "constant_margin",
+      "rare_top",
+      "boundary_constant",
+      "unsafe_constant"
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "source_pin_count": 10,
+    "status": "Fixed before the saved demonstration runs, after implementation tests; not external preregistration or an independent experiment",
+    "tau": "1/10",
+    "title": "Frozen software demonstration of the cached likelihood reference auditor",
+    "trace_hash": "SHA-256 streamed over acquisition-order UTF-8 JSON records, sorted keys and compact separators, followed by one LF per record; fields prompt_index,rank_index,loss,phase,budget,proposal_index; loss is str(Fraction), indices/counts are integers, absent values are null",
+    "truth": "Compute exact risks independently from the fixed rank pattern and binomial winner weights, outside the engine; reveal labels to the engine only through its oracle callback",
+    "version": 1
+  },
+  "protocol_sha256": "32a7b4061026f1d0ea076779f84107d23929bff1cc69ec7cfb138b68c021308d",
+  "release": "0.13.1",
+  "run_count": 45,
+  "runs": [
+    {
+      "acquisition_trace_sha256": "d1681e3bf4abcd8842a159f27ef916d89b12c33724bd5697ce0af95718a54227",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "d1681e3bf4abcd8842a159f27ef916d89b12c33724bd5697ce0af95718a54227",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "d1681e3bf4abcd8842a159f27ef916d89b12c33724bd5697ce0af95718a54227",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "9e03b213e7f57df95e22b434490c6a21e22687fac57c468dd4603d6ff8100444",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "9e03b213e7f57df95e22b434490c6a21e22687fac57c468dd4603d6ff8100444",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "9e03b213e7f57df95e22b434490c6a21e22687fac57c468dd4603d6ff8100444",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "37267e28ea21c463e0bf955ee4edb7155a9f55396898e3c1b4917ad55fed9c44",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "37267e28ea21c463e0bf955ee4edb7155a9f55396898e3c1b4917ad55fed9c44",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "37267e28ea21c463e0bf955ee4edb7155a9f55396898e3c1b4917ad55fed9c44",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "97318658a46f406d3919dfe513d1a04c7ebf4e613dc27d7bb4c598039015ef99",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "97318658a46f406d3919dfe513d1a04c7ebf4e613dc27d7bb4c598039015ef99",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "97318658a46f406d3919dfe513d1a04c7ebf4e613dc27d7bb4c598039015ef99",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "2677054ed70a0e1e7216cb2a21381b3abfbb407051dad02fdbd2da7b1afcc2db",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 11,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "2677054ed70a0e1e7216cb2a21381b3abfbb407051dad02fdbd2da7b1afcc2db",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 29,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "2677054ed70a0e1e7216cb2a21381b3abfbb407051dad02fdbd2da7b1afcc2db",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 64,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "64",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 64,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 64,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 47,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "1e513632744928f7f10c480fa7a0a23e5f7b7634c7682cd6a03a39cd17d111b4",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "1e513632744928f7f10c480fa7a0a23e5f7b7634c7682cd6a03a39cd17d111b4",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "1e513632744928f7f10c480fa7a0a23e5f7b7634c7682cd6a03a39cd17d111b4",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "0",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "all_zero",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "49f6f26c3332b1553f421ad26af22127311158f065b6bcdaca003db3cb35be7c",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "49f6f26c3332b1553f421ad26af22127311158f065b6bcdaca003db3cb35be7c",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "49f6f26c3332b1553f421ad26af22127311158f065b6bcdaca003db3cb35be7c",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "constant_margin",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "bf482c624c8028471b79c01769dc1bcb20de98c6332c236c34974f324457d152",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "bf482c624c8028471b79c01769dc1bcb20de98c6332c236c34974f324457d152",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "bf482c624c8028471b79c01769dc1bcb20de98c6332c236c34974f324457d152",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "3/2048",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "3/1024",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "3/512",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "3/256",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "3/128",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "3/64",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "rare_top",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "a8842f5c00811154c602715e699d790d6f78a3381aa65c4a97ed08373fbd2672",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "a8842f5c00811154c602715e699d790d6f78a3381aa65c4a97ed08373fbd2672",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "a8842f5c00811154c602715e699d790d6f78a3381aa65c4a97ed08373fbd2672",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "boundary_constant",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "464d84405fc76ead8c0420c88333057e9626d47cc2057c776c35a03e233e6339",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 11,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "464d84405fc76ead8c0420c88333057e9626d47cc2057c776c35a03e233e6339",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 29,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "464d84405fc76ead8c0420c88333057e9626d47cc2057c776c35a03e233e6339",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2048,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "2048",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "prefix",
+      "oracle_calls": 2048,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 2048,
+        "proposal": 0
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 32,
+      "proposal_cap_per_budget": 0,
+      "proposals": 0,
+      "scenario": "unsafe_constant",
+      "seed": 47,
+      "status": "not_certified",
+      "total_proposal_cap": 0,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "e19da1e2a194682f136763229f23e8d0121d2748e19bd3a76bfb0dd4fbc34183",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2665,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 2665,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 2665
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 3031,
+      "scenario": "all_zero",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "e8a9c3fcbce9fb2d021db5159a3c35def3b836d7fecc74b910eda7ae0fd06688",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2650,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 2650,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 2650
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 3031,
+      "scenario": "all_zero",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "1069dfcd77a8a7ddf36706a7e44560f31bf2cc5d1929a4c597bd2116db794fb8",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 2663,
+      "exact_truth_risks": {
+        "1": "0",
+        "16": "0",
+        "2": "0",
+        "32": "0",
+        "4": "0",
+        "64": "0",
+        "8": "0"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 2663,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 2663
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 3031,
+      "scenario": "all_zero",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "14c2a098477062c682dbeacab87bb22a1c745abb709d8ab15b1cdd076b284230",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 10532,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 14621,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 2499,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 4688,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 6144,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 17079,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 25964,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 25964,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 25964
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 55563,
+      "scenario": "constant_margin",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "30d86fa55786fc90aaf7d5bdf87db6c6579c9b8a7a21dab481efee25524df7c3",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 14332,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 6113,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 10088,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 12370,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 54344,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 34199,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 29461,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 29461,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 29461
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 131446,
+      "scenario": "constant_margin",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "5076cbc741d868cd05f1ad7c678dd61db00f326fca41012d8f5f335b4309e23c",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 8725,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 27332,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 9675,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 16025,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 6381,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 12009,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 33609,
+      "exact_truth_risks": {
+        "1": "3/32",
+        "16": "3/32",
+        "2": "3/32",
+        "32": "3/32",
+        "4": "3/32",
+        "64": "3/32",
+        "8": "3/32"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 33609,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 33609
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 80147,
+      "scenario": "constant_margin",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "ae8de48e45792b60c59e9eeb433415d67dbb811af27af58d89ec32e711a4cde6",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 464,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 485,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 599,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 919,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 8230,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 3464,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 3464,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 3464
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 11563,
+      "scenario": "rare_top",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "191d72819edffd142ac795e40ee52735bab445e8de4786855859d9233a9822d8",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 433,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 454,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 495,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 599,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 908,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 6830,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 3404,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 3404,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 3404
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 10152,
+      "scenario": "rare_top",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "06fd8c1d01507fd384afe8128f4a606343bd8fdff2a5c86e2c797d66e3f02856",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 444,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 444,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 475,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 506,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 537,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": null,
+          "pass_reason": "likelihood",
+          "proposals": 1032,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "3/32",
+          "pass_reason": "exact_support",
+          "proposals": 7748,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 3480,
+      "exact_truth_risks": {
+        "1": "3/2048",
+        "16": "3/128",
+        "2": "3/1024",
+        "32": "3/64",
+        "4": "3/512",
+        "64": "3/32",
+        "8": "3/256"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": null,
+      "fallback_reason": null,
+      "false_certificate": false,
+      "margin_safe": true,
+      "mode": "likelihood",
+      "oracle_calls": 3480,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 0,
+        "proposal": 3480
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 11186,
+      "scenario": "rare_top",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "dfab32f0ba1817973efe8aeab0c1fd2c68494986319aa59f0910d3c03ec837c7",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 260357,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1275,
+        "proposal": 64261
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "boundary_constant",
+      "seed": 11,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "5bc7c37b1c74eef2135a757c7f7deb573238505d3b79df12eac979ee68cb601b",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 260357,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1267,
+        "proposal": 64269
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "boundary_constant",
+      "seed": 29,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "20af928103506d13dde273a55b5dd9583a20b063bf544491503aa315f229c950",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 260357,
+          "status": "passed"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "1/10",
+          "pass_reason": "prefix",
+          "proposals": 0,
+          "status": "passed"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "1/10",
+        "16": "1/10",
+        "2": "1/10",
+        "32": "1/10",
+        "4": "1/10",
+        "64": "1/10",
+        "8": "1/10"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1231,
+        "proposal": 64305
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "boundary_constant",
+      "seed": 47,
+      "status": "certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": true
+    },
+    {
+      "acquisition_trace_sha256": "fb6bfa290da79a5061737e9c0036a1d0136d7878c514009602646cc762648577",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 260357,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1275,
+        "proposal": 64261
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "unsafe_constant",
+      "seed": 11,
+      "status": "not_certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "496d35558a2e4b68466f757c15d56a91fe3f845f8af399add244d7fbc36e48ef",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 260357,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1267,
+        "proposal": 64269
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "unsafe_constant",
+      "seed": 29,
+      "status": "not_certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": false
+    },
+    {
+      "acquisition_trace_sha256": "6d37e130298615f8e6b3269bd0014fb1063b543631420a5c5ff6924032ce7ebe",
+      "budget_results": [
+        {
+          "budget": 1,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 260357,
+          "status": "unsafe"
+        },
+        {
+          "budget": 2,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 4,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 8,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 16,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 32,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        },
+        {
+          "budget": 64,
+          "exact_risk": "17/160",
+          "pass_reason": null,
+          "proposals": 0,
+          "status": "unsafe"
+        }
+      ],
+      "budgets": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "distinct_labels": 65536,
+      "exact_truth_risks": {
+        "1": "17/160",
+        "16": "17/160",
+        "2": "17/160",
+        "32": "17/160",
+        "4": "17/160",
+        "64": "17/160",
+        "8": "17/160"
+      },
+      "expected_label_bound": "19293799469829108803835461/488746933964626886745",
+      "factor_guarantee": "17F + eta",
+      "fallback_budget": 1,
+      "fallback_reason": "proposal_cap",
+      "false_certificate": false,
+      "margin_safe": false,
+      "mode": "likelihood",
+      "oracle_calls": 65536,
+      "phase_counts": {
+        "census": 0,
+        "prefix": 1231,
+        "proposal": 64305
+      },
+      "pool_size": 64,
+      "prefix_cutoff": 64,
+      "prompts": 1024,
+      "proposal_cap_per_budget": 260357,
+      "proposals": 260357,
+      "scenario": "unsafe_constant",
+      "seed": 47,
+      "status": "not_certified",
+      "total_proposal_cap": 1822499,
+      "whole_family_safe": false
+    }
+  ],
+  "schema_version": 1,
+  "source_sha256": {
+    "docs/cached-likelihood-audit.md": "27b858667f04854513bc6497335f16f043e6b30cf560d7abae4aef0cda947280",
+    "docs/cached-reference-numerics.md": "fcdd292833f8488e3fc8e196033dd06289031cf38db0cc9bd8cae090b862e1e3",
+    "experiments/cached_reference_protocol.json": "32a7b4061026f1d0ea076779f84107d23929bff1cc69ec7cfb138b68c021308d",
+    "experiments/run_cached_reference.py": "d0a56b4d4d189bc25369daa1ed388cabf2780b5499676d6e5261deaa88678f0e",
+    "goodhart_audit/cached.py": "3c62daa063bcc88d8c0a3545e0fc90731572bafc90d591cef5be9a79bf4f6024",
+    "goodhart_audit/cached_math.py": "f11e9bd05766ebc35e168d4505d883ee2dab019b0977a5ea7e2bbfa9d506bf64",
+    "tests/test_cached.py": "ad5694db88aaa9a306a9515f920dbfe90d6f825d7c4ce581eff85b8f49a0e317",
+    "tests/test_cached_exact.py": "147881bd90f6e443956c20ad67b717d5d2736025f295a927b60d8da0bf4ea175",
+    "tests/test_cached_math.py": "aa7411fa0566003b54312fc1c147a84ebb2d7a86c108b9e86f674a1df1f50c77",
+    "tests/test_cached_reference_runner.py": "e9835296c3d6afa4282e85438e2e32c7a5c285ca91fe053644715dfb16db9300"
+  }
+}

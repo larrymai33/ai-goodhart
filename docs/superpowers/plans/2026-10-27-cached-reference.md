@@ -45,7 +45,7 @@ No downloads, installations, model inference, outreach, or extra service depende
 
 **Files:** create a deterministic demonstration protocol, runner, saved result, and `docs/cached-reference-report.md`; update README, citation, provenance, progress, and roadmap.
 
-- [ ] Specify scenarios, comparisons, counts, and source pins before saved runs; commit reviewed sources before running.
-- [ ] Run the complete repository tests and reproduce the saved demonstration byte for byte.
-- [ ] Reconcile every cost/validity claim with the implemented process and actual artifacts. Include the unsuccessful original-instance screen and classical attribution.
+- [x] Specify scenarios, comparisons, counts, and source pins before saved runs; commit reviewed sources before running (protocol `0e4481d`, source freeze `1fd785b`).
+- [x] Run the complete repository tests and reproduce the saved demonstration byte for byte (331 tests, 49 focused normal/optimized tests, two identical 108,290-byte 45-case results).
+- [x] Reconcile every cost/validity claim with the implemented process and actual artifacts. Include the unsuccessful original-instance screen and classical attribution. Final independent review confirms all ten frozen pins, 45 rows, exact bounds/caps/truths, and byte-identical reproduction; fallback phase wording matches the trace.
 - [ ] Verify old/new worktree and Git-byte pins, links, storage, and public publication; keep the full goal active.

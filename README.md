@@ -4,9 +4,11 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** version 0.13 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.13.1 research prototype; mathematical analysis and synthetic evidence. The specific mathematical contributions are candidates for external review, not established novelty claims. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Sharp finite-pool result](docs/sharp-envelope.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
+
+**Executable cached auditor.** The [callback reference](docs/cached-reference-report.md) implements the v0.13 likelihood construction with exact integer sampling, conservative likelihood updates, a finite proposal cap, and a fully charged prefix/census fallback. It buys each label once and certifies only the entire declared family. Its [numerical proof](docs/cached-reference-numerics.md) retains a uniform expected-label guarantee, including `17F + eta` under the stated separated-grid conditions. The program supports bounded rational inputs; the ideal proof has the broader real-label scope. This is implementation support for the existing theorem. It does not improve the original-instance 1,934.2 benchmark or establish model savings.
 
 **Finite cost for every declared grid.** The [v0.13 candidate theorem](docs/all-grid-minimax-theorem.md) gives `F/2^38 <= C*(epsilon) <= 2^16 F` for every finite nonempty best-of-N grid, where `F=min(P*k_epsilon, sum_r min(P,H*e_r))`, `H=tau*log(1/delta)/epsilon^2`, and `k_epsilon` is the first prefix leaving at most epsilon mass under the smallest budget. It requires `tau<=1/8`, `epsilon<=tau/16`, and `delta<=1/4`, with one globally valid auditor and worst expected distinct-label cost over the supplied-margin class. It removes the earlier density, replication, and minimum-budget restrictions. The [cached likelihood construction](docs/cached-likelihood-audit.md) improves the upper constant to 17 on factor-two-separated grids. The [report](docs/all-grid-minimax-report.md) explains the formula, a dyadic sublinear-cost corollary, and 27,600 exact finite configurations. Constants remain loose; the stronger original-instance certificate below is preserved. [Established ingredients and unresolved priority](docs/all-grid-minimax-priority.md).
 
@@ -108,6 +110,8 @@ The v0.11 finite-decision certificate uses `python -B -S -m experiments.check_fi
 The v0.12 placement reduction uses `python -B -S -m experiments.check_monotone_placement --out artifacts/local/monotone-placement-reproduction.json`, again with a new path. It evaluates 386 specified frontier certificates and one separate clean witness. The [report](docs/monotone-placement-report.md) explains the source freeze, exact arithmetic, scope of selection, and separate zero-error benchmarks.
 
 The v0.13 all-grid characterization uses `python -B -S -m experiments.check_all_grid_minimax --out artifacts/local/all-grid-minimax-reproduction.json`, with a new path. Its [report](docs/all-grid-minimax-report.md) records the exact family, conditional-tail, finite-slice, mixture, and likelihood checks. The 13,025-byte result reproduces exactly; finite checks support the arithmetic rather than proving universal quantifiers.
+
+The v0.13.1 callback demonstration uses `python -B -S -m experiments.run_cached_reference --out artifacts/local/cached-reference-reproduction.json`, with a fresh path. The [usage and evidence report](docs/cached-reference-report.md) separates illustrative seeded runs from the proof and exact small-process checks. Use the callback API to connect fixed correct labels; this release adds no external annotation service.
 
 ```console
 python -m unittest discover -s tests -v
