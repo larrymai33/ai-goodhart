@@ -8,4 +8,8 @@ The core has no third-party dependencies. Run `python -m unittest discover -s te
 
 Do not commit API credentials, private prompt logs, personal data, downloaded model weights, or large datasets. Store local experiments under `artifacts/local/`, which is ignored. A changed protocol should be recorded before measuring its outcomes, and a result change must include matching source/output hashes.
 
+The anytime study has a separate protocol and outputs. Reproduce it with `python -m experiments.run_anytime_study --out artifacts/local/anytime-reproduction`, then run `python -m experiments.verify_anytime_results --results artifacts/local/anytime-reproduction`. Add `--no-plots` when Matplotlib is unavailable. Freeze the measured sources during a run; the runner rejects source changes. The study uses the directional upper-test certificate; the CLI's default interval rule can be more conservative. Keep this distinction explicit in cost comparisons.
+
+Numerical changes to the sequential engine require meaningful endpoint, tiny-mass, and scalar/vector conformance checks. Acquisition and betting scales must be predictable from prior observations. Do not repair an endpoint by inspecting the current label; that can invalidate the martingale argument even if a simulation appears to pass.
+
 If reporting a reproducibility issue, include Python/NumPy versions, the command, the protocol, and the smallest input that reproduces it. Cite the exact assumption challenged by a mathematical counterexample.

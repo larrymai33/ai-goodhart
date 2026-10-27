@@ -4,9 +4,13 @@
 
 This research prototype studies that question for a fixed collection of scored candidate pools. It combines a mathematical analysis, a dependency-free audit tool, and reproducible synthetic experiments. The proposed audit distribution places more probability on ranks that matter to at least one target budget.
 
-**Status:** initial research release; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
+**Status:** version 0.2 research prototype; synthetic evidence only. The specific mathematical contribution is a candidate for external review, not an established novelty claim. No real LLM evaluation or deployment safety guarantee is included.
 
 [Research report](docs/report.md) · [Proofs](docs/theory.md) · [Related work](docs/related-work.md) · [Annotation example](examples/README.md) · [Research roadmap](docs/research-roadmap.md)
+
+**New: anytime unique-label audits.** The follow-up implementation queries each candidate at most once and supports inspecting results or stopping after any labeled prefix. Its [study and workflow](docs/anytime-report.md) compare five proposals at equal unique-label cost, using an established weighted-without-replacement betting construction. See [the attributed proof](docs/anytime-theory.md).
+
+Across 4,000 synthetic method paths, the rank envelope helped some whole-curve audits and lost others. In one rare-top-failure scenario, the largest budget was certified after median 163 unique labels versus 200.5 for a dyadic mixture; top-focused proposals were faster for that single budget. These are scoped simulation findings, not a universal cost claim.
 
 ![Envelope scaling and constructed risk curves](results/theory_and_risks.png)
 
@@ -55,6 +59,7 @@ Python 3.10+ is sufficient for the core, CLI, and result-integrity check. The sy
 ```console
 python -m unittest discover -s tests -v
 python -m experiments.verify_results
+python -m experiments.verify_anytime_results
 python -m goodhart_audit --help
 ```
 
@@ -68,6 +73,11 @@ python -m experiments.verify_results --results artifacts/local/reproduction
 Use `--no-plots` if only NumPy is available. Use a fresh output directory for each configuration. The manifest lists only files generated in that run, hashes the relevant source files and output bytes, and records the protocol and environment. Floating-point or image-byte differences across software versions are possible.
 
 The checked-in study contains 128 prompts × 256 binary labels per scenario. Its generated outputs occupy about 6 MB. This project was built with no dependency/model/dataset downloads and stayed far below its 2 GB storage limit.
+
+The additional anytime study uses 32 prompts × 64 candidates per scenario. Reproduce it with:
+
+    python -m experiments.run_anytime_study --out artifacts/local/anytime-reproduction
+    python -m experiments.verify_anytime_results --results artifacts/local/anytime-reproduction
 
 ## Audit your own fixed pools
 
@@ -84,6 +94,8 @@ python -m goodhart_audit report --pool examples/pools.jsonl --audit artifacts/lo
 ```
 
 Each report contains an unbiased importance estimate, simultaneous empirical Bernstein bounds, sharp missing-label bounds, and individually certified budgets. Certification concerns **these exact pools and the declared loss definition**. It does not validate the labeler, cover new prompts, extend beyond the pool size, support optional stopping, or prove that every budget below the largest certified one is safe.
+
+That restriction on stopping applies to the original commands above. The new plan-unique and report-unique commands use an explicitly anytime-valid design. [The follow-up guide](docs/anytime-report.md#use-the-workflow) explains contiguous-prefix labeling and the two available certification rules.
 
 ## Research integrity
 

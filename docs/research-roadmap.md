@@ -1,8 +1,18 @@
 # Research roadmap
 
-Status: offline research artifact, 2026-10-26. Real-model experiments have not been run. The study design below is a draft to preregister before future data collection, not an existing preregistration. All current work must remain offline, use available software, and stay below the user's 2 GB added-storage limit.
+Status: offline research artifact, 2026-10-26. The v0.1 fixed-draw artifact is retained. The v0.2 anytime unique-label extension is implemented and its software checks and full synthetic rerun pass; both result tables reproduce byte for byte. All experimental evidence is synthetic. Real-model experiments have not been run. The future real-model study design below is a draft to preregister before data collection, not an existing preregistration. All current work must remain offline, use available software, avoid downloads and model inference API calls, and stay below the user's 2 GB added-storage limit.
 
 The research question is narrow: how should scarce fixed labels be acquired to estimate every specified best-of-N risk on a recorded candidate pool? The proposed answer specializes classical envelope sampling to winner-rank distributions. [The related-work note](related-work.md) explains which ideas are established and which special-family claims remain provisional.
+
+## Implemented v0.2 extension and remaining work
+
+The unique-label engine and `plan-unique` / `report-unique` workflow sample previously unqueried candidates without replacement and report confidence sequences across all declared budgets and labeled prefixes. The intended guarantee permits stopping at a unique-label quota or based on accumulated evidence, conditional on frozen pools, target masses, and fixed correct labels. The original `plan` / `report` workflow retains its fixed-time, with-replacement interpretation.
+
+The foundation is [Shekhar et al., Risk-limiting Financial Audits via Weighted Sampling without Replacement, UAI 2023](https://proceedings.mlr.press/v216/shekhar23a.html). Their weighted-without-replacement betting martingale is established methodology. The extension specializes it to shared rank-family targets, acquisition, and auditable reporting; it does not claim a new generic confidence-sequence theorem. See [the exact prior-art correspondence](anytime-related-work.md) and [the mathematical note](anytime-theory.md).
+
+The v0.2 synthetic comparison was specified in [anytime_protocol.json](../experiments/anytime_protocol.json), committed as `2095a91` before measurements. This is internal prespecification, not external preregistration. It compares five proposals with the same betting mixture and target-specific normalization, at equal unique-label cost, using eight synthetic scenarios and 100 repetitions per scenario. Outcomes include errors at any observed time, certified-target counts, and censored time to certify the full-pool budget. [The follow-up report](anytime-report.md) records the measurements and limitations. Its cost criterion is the directional upper test (`--rule upper-test`); the public CLI default additionally suppresses certification for empty two-sided intervals.
+
+Implementation checks, scalar/simulation agreement, result provenance, and report review have passed within the assisted development session. Subsequent research still requires independent human reproduction, external mathematical and novelty review, and a separately authorized real-model study. Implementing the stopping-rule extension does not resolve those gaps or demonstrate universal label-cost optimality.
 
 ## Milestone 1: establish the mathematical scope
 
@@ -31,7 +41,7 @@ The generic normalized-envelope minimax theorem is prior art. Passing computatio
 
 Use immutable pools, a reproducible acquisition plan, a separate unique-label table, and a provenance fingerprint. The acquisition code sees proxy ranks and candidate identifiers, not hidden full-pool losses. Reports must reject mismatched pools and incomplete required labels. Unknown unqueried labels remain unknown.
 
-The primary experiment uses iid audit draws with replacement from a frozen proposal. Repeated indices reuse the same fixed label and still count as repeated statistical draws. Report both draws and unique labels. Do not silently switch to sampling without replacement or stop upon reaching a unique-label quota: those are different designs requiring different estimates or confidence arguments.
+The v0.1 experiment uses iid audit draws with replacement from a frozen proposal. Repeated indices reuse the same fixed label and still count as repeated statistical draws. Report both draws and unique labels. Its guarantee does not permit silently switching to sampling without replacement or stopping upon reaching a unique-label quota. The separately implemented v0.2 design supplies the different sampling and confidence argument for those uses; it does not retroactively change v0.1's guarantees.
 
 Acceptance evidence:
 
@@ -48,7 +58,7 @@ Freeze scenario definitions, seeds, proposal methods, draw budgets, and evaluati
 
 Compare the envelope against uniform candidate sampling, a uniform mixture over budgets, a dyadic budget mixture, and the largest-budget law with a uniform floor. An oracle variance-informed sampler may be reported as an unattainable ceiling. Include scenarios where the envelope loses: it minimizes a worst-case weight criterion, not every label pattern's variance.
 
-Predeclare the primary endpoint as the expected maximum absolute curve error across the declared search budgets at a fixed audit-draw budget. Also report per-budget MSE, integrated curve error, simultaneous interval coverage and width, threshold-certification errors, draw count, unique labels, and runtime. For repeated simulation, report Monte Carlo uncertainty and use paired pools and seeds where appropriate.
+For the v0.1 comparison, maximum absolute curve error across the declared search budgets at a fixed audit-draw budget is one of the declared primary metrics. Also report per-budget MSE, integrated curve error, simultaneous interval coverage and width, threshold-certification errors, draw count, unique labels, and runtime. For repeated simulation, report Monte Carlo uncertainty and use paired pools and seeds where appropriate. The v0.2 protocol above separately specifies the anytime, unique-label endpoints; they must not be substituted for the earlier endpoints after viewing results.
 
 Acceptance evidence is reproducible result files plus figures whose conclusions follow the measured endpoints. A negative result against the dyadic mixture is publishable evidence about the proposal's practical limits. Do not select only favorable scenarios or convert synthetic labels into claims about real LLM behavior.
 
@@ -76,6 +86,8 @@ The evaluator may obtain full reference labels for these small pools to measure 
 
 Use search budgets {1, 2, 4, 8, 16, 32} for the confirmation pools. A provisional set of aggregate audit draw budgets is {32, 64, 128, 256}; finalize it from discovery data before any confirmation analysis. Use the five acquisition methods from the synthetic study with frozen parameters and the same candidate pools.
 
+This draft retains the v0.1 fixed-draw planning branch. If a future real-model study instead evaluates v0.2, freeze unique-label checkpoints, the exact directional or two-sided certification rule, anytime error endpoints, and censoring rules before confirmation. Compare acquisition proposals using the same inference engine. Choose and preregister that design before collecting confirmation data; the existing synthetic protocol is not a real-model preregistration.
+
 Primary hypothesis: the envelope reduces expected maximum absolute curve error relative to the dyadic mixture at a prespecified draw budget. Treat this as a two-sided comparison until discovery work justifies a directional hypothesis. Report all budgets and comparisons regardless of outcome. Weight minimax optimality does not establish this hypothesis.
 
 Secondary hypotheses concern simultaneous coverage at the declared confidence level, interval width, and risk-threshold decisions. Freeze the threshold before confirmation. “False certification” means certifying a risk below that threshold when the exact risk on the same stored pools exceeds it. It does not mean the experiment measured a real-world safety incident rate.
@@ -97,3 +109,5 @@ A researcher or user applying this method must establish that the stored candida
 They must also check the proposal support, logged probabilities, actual draw mechanism, immutable provenance, confidence level, budget grid, and any data-dependent tuning or stopping. An acquisition plan fitted after examining labels requires an analysis appropriate to that dependence. A numerical threshold must have an application-specific justification.
 
 Finally, deployment on new prompts, changed models, new candidate generators, fresh stochastic judge calls, or larger search budgets is a different claim. It requires fresh evidence and suitable sampling or shift assumptions. The present deliverable is an audit of fixed pools and fixed losses, with a transparent route to testing broader usefulness.
+
+Human research ownership also remains to be demonstrated: independently derive the argument, explain its assumptions and failures, reproduce the evidence, and make further validated contributions. Agent reviews and generated artifacts do not establish those steps. [The provenance disclosure](provenance.md) records the assistance and limits; no application or program acceptance is promised.
