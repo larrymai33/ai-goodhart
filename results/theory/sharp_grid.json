@@ -1,0 +1,3948 @@
+{
+  "certificate_checks": {
+    "bin_checks": 1576,
+    "certificates": 64,
+    "retained_unsafe_subset_checks": 1170
+  },
+  "claim_boundary": "Analytical finite checks support proofs and implementation, not novelty, empirical model usefulness, nonzero-table efficiency, or a general monotone-family sharp theorem. Sparse grids use their exact Z_K, not log(N)/e. No CLI limits or supported grid domain are changed.",
+  "cost_certificates": [
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "644.278712188",
+        "ratio_upper": "1.101670286",
+        "upper_bound": "709.782712894"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 12288,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "389442585096466653860290303/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "429037323966464635555792896/389442585096466653860290303",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "209490880843000310329977/295147905179352825856"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "1312.223752950",
+        "ratio_upper": "1.168866911",
+        "upper_bound": "1533.814924060"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 12288,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "793190588026564224550565423/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "927134232102977294692466688/793190588026564224550565423",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "56587782721128985271757/36893488147419103232"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "44322.947070839",
+        "ratio_upper": "1.024888836",
+        "upper_bound": "45426.093625177"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 3145728,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "53583155115350113291201827407/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "54916777467707473351141490688/53583155115350113291201827407",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "209490880843000310329977/4611686018427387904"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "94238.704924051",
+        "ratio_upper": "1.041654332",
+        "upper_bound": "98164.155139818"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 3145728,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "56963801794865112753771030441/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "19778863618196848953439289344/18987933931621704251257010147",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "56587782721128985271757/576460752303423488"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "2889313.517330979",
+        "ratio_upper": "1.006214790",
+        "upper_bound": "2907269.992011301"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 805306368,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1746482856031490693561161331003/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "1757336878966639147236527702016/1746482856031490693561161331003",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "209490880843000310329977/72057594037927936"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "6217803.245470537",
+        "ratio_upper": "1.010406036",
+        "upper_bound": "6282505.928948300"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 805306368,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "7516862884732970384300555797725/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "2531694543129196666040229036032/2505620961577656794766851932575",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "56587782721128985271757/9007199254740992"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "185776659.745030748",
+        "ratio_upper": "1.001553585",
+        "upper_bound": "186065279.488723255"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 206158430208,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "224590200647529384399500714726843/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "224939120507729810846275545858048/224590200647529384399500714726843",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "209490880843000310329977/1125899906842624"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        1
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "401037123.215343954",
+        "ratio_upper": "1.002601396",
+        "upper_bound": "402080379.452691157"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 206158430208,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "484824132879002719199910772365133/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 1,
+      "pool_size": 1,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "486085352280805759879723974918144/484824132879002719199910772365133",
+      "representatives": [
+        1
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 1,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "56587782721128985271757/140737488355328"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "644.278712188",
+        "ratio_upper": "1.101670286",
+        "upper_bound": "709.782712894"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 98304,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "389442585096466653860290303/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "429037323966464635555792896/389442585096466653860290303",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "209490880843000310329977/295147905179352825856"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "1312.223752950",
+        "ratio_upper": "1.168866911",
+        "upper_bound": "1533.814924060"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 98304,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "793190588026564224550565423/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "927134232102977294692466688/793190588026564224550565423",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "56587782721128985271757/36893488147419103232"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "44322.947070839",
+        "ratio_upper": "1.024888836",
+        "upper_bound": "45426.093625177"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 25165824,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "53583155115350113291201827407/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "54916777467707473351141490688/53583155115350113291201827407",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "209490880843000310329977/4611686018427387904"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "94238.704924051",
+        "ratio_upper": "1.041654332",
+        "upper_bound": "98164.155139818"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 25165824,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "56963801794865112753771030441/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "19778863618196848953439289344/18987933931621704251257010147",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "56587782721128985271757/576460752303423488"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "2889313.517330979",
+        "ratio_upper": "1.006214790",
+        "upper_bound": "2907269.992011301"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 6442450944,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1746482856031490693561161331003/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "1757336878966639147236527702016/1746482856031490693561161331003",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "209490880843000310329977/72057594037927936"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "6217803.245470537",
+        "ratio_upper": "1.010406036",
+        "upper_bound": "6282505.928948300"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 6442450944,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "7516862884732970384300555797725/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "2531694543129196666040229036032/2505620961577656794766851932575",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "56587782721128985271757/9007199254740992"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "185776659.745030748",
+        "ratio_upper": "1.001553585",
+        "upper_bound": "186065279.488723255"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1649267441664,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "224590200647529384399500714726843/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "224939120507729810846275545858048/224590200647529384399500714726843",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "209490880843000310329977/1125899906842624"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        8
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "401037123.215343954",
+        "ratio_upper": "1.002601396",
+        "upper_bound": "402080379.452691157"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1649267441664,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "484824132879002719199910772365133/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 8,
+      "pool_size": 8,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "486085352280805759879723974918144/484824132879002719199910772365133",
+      "representatives": [
+        8
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 8,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "56587782721128985271757/140737488355328"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "1/28",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "1258.195837508",
+        "ratio_upper": "1.078893602",
+        "upper_bound": "1357.459438409"
+      },
+      "dropped_bad_bin_mass": "1/56",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 196608,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1521065434096166224268941097/1208925819614629174706176",
+      "lower_rounding_error_upper": "11/1208925819614629174706176",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 12288,
+      "ratio_upper": "1641067764171727231000907828/1521065434096166224268941097",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 11,
+      "retained_minimum_mass": "1061/560",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 4,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "410266941042931807750226957/302231454903657293676544"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "1/28",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "2626.504627642",
+        "ratio_upper": "1.116853560",
+        "upper_bound": "2933.421042265"
+      },
+      "dropped_bad_bin_mass": "1/56",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 196608,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "1587624629847374043898374177/604462909807314587353088",
+      "lower_rounding_error_upper": "11/1208925819614629174706176",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 12288,
+      "ratio_upper": "1773144218896944076099342541/1587624629847374043898374177",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 11,
+      "retained_minimum_mass": "1061/560",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 4,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "1773144218896944076099342541/604462909807314587353088"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "1/140",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "85646.390090088",
+        "ratio_upper": "1.014373215",
+        "upper_bound": "86877.404058151"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 50331648,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "103540132336694254203385430967/1208925819614629174706176",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 3145728,
+      "ratio_upper": "2442519462953268436838560487/2407910054341726841939196069",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 2,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "105028336906990542784058100941/1208925819614629174706176"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "1/140",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "183329.480755845",
+        "ratio_upper": "1.024052138",
+        "upper_bound": "187738.946704901"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 50331648,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "110815871391142153094277156257/604462909807314587353088",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 3145728,
+      "ratio_upper": "226962460018808841740715845223/221631742782284306188554312514",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 2,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "226962460018808841740715845223/1208925819614629174706176"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "5540581.329160110",
+        "ratio_upper": "1.003532578",
+        "upper_bound": "5560153.859721613"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 12884901888,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "3349075912248198997236457390001/604462909807314587353088",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 805306368,
+      "ratio_upper": "3360906781023697369089859230106/3349075912248198997236457390001",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "1680453390511848684544929615053/302231454903657293676544"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "11943747.791938255",
+        "ratio_upper": "1.005990147",
+        "upper_bound": "12015292.589113623"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 12884901888,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "3609776272159843392737092135195/302231454903657293676544",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 805306368,
+      "ratio_upper": "7262798720601882935702907047117/7219552544319686785474184270390",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "7262798720601882935702907047117/604462909807314587353088"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "355531788.908067924",
+        "ratio_upper": "1.000894599",
+        "upper_bound": "355849847.022183225"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 3298534883328,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "214905779652370670509095762323973/604462909807314587353088",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 206158430208,
+      "ratio_upper": "430196067971033263243501981453517/429811559304741341018191524647946",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "430196067971033263243501981453517/1208925819614629174706176"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        3,
+        9,
+        16
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "767818164.819405130",
+        "ratio_upper": "1.001511505",
+        "upper_bound": "768978725.703271837"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "153/80",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 3298534883328,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "232058801054824944937132603565319/302231454903657293676544",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 16,
+      "pool_size": 16,
+      "positive_support_size": 14,
+      "prompts": 206158430208,
+      "ratio_upper": "309879412079013671923324034010317/309411734739766593249510138087092",
+      "representatives": [
+        3,
+        16
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "153/80",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 14,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 48,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 5,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "929638236237041015769972102030951/1208925819614629174706176"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 9,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "1682.289290325",
+        "ratio_upper": "1.059890754",
+        "upper_bound": "1783.042863438"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 393216,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1016881479568031425384713949/604462909807314587353088",
+      "lower_rounding_error_upper": "9/1208925819614629174706176",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 12288,
+      "ratio_upper": "2155566555089576354445636889/2033762959136062850769427898",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 9,
+      "retained_minimum_mass": "2469/992",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 9,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "2155566555089576354445636889/1208925819614629174706176"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 9,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "3542.833336079",
+        "ratio_upper": "1.087573464",
+        "upper_bound": "3853.091522941"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 393216,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "535377836822172211076293371/151115727451828646838272",
+      "lower_rounding_error_upper": "9/1208925819614629174706176",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 12288,
+      "ratio_upper": "1164525456855150916518965215/1070755673644344422152586742",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 9,
+      "retained_minimum_mass": "2469/992",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 9,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "1164525456855150916518965215/302231454903657293676544"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "112868.524441268",
+        "ratio_upper": "1.011041332",
+        "upper_bound": "114114.743260021"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 100663296,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "136449673418853735106270690247/1208925819614629174706176",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 3145728,
+      "ratio_upper": "137956259525732886684520760882/136449673418853735106270690247",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "68978129762866443342260380441/604462909807314587353088"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "242151.151249235",
+        "ratio_upper": "1.018363350",
+        "upper_bound": "246597.857468170"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 100663296,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "292742778994607810653791218371/1208925819614629174706176",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 3145728,
+      "ratio_upper": "298118516954918634628855095032/292742778994607810653791218371",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "37264814619364829328606886879/151115727451828646838272"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "7283570.894443954",
+        "ratio_upper": "1.002714696",
+        "upper_bound": "7303343.568641293"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 25769803776,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "4402648456643457660011420186471/604462909807314587353088",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 805306368,
+      "ratio_upper": "7272817635623480022907190030/7253127605672912125224744953",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "2207300152411726186952332174105/302231454903657293676544"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "15710216.714912336",
+        "ratio_upper": "1.004585944",
+        "upper_bound": "15782262.877962865"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 25769803776,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "4748121654599710792994836270245/302231454903657293676544",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 805306368,
+      "ratio_upper": "4769896271278698154061681520508/4748121654599710792994836270245",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "1192474067819674538515420380127/75557863725914323419136"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "467093412.686514441",
+        "ratio_upper": "1.000686321",
+        "upper_bound": "467413988.393042692"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 6597069766656,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "141170321692159674911312492025247/302231454903657293676544",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 206158430208,
+      "ratio_upper": "565068839017401903859797036570823/564681286768638699645249968100988",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "565068839017401903859797036570823/1208925819614629174706176"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 14,
+      "budgets": [
+        1,
+        3,
+        17,
+        32
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "1008897730.867777719",
+        "ratio_upper": "1.001156801",
+        "upper_bound": "1010064824.189623349"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "623/248",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 6597069766656,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "1219682516196667739622407238744601/1208925819614629174706176",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 32,
+      "pool_size": 32,
+      "positive_support_size": 32,
+      "prompts": 206158430208,
+      "ratio_upper": "1221093445447346727439790469250015/1219682516196667739622407238744601",
+      "representatives": [
+        1,
+        17
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "623/248",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 14,
+        "bin_rank_witness_checks": 32,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "1221093445447346727439790469250015/1208925819614629174706176"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "1/72",
+      "bin_count": 25,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "1329.453317892",
+        "ratio_upper": "1.123753734",
+        "upper_bound": "1493.978129558"
+      },
+      "dropped_bad_bin_mass": "1/72",
+      "dropped_good_bin_mass": "11/252",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 786432,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1607210441973165457578909995/1208925819614629174706176",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 12288,
+      "ratio_upper": "1806108734762052740000999127/1607210441973165457578909995",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "15569/7812",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 7,
+        "bin_checks": 25,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "1806108734762052740000999127/1208925819614629174706176"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "1/72",
+      "bin_count": 25,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "2790.284671415",
+        "ratio_upper": "1.157026400",
+        "upper_bound": "3228.433025642"
+      },
+      "dropped_bad_bin_mass": "1/72",
+      "dropped_good_bin_mass": "11/252",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 786432,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "843311795837312777683210547/302231454903657293676544",
+      "lower_rounding_error_upper": "7/604462909807314587353088",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 12288,
+      "ratio_upper": "1951468020797395757376885529/1686623591674625555366421094",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 14,
+      "retained_minimum_mass": "15569/7812",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 7,
+        "bin_checks": 25,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "1951468020797395757376885529/604462909807314587353088"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "1/2016",
+      "bin_count": 58,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "94271.470959892",
+        "ratio_upper": "1.014247464",
+        "upper_bound": "95614.600291703"
+      },
+      "dropped_bad_bin_mass": "1/2016",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 201326592,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "113967215296464883613117194759/1208925819614629174706176",
+      "lower_rounding_error_upper": "57/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 3145728,
+      "ratio_upper": "115590959024771375360063944110/113967215296464883613117194759",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 57,
+      "retained_minimum_mass": "21893/10416",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 1,
+        "bin_checks": 58,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "57795479512385687680031972055/604462909807314587353088"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "1/2016",
+      "bin_count": 58,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "202128.379622713",
+        "ratio_upper": "1.022220205",
+        "upper_bound": "206619.713641067"
+      },
+      "dropped_bad_bin_mass": "1/2016",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 201326592,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "30544777125345749541600138881/151115727451828646838272",
+      "lower_rounding_error_upper": "57/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 3145728,
+      "ratio_upper": "62446976665516664236060336921/61089554250691499083200277762",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 57,
+      "retained_minimum_mass": "21893/10416",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 1,
+        "bin_checks": 58,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "62446976665516664236060336921/302231454903657293676544"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 63,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "6100890.800275194",
+        "ratio_upper": "1.003023103",
+        "upper_bound": "6119334.418668948"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 51539607552,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "7375524411102040875484864825207/1208925819614629174706176",
+      "lower_rounding_error_upper": "63/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 805306368,
+      "ratio_upper": "12602762142394153361233547569/12564777531690018527231456261",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 63,
+      "retained_minimum_mass": "261/124",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 63,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "7397821377585368023044092423003/1208925819614629174706176"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 63,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "13157145.362042570",
+        "ratio_upper": "1.005055528",
+        "upper_bound": "13223661.673028276"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 51539607552,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "15906012740596131678753262671121/1208925819614629174706176",
+      "lower_rounding_error_upper": "63/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 805306368,
+      "ratio_upper": "15986426026372266044431446251719/15906012740596131678753262671121",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 63,
+      "retained_minimum_mass": "261/124",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 63,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "15986426026372266044431446251719/1208925819614629174706176"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 63,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "391342051.631263758",
+        "ratio_upper": "1.000754714",
+        "upper_bound": "391637402.794812657"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 13194139533312,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "59137938814749508380228792283923/151115727451828646838272",
+      "lower_rounding_error_upper": "63/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 206158430208,
+      "ratio_upper": "236730284082731776737410957536091/236551755258998033520915169135692",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 63,
+      "retained_minimum_mass": "261/124",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 63,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "236730284082731776737410957536091/604462909807314587353088"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 63,
+      "budgets": [
+        2,
+        3,
+        64
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "845244365.558525596",
+        "ratio_upper": "1.001265885",
+        "upper_bound": "846314347.073809612"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "261/124",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 13194139533312,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "7983107323495998409455296372229/9444732965739290427392",
+      "lower_rounding_error_upper": "63/1208925819614629174706176",
+      "maximum_budget": 64,
+      "pool_size": 64,
+      "positive_support_size": 63,
+      "prompts": 206158430208,
+      "ratio_upper": "1023131265687825026843612560109965/1021837737407487796410277935645312",
+      "representatives": [
+        2,
+        64
+      ],
+      "retained_bin_count": 63,
+      "retained_minimum_mass": "261/124",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 63,
+        "bin_rank_witness_checks": 63,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 192,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 25,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "1023131265687825026843612560109965/1208925819614629174706176"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "1346.583959348",
+        "ratio_upper": "1.050079528",
+        "upper_bound": "1414.020248343"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1572864,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1627920116735770286583277333/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 12288,
+      "ratio_upper": "1709445587678882532292612320/1627920116735770286583277333",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "53420174614965079134144135/37778931862957161709568"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "2829.086066607",
+        "ratio_upper": "1.080082701",
+        "upper_bound": "3055.646919026"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1572864,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "855038797958526167969648973/302231454903657293676544",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 12288,
+      "ratio_upper": "102612512667647226626119360/95004310884280685329960997",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/512",
+      "upper_bound": "14429884593887891244298035/4722366482869645213696"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "89384.012202766",
+        "ratio_upper": "1.012455066",
+        "upper_bound": "90497.295893907"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 402653184,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "3376832506646034895970954791/37778931862957161709568",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 3145728,
+      "ratio_upper": "3418891175357765064585224640/3376832506646034895970954791",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "53420174614965079134144135/590295810358705651712"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "191601.296888552",
+        "ratio_upper": "1.020668472",
+        "upper_bound": "195561.402817605"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 402653184,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "57907938720054914924039900841/302231454903657293676544",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 3145728,
+      "ratio_upper": "19701602432188267512214917120/19302646240018304974679966947",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/32768",
+      "upper_bound": "14429884593887891244298035/73786976294838206464"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "5773729.039901449",
+        "ratio_upper": "1.003134525",
+        "upper_bound": "5791826.937210014"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 103079215104,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "6980010111795645988879121382601/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 805306368,
+      "ratio_upper": "7001889127132702852270540062720/6980010111795645988879121382601",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "53420174614965079134144135/9223372036854775808"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "12450717.406388732",
+        "ratio_upper": "1.005237640",
+        "upper_bound": "12515929.780326691"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 103079215104,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "15051993745308628594486447698307/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 805306368,
+      "ratio_upper": "2161547238274369921340150906880/2150284820758375513498063956901",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/2097152",
+      "upper_bound": "14429884593887891244298035/1152921504606846976"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "370386062.187913111",
+        "ratio_upper": "1.000785294",
+        "upper_bound": "370676923.981440859"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26388279066624,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "223884636902178934816411187209265/604462909807314587353088",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 206158430208,
+      "ratio_upper": "44812090413649298254531456401408/44776927380435786963282237441853",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "53420174614965079134144135/144115188075855872"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 2,
+      "budgets": [
+        1,
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "799968139.095025201",
+        "ratio_upper": "1.001314261",
+        "upper_bound": "801019505.940908164"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "255/128",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26388279066624,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "967102138221043017069700497235617/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/604462909807314587353088",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 128,
+      "prompts": 206158430208,
+      "ratio_upper": "322791054248972574920129202094080/322367379407014339023233499078539",
+      "representatives": [
+        1,
+        128
+      ],
+      "retained_bin_count": 2,
+      "retained_minimum_mass": "255/128",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 2,
+        "bin_rank_witness_checks": 128,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 2,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 256,
+        "skeleton_blocks": 2,
+        "skeleton_rank_density_checks": 97,
+        "window_count_checks": 2
+      },
+      "tau": "1/134217728",
+      "upper_bound": "14429884593887891244298035/18014398509481984"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "269799673/3150859840",
+      "bin_count": 86,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "1430.969957144",
+        "ratio_upper": "1.131939793",
+        "upper_bound": "1619.771836329"
+      },
+      "dropped_bad_bin_mass": "1197150727/15754299200",
+      "dropped_good_bin_mass": "222613831/7877149600",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1560576,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "864968264142118743088077337/604462909807314587353088",
+      "lower_rounding_error_upper": "9/604462909807314587353088",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 12192,
+      "ratio_upper": "979091997410860402702076627/864968264142118743088077337",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 18,
+      "retained_minimum_mass": "67656754447/31508598400",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 85,
+        "bin_checks": 86,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/512",
+      "upper_bound": "979091997410860402702076627/604462909807314587353088"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "269799673/3150859840",
+      "bin_count": 86,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "3003.890220521",
+        "ratio_upper": "1.165245215",
+        "upper_bound": "3500.268703367"
+      },
+      "dropped_bad_bin_mass": "1197150727/15754299200",
+      "dropped_good_bin_mass": "222613831/7877149600",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1560576,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "3631480446876127530408795559/1208925819614629174706176",
+      "lower_rounding_error_upper": "9/604462909807314587353088",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 12192,
+      "ratio_upper": "4231565211089382208753799890/3631480446876127530408795559",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 18,
+      "retained_minimum_mass": "67656754447/31508598400",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 85,
+        "bin_checks": 86,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/512",
+      "upper_bound": "2115782605544691104376899945/604462909807314587353088"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "135779051/7877149600",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "101994.655435675",
+        "ratio_upper": "1.016380683",
+        "upper_bound": "103665.397525003"
+      },
+      "dropped_bad_bin_mass": "9581/1041400",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 399507456,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "123303972418885494065548109159/1208925819614629174706176",
+      "lower_rounding_error_upper": "61/1208925819614629174706176",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 3121152,
+      "ratio_upper": "125323775668590131545865808221/123303972418885494065548109159",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 61,
+      "retained_minimum_mass": "53711141747/23631448800",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 67,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/32768",
+      "upper_bound": "125323775668590131545865808221/1208925819614629174706176"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "135779051/7877149600",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "218725.168952430",
+        "ratio_upper": "1.024194875",
+        "upper_bound": "224017.197015488"
+      },
+      "dropped_bad_bin_mass": "9581/1041400",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 399507456,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "264422504146165552614288780009/1208925819614629174706176",
+      "lower_rounding_error_upper": "61/1208925819614629174706176",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 3121152,
+      "ratio_upper": "90273391169906820453414397637/88140834715388517538096260003",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 61,
+      "retained_minimum_mass": "53711141747/23631448800",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 67,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/32768",
+      "upper_bound": "270820173509720461360243192911/1208925819614629174706176"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "12528087/3938574800",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "6614325.376718279",
+        "ratio_upper": "1.003063059",
+        "upper_bound": "6634585.441600168"
+      },
+      "dropped_bad_bin_mass": "392977/1152753600",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 102273908736,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "7996228727246987163472736287021/1208925819614629174706176",
+      "lower_rounding_error_upper": "85/1208925819614629174706176",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 799014912,
+      "ratio_upper": "8020721642789768418935411726100/7996228727246987163472736287021",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 85,
+      "retained_minimum_mass": "107840995541/47262897600",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 52,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/2097152",
+      "upper_bound": "2005180410697442104733852931525/302231454903657293676544"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "12528087/3938574800",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "14265176.777480448",
+        "ratio_upper": "1.005041917",
+        "upper_bound": "14337100.608991220"
+      },
+      "dropped_bad_bin_mass": "392977/1152753600",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 102273908736,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "8622770263831562844617202591995/604462909807314587353088",
+      "lower_rounding_error_upper": "85/1208925819614629174706176",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 799014912,
+      "ratio_upper": "17332491104622109527055564346263/17245540527663125689234405183990",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 85,
+      "retained_minimum_mass": "107840995541/47262897600",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 52,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/2097152",
+      "upper_bound": "17332491104622109527055564346263/1208925819614629174706176"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "511313/768502400",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "424303918.177825553",
+        "ratio_upper": "1.000729549",
+        "upper_bound": "424613468.262410693"
+      },
+      "dropped_bad_bin_mass": "9867/787714960",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26182120636416,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "128237990512206577952143326505125/302231454903657293676544",
+      "lower_rounding_error_upper": "25/302231454903657293676544",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 204547817472,
+      "ratio_upper": "5292022527201496688782127324437/5288164557204394967098693876500",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 100,
+      "retained_minimum_mass": "1739621219/762304800",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 41,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/134217728",
+      "upper_bound": "513326185138545178811866350470389/1208925819614629174706176"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "511313/768502400",
+      "bin_count": 122,
+      "budgets": [
+        7,
+        31,
+        127
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "916450050.250719114",
+        "ratio_upper": "1.001226896",
+        "upper_bound": "917574438.975438070"
+      },
+      "dropped_bad_bin_mass": "9867/787714960",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "53928553799/23631448800",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26182120636416,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "553960064067609349290279413574953/604462909807314587353088",
+      "lower_rounding_error_upper": "25/302231454903657293676544",
+      "maximum_budget": 127,
+      "pool_size": 128,
+      "positive_support_size": 122,
+      "prompts": 204547817472,
+      "ratio_upper": "554639715347907504865778059080391/553960064067609349290279413574953",
+      "representatives": [
+        7,
+        31,
+        127
+      ],
+      "retained_bin_count": 100,
+      "retained_minimum_mass": "1739621219/762304800",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 41,
+        "bin_checks": 122,
+        "bin_rank_witness_checks": 122,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 1,
+        "representative_tail_checks": 3,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 384,
+        "skeleton_blocks": 3,
+        "skeleton_rank_density_checks": 18,
+        "window_count_checks": 3
+      },
+      "tau": "1/134217728",
+      "upper_bound": "554639715347907504865778059080391/604462909807314587353088"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "644.278712188",
+        "ratio_upper": "1.101670286",
+        "upper_bound": "709.782712894"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1572864,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "389442585096466653860290303/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "429037323966464635555792896/389442585096466653860290303",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/1208925819614629174706176",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "209490880843000310329977/295147905179352825856"
+    },
+    {
+      "a": "1/24",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "1312.223752950",
+        "ratio_upper": "1.168866911",
+        "upper_bound": "1533.814924060"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/8",
+      "eta": "1/8",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 1572864,
+      "k": 8,
+      "kappa": 8,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "793190588026564224550565423/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 12288,
+      "ratio_upper": "927134232102977294692466688/793190588026564224550565423",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/151115727451828646838272",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 0,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/512",
+      "upper_bound": "56587782721128985271757/36893488147419103232"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "44322.947070839",
+        "ratio_upper": "1.024888836",
+        "upper_bound": "45426.093625177"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 402653184,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "53583155115350113291201827407/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "54916777467707473351141490688/53583155115350113291201827407",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/4835703278458516698824704",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "209490880843000310329977/4611686018427387904"
+    },
+    {
+      "a": "1/96",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "94238.704924051",
+        "ratio_upper": "1.041654332",
+        "upper_bound": "98164.155139818"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/32",
+      "eta": "1/32",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 402653184,
+      "k": 32,
+      "kappa": 32,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "56963801794865112753771030441/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 3145728,
+      "ratio_upper": "19778863618196848953439289344/18987933931621704251257010147",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/604462909807314587353088",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/32768",
+      "upper_bound": "56587782721128985271757/576460752303423488"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "2889313.517330979",
+        "ratio_upper": "1.006214790",
+        "upper_bound": "2907269.992011301"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 103079215104,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "1746482856031490693561161331003/604462909807314587353088",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "1757336878966639147236527702016/1746482856031490693561161331003",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/19342813113834066795298816",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "209490880843000310329977/72057594037927936"
+    },
+    {
+      "a": "1/384",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "6217803.245470537",
+        "ratio_upper": "1.010406036",
+        "upper_bound": "6282505.928948300"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/128",
+      "eta": "1/128",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 103079215104,
+      "k": 128,
+      "kappa": 128,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "7516862884732970384300555797725/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 805306368,
+      "ratio_upper": "2531694543129196666040229036032/2505620961577656794766851932575",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/2417851639229258349412352",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/2097152",
+      "upper_bound": "56587782721128985271757/9007199254740992"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/4",
+      "display": {
+        "lower_bound": "185776659.745030748",
+        "ratio_upper": "1.001553585",
+        "upper_bound": "186065279.488723255"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26388279066624,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "lower_bound": "224590200647529384399500714726843/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "224939120507729810846275545858048/224590200647529384399500714726843",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "69830293614333436776659/77371252455336267181195264",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "209490880843000310329977/1125899906842624"
+    },
+    {
+      "a": "1/1536",
+      "bad_envelope_mass": "0",
+      "bin_count": 1,
+      "budgets": [
+        128
+      ],
+      "delta": "1/20",
+      "display": {
+        "lower_bound": "401037123.215343954",
+        "ratio_upper": "1.002601396",
+        "upper_bound": "402080379.452691157"
+      },
+      "dropped_bad_bin_mass": "0",
+      "dropped_good_bin_mass": "0",
+      "envelope_normalizer": "1",
+      "epsilon": "1/512",
+      "eta": "1/512",
+      "interpretation": "lower <= OPT_0 <= C_NEG <= upper for the unchanged declared grid; analytical bounds, not exact optima or sampled costs. P*m is not allocated.",
+      "items": 26388279066624,
+      "k": 512,
+      "kappa": 512,
+      "log_interval": {
+        "lower": "3621618094152255057392447/1208925819614629174706176",
+        "upper": "56587782721128985271757/18889465931478580854784"
+      },
+      "lower_bound": "484824132879002719199910772365133/1208925819614629174706176",
+      "lower_rounding_error_upper": "1/1208925819614629174706176",
+      "maximum_budget": 128,
+      "pool_size": 128,
+      "positive_support_size": 1,
+      "prompts": 206158430208,
+      "ratio_upper": "486085352280805759879723974918144/484824132879002719199910772365133",
+      "representatives": [
+        128
+      ],
+      "retained_bin_count": 1,
+      "retained_minimum_mass": "1",
+      "rho_upper": "18862594240376328423919/9671406556917033397649408",
+      "structure_checks": {
+        "bad_rank_witness_checks": 0,
+        "bin_checks": 1,
+        "bin_rank_witness_checks": 1,
+        "nontrivial_bad_mass_bound_cases": 1,
+        "positive_bad_mass_cases": 0,
+        "representative_tail_checks": 1,
+        "retained_mass_checks": 1,
+        "row_domination_checks": 128,
+        "skeleton_blocks": 1,
+        "skeleton_rank_density_checks": 1,
+        "window_count_checks": 1
+      },
+      "tau": "1/134217728",
+      "upper_bound": "56587782721128985271757/140737488355328"
+    }
+  ],
+  "dependencies": "Python standard library only",
+  "description": "Exact arbitrary-grid rank checks and symbolic monotone-family boundaries.\n\nReuses the frozen sharp-cost rational arithmetic. Populations in analytical\ncertificates are symbolic counts, never expanded into label tables. Finite\nchecks support the proof and implementation; they establish neither novelty\nnor empirical usefulness. All decimal bounds are rounded outward.\n",
+  "grid_checks": {
+    "bad_rank_witness_checks": 2802,
+    "bin_checks": 34538,
+    "bin_rank_witness_checks": 49194,
+    "grid_scale_cases": 6108,
+    "grids": 2036,
+    "nontrivial_bad_mass_bound_cases": 2036,
+    "positive_bad_mass_cases": 1566,
+    "representative_tail_checks": 10128,
+    "retained_mass_checks": 6108,
+    "row_domination_checks": 254967,
+    "scope": "Every nonempty declared grid in the finite range; zero envelope support is excluded from bins, and no targets are added.",
+    "skeleton_blocks": 10128,
+    "skeleton_rank_density_checks": 36234,
+    "window_count_checks": 10128
+  },
+  "monotone_counterexamples": [
+    {
+      "beta": "1/4",
+      "comparator_cost_upper_divided_by_L": "5",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "0.661370563"
+      },
+      "envelope_normalizer_lower": "2",
+      "head_size": 8,
+      "head_threshold": "1/3",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 2,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/8",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "799547951017303091500959/1208925819614629174706176",
+      "rho_upper": "209490880843000310329977/604462909807314587353088",
+      "tail_levels": 8,
+      "tau": "1/2"
+    },
+    {
+      "beta": "1/16",
+      "comparator_cost_upper_divided_by_L": "9",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "1.275571068"
+      },
+      "envelope_normalizer_lower": "3",
+      "head_size": 64,
+      "head_threshold": "1/5",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 4,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/64",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "771035399602586064749121/604462909807314587353088",
+      "rho_upper": "209490880843000310329977/2417851639229258349412352",
+      "tail_levels": 64,
+      "tau": "1/4"
+    },
+    {
+      "beta": "1/64",
+      "comparator_cost_upper_divided_by_L": "17",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "2.327457824"
+      },
+      "envelope_normalizer_lower": "5",
+      "head_size": 512,
+      "head_threshold": "1/9",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 8,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/512",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "1406861928896401947424179/604462909807314587353088",
+      "rho_upper": "209490880843000310329977/9671406556917033397649408",
+      "tail_levels": 512,
+      "tau": "1/8"
+    },
+    {
+      "beta": "1/256",
+      "comparator_cost_upper_divided_by_L": "33",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "4.351821354"
+      },
+      "envelope_normalizer_lower": "9",
+      "head_size": 4096,
+      "head_threshold": "1/17",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 16,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/4096",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "2630514599130452279688589/604462909807314587353088",
+      "rho_upper": "209490880843000310329977/38685626227668133590597632",
+      "tail_levels": 4096,
+      "tau": "1/16"
+    },
+    {
+      "beta": "1/1024",
+      "comparator_cost_upper_divided_by_L": "65",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "8.363565624"
+      },
+      "envelope_normalizer_lower": "17",
+      "head_size": 32768,
+      "head_threshold": "1/33",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 32,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/32768",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "1263866303362628644962901/151115727451828646838272",
+      "rho_upper": "209490880843000310329977/154742504910672534362390528",
+      "tail_levels": 32768,
+      "tau": "1/32"
+    },
+    {
+      "beta": "1/4096",
+      "comparator_cost_upper_divided_by_L": "129",
+      "delta": "1/4",
+      "display": {
+        "ratio_lower": "16.369322449"
+      },
+      "envelope_normalizer_lower": "33",
+      "head_size": 262144,
+      "head_threshold": "1/65",
+      "interpretation": "C_NEG/OPT_0 is at least this bound for a constructed monotone family with a uniform baseline. A conjunction of head and uniform audits is valid for fractional losses; both tests may use delta. The exponential population is not expanded.",
+      "k": 64,
+      "log_interval": {
+        "lower": "1675927046744002482639815/1208925819614629174706176",
+        "upper": "209490880843000310329977/151115727451828646838272"
+      },
+      "maximum_item_mass_upper": "1/262144",
+      "population_symbolic": "H*(1+2^J)",
+      "ratio_lower": "19789296558793473866972001/1208925819614629174706176",
+      "rho_upper": "209490880843000310329977/618970019642690137449562112",
+      "tail_levels": 262144,
+      "tau": "1/64"
+    }
+  ],
+  "protocol": {
+    "certificate_construction": "tau=1/k^3, epsilon=eta=1/k, kappa=k, P=ceil(3*N*k^4/m); no P*m table is allocated",
+    "certificate_deltas": [
+      "1/4",
+      "1/20"
+    ],
+    "certificate_geometries": [
+      {
+        "budgets": [
+          1
+        ],
+        "pool_size": 1
+      },
+      {
+        "budgets": [
+          8
+        ],
+        "pool_size": 8
+      },
+      {
+        "budgets": [
+          3,
+          9,
+          16
+        ],
+        "pool_size": 16
+      },
+      {
+        "budgets": [
+          1,
+          3,
+          17,
+          32
+        ],
+        "pool_size": 32
+      },
+      {
+        "budgets": [
+          2,
+          3,
+          64
+        ],
+        "pool_size": 64
+      },
+      {
+        "budgets": [
+          1,
+          128
+        ],
+        "pool_size": 128
+      },
+      {
+        "budgets": [
+          7,
+          31,
+          127
+        ],
+        "pool_size": 128
+      },
+      {
+        "budgets": [
+          128
+        ],
+        "pool_size": 128
+      }
+    ],
+    "certificate_k": [
+      8,
+      32,
+      128,
+      512
+    ],
+    "claim_boundary": "Analytical finite checks support proofs and implementation, not novelty, empirical model usefulness, nonzero-table efficiency, or a general monotone-family sharp theorem. Sparse grids use their exact Z_K, not log(N)/e. No CLI limits or supported grid domain are changed.",
+    "counterexample_construction": "tau=1/k, beta=1/k^2, H=J=k^3, tail lengths H*2^j for j=0,...,J, plus a uniform baseline; D is a symbolic formula and is never expanded",
+    "counterexample_delta": "1/4",
+    "counterexample_k": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "dyadic_rounding_bits": 80,
+    "evidence_type": "deterministic_exact_arithmetic_checks",
+    "grid_k": [
+      4,
+      16,
+      64
+    ],
+    "grid_max_pool_size": 10,
+    "log_series_terms": 32,
+    "status": "Fixed after exploratory proof and small-grid checks, before the saved broader calculation; not external preregistration",
+    "tail_epsilons": [
+      "1/4",
+      "1/16",
+      "1/64"
+    ],
+    "tail_max_pool_size": 64,
+    "theorem": {
+      "budget_family": "Every nonempty subset K of {1,...,m}; N=max K",
+      "conclusion": "OPT_0 and C_NEG are asymptotic to log(1/delta)*Z_K/tau uniformly in the other parameters",
+      "confidence_range": "0<delta<=1/4",
+      "limit": "tau tends to zero and rho=log(1/delta)*N/(P*m*tau) tends to zero",
+      "objective": "Expected distinct unit-cost queries on the all-zero fixed-loss table; validity for every fixed table and almost-sure finite zero-table certification"
+    },
+    "title": "Sharp audit cost for arbitrary budget grids and a monotone-family boundary",
+    "version": 1
+  },
+  "protocol_sha256": "118464f119d90b07f9b03937bf75c982ad5f5b068704372ee350fb06f0747180",
+  "rounding": {
+    "bits": 80,
+    "log_series_terms": 32,
+    "lower": "Each bin lower bound rounds down before summation; counterexample ratios round down.",
+    "upper": "Linear total cost rounds up; upper decimal bounds round up and lower decimal bounds round down."
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "docs/sharp-cost-theorem.md": "9f81e0981622b52db173a01cf8a14ad1da52981069765746a00ad4393529b3ba",
+    "docs/sharp-grid-structure.md": "c0c59d65694ac7964ad8040c842a5ceeb9ed796c5c6950cb85f2de6099dcb327",
+    "docs/sparse-grid-theorem.md": "4e7fe8b059336fdfc3d933cc59cd9c4b70659fe226e0ac62d5e57466f2463c58",
+    "experiments/check_sharp_cost.py": "990a15f91d2d574b2edd76d6859ecec007b440af799f8e88baa614e0d1efcb6a",
+    "experiments/check_sharp_grid.py": "58f022780ccefaad8d8ad3a5c509b8e07efcdeb6b53d4971be8012129100150b",
+    "experiments/sharp_grid_protocol.json": "118464f119d90b07f9b03937bf75c982ad5f5b068704372ee350fb06f0747180",
+    "tests/test_sharp_grid.py": "973ecb7b53b5c173da67165733861362dcbcf2f678cb204d44fe781457eb6bf1"
+  },
+  "tail_checks": {
+    "empty_tail_checks": 2080,
+    "maximum_pool_size": 64,
+    "small_weight_tail_checks": 6240,
+    "tail_identity_checks": 89440
+  }
+}

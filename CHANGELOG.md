@@ -1,5 +1,13 @@
 # Research releases
 
+## 0.7.0 — 26 October 2026
+
+Extends the sharp zero-table cost limit to every nonempty declared best-of-N grid, including grids without budget 1. A representative-family and exact-tail argument controls lost envelope mass independently of gaps in the grid. A separate normalized monotone-family construction has an unbounded NEGEXP cost ratio under the same shrinking-threshold and small-atom conditions. The structural criteria are sufficient, not an if-and-only-if characterization; sparse grids retain their actual envelope normalizer.
+
+Adds 89,440 exact tail identities, 6,108 configurations covering all 2,036 small nonempty grids at three scales, 64 conservative cost certificates, and six symbolic counterexample bounds. The 137,749-byte source-pinned artifact reproduces byte for byte. All 192 tests pass, including ten focused standard-library tests. The checker reuses frozen exact arithmetic; earlier artifacts, source pins, and CLI behavior are preserved.
+
+Documents a roughly 0.47% ideal zero-only certification probability on an existing safe nonzero synthetic scenario, making the practical power limitation explicit. The literature review identifies a stronger unresolved comparison with older IAEA stratified without-replacement auditing. No model experiment, priority determination, independent human validation, or practical safety claim is added.
+
 ## 0.6.0 — 26 October 2026
 
 Adds a candidate sharp zero-table cost theorem: for the full prefix of budgets, classical NEGEXP attains the unrestricted adaptive optimum to leading order as the threshold tends to zero and log(1/delta)*N/(P*m*tau) tends to zero, with delta at most 1/4. A finite hypergeometric bound and geometric envelope-value bins give the matching lower bound uniformly in growing target families. The design, envelope coefficient, and generic lower-bound ingredients are attributed to prior work; priority remains unestablished.
