@@ -1,5 +1,7 @@
 # Scientific review guide
 
+For the current cost result, start with the [self-contained sharp-cost manuscript](../paper/sharp-cost/README.md). It combines the arbitrary-grid theorem, complete finite lower-bound proof, structural counterexample, saved arithmetic evidence, and practical power limitation. Its evidence remains frozen at v0.7; the manuscript is a consolidation, not an additional experiment. Earlier proof notes and the v0.3 paper remain available below.
+
 This guide maps the project's claims to inspectable evidence. All experiments use synthetic fixed pools and fixed loss labels. External novelty review, independent human replication, real-model validation, and practical adoption remain unestablished. [Provenance](provenance.md) describes the substantial agent assistance and distinguishes agent review from human review.
 
 The companion [seven-page research note](../paper/paper.pdf) has [editable Markdown source](../paper/paper.md) and [build instructions](../paper/README.md). It consolidates the existing v0.3 evidence; the notes and saved results below provide supporting detail.

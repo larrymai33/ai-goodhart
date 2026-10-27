@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "document_version": "0.7.1",
+  "research_evidence_commit": "ba573d604e3810d7edc9780d57ffea0ff8785296",
+  "scope": "Consolidation of existing v0.7 theory and saved evidence; no new scientific measurements or novelty determination. Hashes identify distributed files, not a byte-identical PDF rebuild guarantee.",
+  "sha256": {
+    "paper/sharp-cost/manuscript.md": "8e8492380a3635566db7bd92904e669dce351d40a25e76d1a755a1b0754cb579",
+    "paper/sharp-cost/build_pdf.py": "df605b3a804f9f87dc3108a79e99d90c0e5e706c1f3c7691d7bfa88398886037",
+    "paper/sharp-cost/README.md": "f44b0859e83dbc483a899b7d5bac689ad900ec3ba23640b570981ef793ea60a9",
+    "paper/sharp-cost/manuscript.pdf": "5f4b718a99b77a68e3317b67821470a6307ebf323fba10ee2622694a402038f1",
+    "paper/build_pdf.py": "6a44d819472b2161c71b9097de1de4d18b2cbfa7a7233400f3284ea5e09bf586",
+    "paper/artifact-manifest.json": "929dd6980a88ec551429099cde5dc0931240de35e36aa3d7c84fd29b9864593a",
+    "docs/sharp-grid-structure.md": "c0c59d65694ac7964ad8040c842a5ceeb9ed796c5c6950cb85f2de6099dcb327",
+    "docs/sharp-grid-report.md": "16caa94d3d693d0e543f6b32f31fd36db231db16985c30ca8ce417416f61dccf",
+    "docs/sharp-cost-theorem.md": "9f81e0981622b52db173a01cf8a14ad1da52981069765746a00ad4393529b3ba",
+    "docs/sharp-envelope.md": "0837962d3380bef62e1c40143808f97b933df839123b8baa2d95164a9aa1bec2",
+    "docs/sparse-grid-theorem.md": "4e7fe8b059336fdfc3d933cc59cd9c4b70659fe226e0ac62d5e57466f2463c58",
+    "docs/inspection-priority-review.md": "68c4330a5b18f951b53e15b1a68041cb97faf42c6be98613a0b79a794fb1c497",
+    "results/theory/sharp_grid.json": "5e0dc8c8adf2316bfe09a7564b64bf4220808d7c84284ab574149611747b5da8",
+    "results/theory/sharp_cost.json": "901ec03f590c01de2ce58f89d7b7048e69e0b61a0236fe94d602980d094dd313",
+    "results/theory/sharp_envelope.json": "e2090da8ae9261a3506f8615521284e3bb77943f70987733b5be69f136320052",
+    "results/theory/sparse_grid.json": "e9367cf51b192a80fe21548072c3dfb27646332d2bae50d8d6ad6ce8623cf46a",
+    "results/theory/zero_cost.json": "30cd59acda7c007eac44a75870fc4ce6ae1dc61e73ba3f6e9f0d1a8b3ca50317",
+    "experiments/run_study.py": "dd8ca43e0d9a1d499b8f157acbfdbe98692606de9b913a27745b4d16a6db3209",
+    "experiments/anytime_protocol.json": "74a636c08c5e31b636ffe3ab080d11d951a7585ebd1dd280e52fae0f4fbea770",
+    "results/anytime/manifest.json": "26fe14ebc98480561d911810357230e291370ce5d487527aab1b6dceec6210a2",
+    "experiments/sharp_grid_protocol.json": "118464f119d90b07f9b03937bf75c982ad5f5b068704372ee350fb06f0747180",
+    "experiments/check_sharp_grid.py": "58f022780ccefaad8d8ad3a5c509b8e07efcdeb6b53d4971be8012129100150b",
+    "tests/test_sharp_grid.py": "973ecb7b53b5c173da67165733861362dcbcf2f678cb204d44fe781457eb6bf1",
+    "experiments/check_sharp_cost.py": "990a15f91d2d574b2edd76d6859ecec007b440af799f8e88baa614e0d1efcb6a"
+  },
+  "render_environment": {
+    "python": "3.11.0",
+    "matplotlib": "3.7.1",
+    "pillow": "12.3.0",
+    "reportlab": "4.4.9",
+    "note": "Existing Python scientific installation with an existing bundled ReportLab package directory appended to sys.path; no packages installed."
+  },
+  "pages": 10,
+  "display_equations": 44,
+  "minimum_effective_display_base_size_pt": 12.0,
+  "distinct_reference_urls": 12,
+  "verification": {
+    "existing_tests_passed": 192,
+    "test_runtime_seconds": 9.194,
+    "scientific_measurements_added": 0,
+    "page_review": "All ten pages rendered and visually inspected. Final pages 1-6 are pixel-identical to the inspected draft; final pages 7-10 were inspected directly.",
+    "limitations": "Agent proof and artifact checks within the assisted session, not machine-checked proofs or independent human review."
+  },
+  "external_peer_review": false,
+  "real_model_evaluation": false,
+  "priority_established": false
+}

@@ -1,5 +1,7 @@
 # Research note
 
+The [current sharp-cost manuscript](sharp-cost/README.md) consolidates the later v0.7 theorem and counterexample with complete proofs. This directory's original source, renderer, PDF, and integrity manifest remain the frozen v0.3 paper described below.
+
 [Read the seven-page PDF](paper.pdf) or [Markdown source](paper.md). The note consolidates the v0.3 finite-pool theory and synthetic evidence frozen at commit `e589045`. It is an AI-assisted research artifact, with no external peer review or real-model validation. See the [review guide](../docs/review-guide.md) for claims, evidence, and unresolved questions.
 
 ## Render with existing libraries
