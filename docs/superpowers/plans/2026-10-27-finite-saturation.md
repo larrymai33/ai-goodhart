@@ -3,10 +3,10 @@
 Root coordinates one shared checkout. Separate agents own the new theorem, source comparison, and checker/tests/protocol. Existing Python and standard-library arithmetic suffice; the unchanged sharp-cost helper supplies exact rank weights and logarithm enclosures.
 
 - [x] Explore the hybrid upper and finite lower directions. Identify the hybrid architecture as prior art; derive and independently review the stronger finite-slice lemma and high-budget arbitrary-grid result in ignored notes.
-- [ ] Freeze the specification and bounded protocol before the saved calculation.
-- [ ] Write the full theorem and focused primary-source comparison; independently check the transcription and source passages.
-- [ ] Write meaningful failing tests before implementation, then implement the frozen checker with six source pins and conservative rounding. Preserve all prior files.
-- [ ] Independently review the checker; run focused tests under standard-library and optimized Python and the full suite; commit reviewed sources before the full calculation.
+- [x] Freeze the specification and bounded protocol before the saved calculation (`4eedbd2`).
+- [x] Write the full theorem and focused primary-source comparison; independently check the transcription and source passages.
+- [x] Write meaningful failing tests before implementation, then implement the frozen checker with six source pins and conservative rounding. Preserve all prior files.
+- [x] Independently review the checker; run focused tests under standard-library and optimized Python and the full suite; commit reviewed sources before the full calculation. All 241 tests pass; 14 focused tests also pass with site packages disabled and under optimized Python. Review corrected conservative handling of unresolved integer caps and added a failing-then-passing regression.
 - [ ] Run the frozen calculation twice to separate paths, compare bytes, and report only the observed scope and counts.
 - [ ] Update navigation/provenance; verify old pins, local links, storage, source freeze, and staged Git bytes.
 - [ ] Publish and verify public main/tag; record the bounded phase's completion while leaving the broader goal active.
