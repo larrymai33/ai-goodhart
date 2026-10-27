@@ -78,6 +78,34 @@ class AllGridMinimaxTests(unittest.TestCase):
             self.assertLessEqual(row['conditional_F'], 8192*row['A'])
         self.assertEqual(check.conditional_tail_geometry(9, 2, 1, F(1, 128), F(3072))['block_length'], 3)
 
+    def test_bound_arithmetic_and_serialized_profiles_never_use_floats(self):
+        def no_float(value):
+            self.assertNotIsInstance(value, float)
+            if isinstance(value, dict):
+                for item in value.values():
+                    no_float(item)
+            elif isinstance(value, (tuple, list)):
+                for item in value:
+                    no_float(item)
+        args = (F(1, 8), F(1, 128), F(3, 2))
+        for m, prompts, grid in ((8,1,(2,8)), (9,1,(2,9)), (9,1,(1,)),
+                                 (16,2**20,(1,2,4,8,16))):
+            with self.subTest(grid=grid):
+                row = check.family_profile(m,prompts,grid,*args)
+                no_float(row)
+                no_float(json.loads(json.dumps(check.json_value(row))))
+                self.assertEqual(row['universal_lower'], F(row['F'])/2**38)
+        uniform = check.family_profile(9,1,(1,),*args)
+        self.assertIsInstance(uniform['F']/uniform['proved_lower'], F)
+        self.assertEqual(uniform['F']/uniform['proved_lower'], F(1179648,5))
+        saturated = check.centered_slice_check(3,*args[:2],F(1),F(1),args[2])
+        self.assertIsInstance(saturated['target'], F)
+
+    def test_exact_serializer_rejects_nested_floating_values(self):
+        for value in (0.5, {'bound': [0.5]}, {'bound': float('nan')}):
+            with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'float'):
+                check.json_value(value)
+
     def test_cached_geometry_revalidates_equal_but_invalid_types(self):
         check.conditional_tail_geometry(9, 2, 1, F(1,128), F(3072))
         for prompts, scale in ((True,F(3072)),(1,3072.0)):

@@ -165,7 +165,7 @@ def conditional_tail_geometry(m, budget, prompts, epsilon, scale):
     cost = sum((min(population,hp*s*s) for s in mass[:retained]),F(0))
     clipped = sum((min(prompts,hp*w) for w in v),F(0))
     cutoff = tail_cutoff(v,ep)
-    functional = min(prompts*cutoff,clipped)
+    functional = F(min(prompts*cutoff,clipped))
     require(clipped <= 2048*all_cost, 'paired block sum')
     require(functional <= 8192*cost, 'conditional clipped-or-prefix bound')
     require(all(q*s >= 8*epsilon for s in mass[:retained]), 'original block mass threshold')
@@ -195,7 +195,7 @@ def centered_slice_check(size,tau,epsilon,tail_mass,minimum_mass,log_inverse_del
     require(s*d/(2*size) > epsilon, 'every alternative strictly unsafe')
     h = tau*log_inverse_delta/epsilon**2
     information = F(size*(k+1),d*d)*log_inverse_delta
-    target = min(size,h*s*s)
+    target = F(min(size,h*s*s))
     require(min(size,information) >= target/128, 'centered-slice rate comparison')
     return {'population':size,'null_count':k,'added_count':d,'safe_level':p0,
             'risk_increment':s*d/(2*size),'slice_information':information,'target':target}
@@ -211,7 +211,7 @@ def family_profile(m,prompts,budgets,tau,epsilon,log_inverse_delta):
     envelope = tuple(map(max,zip(*rows)))
     clipped = sum((min(prompts,h*w) for w in envelope),F(0))
     cutoff = tail_cutoff(rows[0],epsilon)
-    functional = min(prompts*cutoff,clipped)
+    functional = F(min(prompts*cutoff,clipped))
     reps = representatives(budgets)
     broad = tuple(n for n in reps if F(prompts*m,n) >= 32*h)
     residual_prefix = (8*h/prompts).__floor__()
@@ -240,9 +240,9 @@ def family_profile(m,prompts,budgets,tau,epsilon,log_inverse_delta):
         elif a == 1:
             tail_population = prompts*(m-m//2)
             q = F(m-m//2,m)
-            block_cost = min(tail_population,h*q*q)
+            block_cost = F(min(tail_population,h*q*q))
             require(tail_population >= 3 and q >= F(1,2),'uniform-tail endpoints')
-            require(block_cost >= min(prompts*m,h)/4,'uniform-tail cost comparison')
+            require(block_cost >= min(F(prompts*m),h)/4,'uniform-tail cost comparison')
             centered_slice_check(tail_population,tau,epsilon,q,q,L)
             branch,lower = 'uniform_tail',block_cost/2**17
         else:
@@ -288,6 +288,8 @@ def likelihood_checks():
 
 
 def json_value(value):
+    if isinstance(value,float):
+        raise ValueError('floating-point value in exact result')
     if isinstance(value,F):
         return str(value)
     if isinstance(value,dict):
