@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this research software, cite this repository and its version. See docs/provenance.md for AI-assistance disclosure."
 title: "Rank Envelope Audits: finite-pool best-of-N risk auditing"
 type: software
-version: 0.11.0
+version: 0.12.0
 date-released: 2026-10-27
 authors:
   - family-names: Mai

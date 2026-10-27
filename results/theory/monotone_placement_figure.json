@@ -1,0 +1,26 @@
+{
+  "description": "Presentation of saved exact certificates; no dynamic program rerun",
+  "floating_point_scope": "Drawing only; exact fractions validate values and selection",
+  "frontier_geometry_count": 193,
+  "matplotlib_version": "3.7.1",
+  "registered_frontier_dual_count": 386,
+  "schema_version": 1,
+  "selected_registered_certificate": {
+    "blind_mixture_expected_upper": "9671/5",
+    "blind_mixture_to_lower_ratio_upper": "1.753161857",
+    "dual_lower_decimal_down": "1103.263793259",
+    "dual_lower_exact": "230632934772671184975227204789683652403006435081605434214163563361402005505778836157084512093308437485232263716780836274446202126401867353432440401305391359913667/209046046994243806265650025936176239815093071641300954441910225522754419773982075424738559913445250909019490937282545400903675135369497377067031838728015869625",
+    "fixed_bottom_ones": 112,
+    "globally_optimized_prior_or_multiplier": false,
+    "head_zeros": 286,
+    "multiplier": 4096,
+    "null_unknown_ones": 80,
+    "selection_scope": "Only registered maximal-unknown-population frontiers and registered multipliers; separate clean witness excluded",
+    "unknown_population": 1650
+  },
+  "source_sha256": {
+    "experiments/plot_monotone_placement.py": "2546daaea3d064d73c54f083ef1f3283d50d58c846d0ed73606af8cacd553e8e",
+    "results/theory/monotone_placement.json": "f870ef27ab5ad09abdba8be483c150fd6c2830d3bf25f2c1e8a2098e66bb6f37",
+    "results/theory/monotone_placement.svg": "733ae06e316460a7f6832f688708674705d0da2814203b5ed605b75cdb509fd6"
+  }
+}

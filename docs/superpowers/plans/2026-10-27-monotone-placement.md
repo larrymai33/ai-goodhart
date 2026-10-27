@@ -25,17 +25,18 @@ Preserve the original targets, fixed-table fractional-loss class, global validit
 ## Proof, scope, and protocol
 
 - [x] Screen upper and lower directions; identify a stronger common-safe prior and independently check the sorting and latent-subset arguments.
-- [ ] Write `docs/monotone-placement-theorem.md` and `docs/monotone-placement-priority.md`; independently review scope, elementary baselines, and classical attribution.
-- [ ] Commit this specification, plan, and `experiments/monotone_placement_protocol.json` before the saved sweep, explicitly recording prior exploration.
+- [x] Write `docs/monotone-placement-theorem.md` and `docs/monotone-placement-priority.md`; independently review scope, elementary baselines, and classical attribution.
+- [x] Commit this specification, plan, and `experiments/monotone_placement_protocol.json` before the saved sweep, explicitly recording prior exploration (`c54379c`).
 
 ## Implementation and evidence
 
-- [ ] Write meaningful failing tests in `tests/test_monotone_placement.py`, then implement `experiments/check_monotone_placement.py` with bounded integer arithmetic, canonical protocol, exact frontiers, seven transitive source pins, and fresh-output/source-drift guards.
-- [ ] Independently review the checker and run focused standard-library/optimized checks and the full suite. Commit reviewed sources before the saved sweep.
-- [ ] Compute `results/theory/monotone_placement.json` and reproduce to a separate fresh ignored path. Compare bytes; extract only actual selected bounds, scope, counts, and resource figures.
+- [x] Write meaningful failing tests in `tests/test_monotone_placement.py`, then implement `experiments/check_monotone_placement.py` with bounded integer arithmetic, canonical protocol, exact frontiers, seven transitive source pins, and fresh-output/source-drift guards.
+- [x] Independently review the checker and run focused standard-library/optimized checks and the full suite. Commit reviewed sources before the saved sweep (`fafd66a`; 266 full-suite tests, 12 focused tests normally and under optimized Python).
+- [x] Compute `results/theory/monotone_placement.json` and reproduce to a separate fresh ignored path. Compare bytes; extract only actual selected bounds, scope, counts, and resource figures (2,162,229 bytes, SHA-256 `f870ef27ab5ad09abdba8be483c150fd6c2830d3bf25f2c1e8a2098e66bb6f37`).
 
 ## Integration and publication
 
-- [ ] Write the report; update navigation, citation, roadmap, provenance, and progress. Independently reconcile all numerical and interpretive claims with the artifact.
-- [ ] Verify legacy evidence, every worktree/index pin, committed source bytes, local links, storage, and staged changes; commit the package.
+- [x] Write the report; update navigation, citation, roadmap, provenance, and progress. Independently reconcile all numerical and interpretive claims with the artifact.
+- [x] Render a two-panel scientific figure of the saved frontier populations and the two multiplier bounds using installed Matplotlib; separately pin the result, renderer, and SVG and inspect an ignored PNG preview. Both SVG and PNG reproduce byte for byte. This presentation addition does not change the frozen calculation protocol or selection.
+- [x] Verify legacy evidence, every worktree/index pin, committed source bytes, local links, storage, and staged changes; commit the package (86 pins across 13 manifests; 132 local links; about 54 MB including Git and local reproductions).
 - [ ] Publish and verify public main and the version tag. Keep the broader goal active.
