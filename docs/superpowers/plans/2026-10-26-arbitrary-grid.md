@@ -7,6 +7,6 @@ Spec: [arbitrary-grid design](../specs/2026-10-26-arbitrary-grid-design.md).
 - [x] Implement an exact bounded checker and tests under the committed saved-run protocol. The saved 122,900-comparison artifact reproduces byte for byte after source freeze.
 - [x] Extend the zero-only workflow domain. Four legacy mathematical records are identical; two actual v0.4.1 reports replay byte for byte. An actual sparse-grid CLI run certifies exactly 1,3,7 with factor 320.
 - [x] Full suite: 171 tests pass. Focused standard-library checks pass, and prior evidence/source pins match. Proof and claims were separately agent-reviewed.
-- [ ] Check final local links and storage, publish the reviewed result, and confirm remote state.
+- [x] Local links and changed-file credential-pattern checks are clean; workspace storage is about 37.7 MB. Implementation commit `dfaa491` is on public main, remote HEAD matches, and the GitHub connector returned the new proof note. Both theorem artifacts and all eight source pins match their staged Git blob bytes.
 
 Exploratory checks preceded the protocol; no independent holdout, external preregistration, model study, human review, or priority determination is claimed. The broader goal remains active.
