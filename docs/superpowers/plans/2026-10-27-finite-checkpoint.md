@@ -23,14 +23,14 @@ all-real theorem domains; explicit blind branch and error allocation.
 
 ## Tasks
 
-- [ ] Write failing exact arithmetic tests in `tests/test_checkpoint_math.py`;
+- [x] Write failing exact arithmetic tests in `tests/test_checkpoint_math.py`;
   implement `goodhart_audit/checkpoint_math.py` without optional dependencies.
   Compare extremal laws with direct subsets, cutoffs with independent
   variational calculations, and upper hinges with exact enumeration.
-- [ ] Write failing callback tests in `tests/test_checkpoint.py`; implement
+- [x] Write failing callback tests in `tests/test_checkpoint.py`; implement
   `goodhart_audit/checkpoint.py`. Exercise all branches, malformed labels/RNG,
   no duplicate charges, strict cutoffs, and safe-boundary completion.
-- [ ] Write `docs/finite-checkpoint-theorem.md` with complete proof and
+- [x] Write `docs/finite-checkpoint-theorem.md` with complete proof and
   attribution. Independently review validity, cost, and claims.
 - [ ] Freeze `experiments/finite_checkpoint_protocol.json`; add exact checker
   `experiments/check_finite_checkpoint.py` and runner regression tests.
@@ -50,3 +50,10 @@ all-real theorem domains; explicit blind branch and error allocation.
   for the original margin class and reduces unsupported generality.
 - The default disables blind certification. The optional mixed mode makes
   the mathematically admissible empty-query event explicit to a caller.
+- Six arithmetic and eight callback tests were observed failing before
+  implementation, then passed normally and under optimized standard-library
+  Python. The callback exercises each of the three stopping checkpoints and
+  fully charged completion on boundary-safe tables.
+- Fresh code and theorem reviews found no blocking issue. The proof review
+  independently recomputed all 2439 exact bin/checkpoint bounds without
+  writing the production artifact. The saved-run obligation remains open.
