@@ -61,4 +61,4 @@ Files: `README.md`, `docs/theory.md`, `docs/related-work.md`, `docs/research-roa
 - [x] Write claims directly from measured results and document limitations, author/tool provenance and reproduction commands.
 - [x] Obtain independent code/math review; fix material findings and rerun checks.
 - [x] Verify no secrets, artifacts well below 2 GB, and public repo destination.
-- [ ] Commit and publish the authorized project (release operation follows verification).
+- [x] Commit and publish the authorized project; initial research release pushed to the public main branch.

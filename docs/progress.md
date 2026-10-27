@@ -11,3 +11,4 @@
 - Results independently rerun with the same protocol; all four CSV outputs reproduced byte-for-byte. Source/output checksums and aggregate/analytic checks pass.
 - Task 4 documentation complete: research report, proofs, related work, provenance, annotation example, contribution guide, citation metadata, and next-study protocol. Public release prepared for the existing public repository's main branch under the user's authorization to create a public project.
 - Original aspirational outcome (field impact and fellowship competitiveness) remains unverified. External review, independent human ownership, and empirical validation are research milestones, not completed results.
+- Public main branch successfully updated with release implementation commit a320ca4. Version 0.1.0 records this initial synthetic research artifact; it does not change the unverified research milestones above.
