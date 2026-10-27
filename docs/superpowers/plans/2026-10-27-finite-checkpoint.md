@@ -32,10 +32,10 @@ all-real theorem domains; explicit blind branch and error allocation.
   no duplicate charges, strict cutoffs, and safe-boundary completion.
 - [x] Write `docs/finite-checkpoint-theorem.md` with complete proof and
   attribution. Independently review validity, cost, and claims.
-- [ ] Freeze `experiments/finite_checkpoint_protocol.json`; add exact checker
+- [x] Freeze `experiments/finite_checkpoint_protocol.json`; add exact checker
   `experiments/check_finite_checkpoint.py` and runner regression tests.
   Include all-bin cost, independent finite checks, and fixed callback traces.
-- [ ] Freeze reviewed scientific sources; run the fixed calculation twice
+- [x] Freeze reviewed scientific sources; run the fixed calculation twice
   at fresh paths, compare bytes, verify all prior pins, full tests and staged
   bytes. Write `docs/finite-checkpoint-report.md` and update public summaries.
 - [ ] Publish the bounded improvement and verify remote state. Keep the
@@ -57,3 +57,9 @@ all-real theorem domains; explicit blind branch and error allocation.
 - Fresh code and theorem reviews found no blocking issue. The proof review
   independently recomputed all 2439 exact bin/checkpoint bounds without
   writing the production artifact. The saved-run obligation remains open.
+- The saved-run obligation is now met: protocol `0624c7e`, source freeze
+  `46c0250`, and two identical 848,201-byte outputs. All 366 repository tests
+  and 22 optimized standard-library focused tests pass. All 119 pins across
+  seventeen manifests, staged changed-file bytes, and 148 local links pass.
+  Final public claim review found no publication blocker. Storage is about
+  58 MB including Git and local reproductions.
