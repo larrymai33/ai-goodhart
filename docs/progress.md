@@ -1,5 +1,7 @@
 # Research progress
 
+The v0.4.1 workflow implementation was published to public main as `7a558a0`. The remote commit matched local HEAD and the GitHub connector returned the new module. This completes the bounded workflow plan; it does not complete the broader research-impact objective.
+
 Latest continuation: v0.4.0 was published as `a5df7d1`; the zero-only workflow was specified in `b6d4c9f`. The user declined external outreach and reported comfort with probability proofs and Python. The companion adds exact rational planning, immutable commitments, annotation, and replayable whole-family reporting. It preserves the original factor-160 proof under its stated assumptions. Agent cross-review fixed aggregate-pool allocation and output-size checks before sampling; examples remain hand-authored software fixtures.
 
 Release verification: all 159 tests pass, with 44 zero-related tests separately passing under `-S`. The actual CLI produced pending, certified, and not-certified outcomes as expected; tiny-positive labels blocked certification, report replay matched byte for byte, and wrong commitments and overwrites failed safely. Earlier saved evidence and all four v0.4 source pins still match. Workspace storage including Git and local artifacts is about 37.4 MB. This is concrete usability progress; the broader field-impact, human-ownership, and fellowship objective remains active and unverified.
