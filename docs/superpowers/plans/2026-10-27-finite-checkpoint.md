@@ -38,7 +38,7 @@ all-real theorem domains; explicit blind branch and error allocation.
 - [x] Freeze reviewed scientific sources; run the fixed calculation twice
   at fresh paths, compare bytes, verify all prior pins, full tests and staged
   bytes. Write `docs/finite-checkpoint-report.md` and update public summaries.
-- [ ] Publish the bounded improvement and verify remote state. Keep the
+- [x] Publish the bounded improvement and verify remote state. Keep the
   broader research/fellowship goal active until its actual requirements hold.
 
 ## Decisions and evidence
