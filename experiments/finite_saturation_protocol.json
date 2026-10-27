@@ -1,0 +1,121 @@
+{
+  "claim_boundary": "Finite arithmetic checks support the proof implementation, not concentration, scientific priority, useful numerical constants, real-model performance, or independent human review. All pre-existing source-pinned files and the audit engine remain unchanged.",
+  "conditional_matrix": "k>=0,d>=1,k+d<=N/2; t in {0,floor(N/4)}; every feasible null success count",
+  "conditional_populations": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "confidence_cap_construction": "P=1,tau=1/8,epsilon=1/128,L=4^j,m=2^(3j),n=m/2; exact seven-factor tail and first j rank weights prove C*<=7 and G>=j; never construct exp(-L) or a population table",
+  "confidence_cap_exponents": [
+    7,
+    12,
+    20,
+    32
+  ],
+  "deltas": [
+    "1/4",
+    "1/20"
+  ],
+  "dyadic_rounding_bits": 80,
+  "evidence_type": "deterministic_exact_arithmetic_checks",
+  "grid_checks": "Outward F_upper<=40*A16_lower; exact clipping/prefix identity; envelope pairing; 6/7 weight ratios for m>=5; 3/4 tail ratios; m<=4 and n/a=4 endpoints; fractional fixed-count priors and small-P*tau hidden subsets",
+  "grid_matrix": "All nonempty subsets of {ceil(m/4),...,m}, for every m=1..maximum",
+  "grid_max_pool_size": 10,
+  "log_series_terms": 32,
+  "practical_case": {
+    "budgets": [
+      16,
+      32,
+      64
+    ],
+    "delta": "1/20",
+    "different_declared_grid_from_original_study": true,
+    "epsilon": "1/160",
+    "pool_size": 64,
+    "prompts": 32,
+    "tau": "1/10"
+  },
+  "prompt_counts": [
+    1,
+    32,
+    64,
+    1000000
+  ],
+  "reciprocal_matrix": "N=2..maximum; k=0..floor(N/2); t=0..floor(N/4); exact hypergeometric expectation",
+  "reciprocal_max_population": 32,
+  "relative_margins": [
+    "1/16",
+    "1/64"
+  ],
+  "selected_prior_witnesses": [
+    {
+      "delta": "1/4",
+      "epsilon": "1/128",
+      "prompts": 1,
+      "tau": "1/8",
+      "weight": "1/4"
+    },
+    {
+      "delta": "1/4",
+      "epsilon": "1/128",
+      "prompts": 31,
+      "tau": "1/8",
+      "weight": "1/4"
+    },
+    {
+      "delta": "1/4",
+      "epsilon": "1/128",
+      "prompts": 32,
+      "tau": "1/8",
+      "weight": "1/4"
+    },
+    {
+      "delta": "1/20",
+      "epsilon": "1/256",
+      "prompts": 63,
+      "tau": "1/16",
+      "weight": "1/4"
+    },
+    {
+      "delta": "1/20",
+      "epsilon": "1/256",
+      "prompts": 64,
+      "tau": "1/16",
+      "weight": "1/4"
+    },
+    {
+      "delta": "1/20",
+      "epsilon": "1/512",
+      "prompts": 1000000,
+      "tau": "1/8",
+      "weight": "1/4"
+    }
+  ],
+  "slice_matrix": "k in {0,N//32,N//8}; d in {1,max(1,N//64),N//4}; skip duplicates and k+d>N/2; preserve both floor endpoints",
+  "slice_populations": [
+    16,
+    64,
+    512,
+    4096
+  ],
+  "status": "Fixed after exploratory proof and agent review, before the saved full calculation; not external preregistration",
+  "taus": [
+    "1/8",
+    "1/16"
+  ],
+  "theorem": {
+    "geometry_constant": 40,
+    "lower_constant": 2097152,
+    "objective": "One globally delta-valid, all-safe-complete auditor; worst-case expected distinct labels over fixed tables with max R_n <= tau-epsilon",
+    "range": "0<tau<=1/8; 0<epsilon<=tau/16; 0<delta<=1/4; min(K)>=m/4; every integer P>=1",
+    "rank_lower_constant": 32768,
+    "rate": "F=min(P*k_epsilon,sum_r min(P,H*e_r)); H=tau*log(1/delta)/epsilon^2; e_r=max_n w_n(r)",
+    "scope": "Every originally declared target is retained; no density or replication condition; no claim for grids with min(K)<m/4",
+    "slice_lower_constant": 1024,
+    "upper_constant": 12288
+  },
+  "title": "Finite saturation for high-budget best-of-n grids",
+  "version": 1
+}
