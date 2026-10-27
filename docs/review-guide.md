@@ -1,6 +1,8 @@
 # Scientific review guide
 
-For the current cost result, start with the [self-contained sharp-cost manuscript](../paper/sharp-cost/README.md). It combines the arbitrary-grid theorem, complete finite lower-bound proof, structural counterexample, saved arithmetic evidence, and practical power limitation. Its evidence remains frozen at v0.7; the manuscript is a consolidation, not an additional experiment. Earlier proof notes and the v0.3 paper remain available below.
+The [nonzero minimax theorem](nonzero-minimax-theorem.md) is the latest extension. Review its one-auditor worst-case objective, monotone-ratio/sub-CDF upper argument, linear stage schedule, and common fixed-count permutation lower bound. The strong replication condition belongs only to the lower bound and cannot be replaced by small atoms. Its [report](nonzero-minimax-report.md) distinguishes exact arithmetic from probability proofs and records a census fallback on the existing practical geometry. The [priority comparison](nonzero-minimax-priority.md) identifies close prior rare-event bandwise KL and concentration results.
+
+For the zero-table cost result, start with the [self-contained sharp-cost manuscript](../paper/sharp-cost/README.md). It combines the arbitrary-grid theorem, complete finite lower-bound proof, structural counterexample, saved arithmetic evidence, and practical power limitation. Its evidence remains frozen at v0.7; the manuscript is a consolidation, not an additional experiment. Earlier proof notes and the v0.3 paper remain available below.
 
 This guide maps the project's claims to inspectable evidence. All experiments use synthetic fixed pools and fixed loss labels. External novelty review, independent human replication, real-model validation, and practical adoption remain unestablished. [Provenance](provenance.md) describes the substantial agent assistance and distinguishes agent review from human review.
 

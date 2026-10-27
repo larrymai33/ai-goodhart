@@ -1,6 +1,8 @@
 # What zero-table competitiveness does not imply
 
-The project's cost theorems evaluate expected distinct queries at an all-zero table, while requiring validity against every fixed loss table. Extending this to arbitrary safe tables raises an established distinction between testing an unknown table and checking a candidate reference. The observations below delimit the research claim; they are not new auditing methods or general impossibility discoveries.
+The project's earlier cost theorems evaluate expected distinct queries at an all-zero table, while requiring validity against every fixed loss table. Extending this to arbitrary safe tables raises an established distinction between testing an unknown table and checking a candidate reference. The observations below delimit the research claim; they are not new auditing methods or general impossibility discoveries.
+
+The later [nonzero minimax extension](nonzero-minimax-theorem.md) uses a different order of quantifiers: one auditor's worst-case cost over a supplied margin class. It supplies a matching order under a strong replication condition, while retaining the limitations below for a pointwise optimum. Its proof construction is not a practical engine replacement; see the [scope and census example](nonzero-minimax-report.md).
 
 ## A fixed reference gives a classical comparison audit
 
