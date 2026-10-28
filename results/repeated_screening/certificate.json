@@ -1,0 +1,117 @@
+{
+  "examples": [
+    {
+      "N": 13000,
+      "census_cap_multiplier": null,
+      "cheap_only_lower_integer": 18653,
+      "delta": "1/20",
+      "epsilon": "9/640",
+      "exact_cost": 64,
+      "exact_only_lower_integer": 9410,
+      "gate_height": 4,
+      "guaranteed_reduction_fraction_at_least": "75/1066",
+      "margin_class_risk_max": "1/640",
+      "name": "wide-margin finite example",
+      "nu": "1/200",
+      "one_report_lower_integer": 3198,
+      "prior_p": "0",
+      "prior_p_alternate": "5/256",
+      "small_relative_margin_regime": false,
+      "tail_checks_passed": true,
+      "tau": "1/64",
+      "upper_integer": 2973
+    },
+    {
+      "N": 70000000,
+      "census_cap_multiplier": "48",
+      "cheap_only_lower_integer": 302326524,
+      "delta": "1/20",
+      "epsilon": "1/8192",
+      "exact_cost": 8192,
+      "exact_only_lower_integer": 2747662969,
+      "gate_height": 52,
+      "guaranteed_reduction_fraction_at_least": "30019578/128874779",
+      "margin_class_risk_max": "15/8192",
+      "name": "small-relative-margin example",
+      "nu": "1/10000000",
+      "one_report_lower_integer": 128874779,
+      "prior_p": "59/32768",
+      "prior_p_alternate": "65/32768",
+      "small_relative_margin_regime": true,
+      "tail_checks_passed": true,
+      "tau": "1/512",
+      "upper_integer": 98855201
+    }
+  ],
+  "gate_cases": 561,
+  "illustrative_trace_scope": "Scripted conformance paths; not Monte Carlo or evidence of statistical calibration.",
+  "illustrative_traces": [
+    {
+      "adjudications": 0,
+      "corrected_ones": 0,
+      "corrected_zeros": 318,
+      "name": "all reports zero",
+      "payment": 318,
+      "proposals": 318,
+      "ratings": 318,
+      "reason": "likelihood",
+      "status": "certified"
+    },
+    {
+      "adjudications": 1,
+      "corrected_ones": 0,
+      "corrected_zeros": 318,
+      "name": "cache reused",
+      "payment": 65,
+      "proposals": 318,
+      "ratings": 1,
+      "reason": "likelihood",
+      "status": "certified"
+    },
+    {
+      "adjudications": 1,
+      "corrected_ones": 0,
+      "corrected_zeros": 0,
+      "name": "safe boundary census",
+      "payment": 65,
+      "proposals": 1,
+      "ratings": 1,
+      "reason": "census",
+      "status": "certified"
+    },
+    {
+      "adjudications": 1,
+      "corrected_ones": 0,
+      "corrected_zeros": 0,
+      "name": "all up walk",
+      "payment": 69,
+      "proposals": 1,
+      "ratings": 5,
+      "reason": "census",
+      "status": "certified"
+    },
+    {
+      "adjudications": 0,
+      "corrected_ones": 0,
+      "corrected_zeros": 0,
+      "name": "cap during walk",
+      "payment": 3,
+      "proposals": 1,
+      "ratings": 3,
+      "reason": "rating_limit",
+      "status": "inconclusive"
+    }
+  ],
+  "logarithm_method": "64-term rational atanh series after dyadic reduction, with geometric tail enclosure",
+  "scope": "Finite ideal-channel theory; exploratory example selection; no LLM measurements or independent proof review.",
+  "source_sha256": {
+    "docs/repeated-screening-theorem.md": "44b2396d2fac02ad7c04f5ee59e0e98be324de23499f1e24219af526b11b7429",
+    "experiments/check_repeated_screening.py": "70fcdedbfae6db09435f182f825f23c522b4d8c891368aec45a40b5beb519492",
+    "experiments/repeated_screening_protocol.json": "16bbaa809a2f00da73ba934ac760fb9dfd9a9ba397e08dd6a2a59cfac9aaab1a",
+    "goodhart_audit/screening.py": "6db270e016c249d8efc82d6c6e8f5ba87cd5d918cdbf5b97b3a823da83bd6b3d",
+    "goodhart_audit/screening_math.py": "ac96f0857a28c718397c3b51b4a38ce01724b9585f23f76f9dc1b331668401f2",
+    "tests/test_screening.py": "55dae749db3815aadc6598893dc5037c96e3b4d5ee401e75b2c755a94dda6d53",
+    "tests/test_screening_checker.py": "cf12fe4cd67cb8f0732985721662a337e79c8d0406d3ca4766c602d527f3bda2",
+    "tests/test_screening_math.py": "07f96dc8ee79f6891761d30ff98e508b02877d24ad1212abba3fbd309941e36b"
+  }
+}

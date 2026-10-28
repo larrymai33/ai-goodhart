@@ -1,5 +1,18 @@
 # Provenance and contribution disclosure
 
+An unmerged [repeated-screening working draft](repeated-screening-report.md)
+adds a separate ideal two-oracle finite comparison. Codex derived the gate
+bound and elementary lower comparisons, implemented the callback auditor,
+wrote the proof and report, and ran exact checks. The two examples were chosen
+exploratorily; source/protocol freeze `144e3a7` preceded saved results, not the
+discovery process. Two runs reproduce all 3,890 bytes. The 25 new tests and all
+398 repository tests pass. Review was performed by the generating session
+only because independent agents were unavailable; the [review record](repeated-screening-review.md)
+states that limitation. No independent human review or owner verification has
+occurred. Existing scientific sources and results are preserved. No downloads,
+installations, model calls or outreach occurred. Novelty, real-model relevance,
+field impact and fellowship competitiveness remain unestablished.
+
 Version 0.14.1 consolidates the existing all-grid finite-cost result and its
 complete project-specific proof dependencies into a current
 [manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the
