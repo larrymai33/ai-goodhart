@@ -1,5 +1,16 @@
 # Provenance and contribution disclosure
 
+The [training-audit working draft](audit-surrogate-contract.md) is a separate
+analysis of verifier corrections in a fixed-batch clipped surrogate. Codex
+derived the exact clipping-gap identity, the two-action audit-reuse example,
+and the conditional fresh-or-cached rule. Six standard-library tests, an
+optional installed-PyTorch autograd test, and exact finite checks support
+the calculation; no model was trained. Primary papers and the TRL
+v0.26.2 clipping and buffering code were read without installing or saving
+external source files. The referenced study's own implementation was not
+inspected. This is generating-session self-review, not independent validation.
+Novelty, practical benefit and owner research ownership remain unestablished.
+
 Version 0.14.1 consolidates the existing all-grid finite-cost result and its
 complete project-specific proof dependencies into a current
 [manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the
