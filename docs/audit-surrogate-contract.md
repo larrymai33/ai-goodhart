@@ -219,11 +219,24 @@ and timings have not been independently checked here. Standard group-relative
 clipping and repeated updates also appear in
 [DeepSeekMath, Section 4.1](https://arxiv.org/html/2402.03300v3).
 
-The proposed contribution to assess is the precise additional-penalty
-identity, the isolated audit-reuse counterexample, and a checkable conditional
-rule with explicit cached-label cost. A complete priority comparison remains
+The proposed contributions to assess are the precise additional-penalty
+identity, the isolated audit-reuse counterexample, and the
+[one-label sequential cost benchmark](audit-budget-theorem.md). The
+conditional rule uses classical sampling ideas. A complete priority comparison remains
 open. These calculations do not establish a new general sampling method,
 measured LLM savings or a field-moving AI-safety result.
+
+[Farquhar et al. (2021), Section 3.1, Equation 4](https://arxiv.org/html/2101.11665v2)
+already combine directly evaluated known losses with an inverse-probability
+estimate of the unknown remainder in PURE. Their Section 2 explicitly
+distinguishes fixed-model unbiasedness from dependence on training data.
+These foundations precede our verifier-specific analysis; the cached-plus-
+fresh sampling pattern is not claimed as a new method.
+
+The [matched-budget comparison](audit-budget-report.md) now tests fresh
+corrections without buying more labels on average. It includes a constructed
+case where both conditionally unbiased rules produce worse final reward
+than reusing one draw. Surrogate fidelity is not a policy-improvement result.
 
 A broader priority search also checked
 [Garg et al. (2021)](https://proceedings.mlr.press/v139/garg21b.html), whose

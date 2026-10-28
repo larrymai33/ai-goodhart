@@ -1,0 +1,21 @@
+{
+  "command": "python -B -m experiments.check_audit_budget --autograd",
+  "device": "cpu",
+  "dtype": "float64",
+  "generator_sources": {
+    "experiments/check_audit_budget.py": "65918c3e00e70c5e854b7a1db36484d6a918535ca66b44224dd2db43628e9558",
+    "experiments/check_audit_cache.py": "cac64cdf1c0ab22b444d61c35edd42035ea38420bd12dcddd9afd7712c73655b",
+    "experiments/check_audit_surrogate.py": "f8617a27405ff4c1101fb3f95ece0c08fad9b322cf28f92247766a954fc300d2"
+  },
+  "independent_review": false,
+  "platform": "win32",
+  "python_version": "3.11.0",
+  "result": {
+    "bytes": 24357,
+    "path": "results/audit_budget/comparison.json",
+    "sha256": "a84e89cd5d6ee2bc3475b3c361504b31c3257e33a6f0dfb8529b55bc8c0ddfa2"
+  },
+  "scope": "Constructed exact audit-tree comparison, not real-model evidence or external preregistration.",
+  "settings": 9,
+  "torch_version": "2.11.0+cu128"
+}

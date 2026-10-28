@@ -17,6 +17,18 @@ external source files. The referenced study's own implementation was not
 inspected. This is generating-session self-review, not independent validation.
 Novelty, practical benefit and owner research ownership remain unestablished.
 
+The [matched-budget extension](audit-budget-report.md) adds a one-label
+minimax proof, a schedule attaining its bound, exact checks and a comparison
+of three audit rules in nine constructed training settings. Eight tests
+cover the new checker, including an optional tensor case. Codex selected
+the settings after earlier experiments, derived the argument, implemented
+and ran the checks, and reported all settings, including adverse reward
+outcomes. The protocol is not an external preregistration. Prior active-
+learning constructions are explicitly attributed; general importance
+weighting, cached-plus-fresh estimation and the distinction between bias
+correction and training quality are not claimed as new. Independent review,
+real-model evidence and demonstrated owner contribution are still absent.
+
 Version 0.14.1 consolidates the existing all-grid finite-cost result and its
 complete project-specific proof dependencies into a current
 [manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the

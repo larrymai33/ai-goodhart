@@ -1,0 +1,734 @@
+{
+  "allocation_cases": 192,
+  "example": {
+    "T": 3,
+    "equal_time": [
+      "1/6",
+      "1/5",
+      "1/4"
+    ],
+    "equal_time_sum_mse": "31/3",
+    "inverse_survival": [
+      "1/4",
+      "1/5",
+      "1/6"
+    ],
+    "p": "1/2",
+    "reused_sum_step_mse": "3",
+    "reused_summed_error_mse": "9",
+    "sharp_sum_mse": "9"
+  },
+  "schedule_cases": 180,
+  "scope": "Finite algebra checks for the separately proved one-label benchmark; no training optimality claim.",
+  "tensor_comparison": {
+    "device": "cpu",
+    "dtype": "float64",
+    "scope": "Declared constructed settings; exact audit enumeration, floating-point gradients; no LLM benefit claim.",
+    "settings": [
+      {
+        "final_purchase_probabilities": [
+          "1/4",
+          "1/8"
+        ],
+        "learning_rate": 0.05,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              2.744450170751811e-33,
+              1.2543705442043968e-32,
+              9.452426969186874e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 1.4210854715202004e-14,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.022552677450329052,
+            "gradient_mse": [
+              11.795138888888888,
+              10.711636628160889,
+              9.676077558730123
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              5.238750013840908e-17,
+              9.302646679854572e-17,
+              6.842853880274879e-17
+            ],
+            "summed_error_mse": 32.18285307577991
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              7.16882282815077e-33,
+              1.254469789173911e-32,
+              9.338030738308858e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 7.105427357601002e-15,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.022712411206244752,
+            "gradient_mse": [
+              10.55208333333333,
+              10.641886449893827,
+              10.730476176370457
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.466890118662678e-17,
+              9.207110073775515e-17,
+              8.012435547844628e-17
+            ],
+            "summed_error_mse": 31.92444595959762
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              8.373281359777318e-34,
+              3.011582099184877,
+              1.2106284783704195
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 13.475835809118403,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.01728737972780078,
+            "gradient_mse": [
+              3.5173611111111107,
+              3.011582099184877,
+              1.2106284783704195
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              2.893662274657725e-17,
+              0.06805686416602927,
+              0.3765910357569444
+            ],
+            "summed_error_mse": 21.21540749778481
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "1/2",
+          "1/4"
+        ],
+        "learning_rate": 0.05,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              5.5611227144181435e-33,
+              1.1055613184612342e-32,
+              1.0401965183684434e-32
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.026428045804854253,
+            "gradient_mse": [
+              5.5868055555555545,
+              4.519864037868039,
+              3.573420524104975
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.457293553574342e-17,
+              8.992346015853962e-17,
+              2.9025595917299896e-17
+            ],
+            "summed_error_mse": 13.680090117528568
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              6.454874579235345e-33,
+              1.0225390258932915e-32,
+              4.905868821975486e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": -1.7763568394002505e-15,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.026404455448819718,
+            "gradient_mse": [
+              4.343749999999999,
+              4.380204639719575,
+              4.416186753791384
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.034223409412602e-17,
+              7.274774239823825e-17,
+              2.6817033087234888e-17
+            ],
+            "summed_error_mse": 13.140141393510957
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              1.367483205597387,
+              1.2875221331365871
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 8.190528496628033,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.02609894537584357,
+            "gradient_mse": [
+              1.4479166666666663,
+              1.367483205597387,
+              1.2875221331365871
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              0.027628290928048305,
+              0.05604794800829245
+            ],
+            "summed_error_mse": 12.293450502028673
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "3/4",
+          "1/2"
+        ],
+        "learning_rate": 0.05,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              1.6400497182672555e-33,
+              1.0162164336116687e-32,
+              4.277169418159986e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.02915983213095854,
+            "gradient_mse": [
+              2.690972222222222,
+              1.7043278114888456,
+              0.9458316080171301
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              4.0497527310531634e-17,
+              6.489778977072747e-17,
+              3.531060777285198e-17
+            ],
+            "summed_error_mse": 5.3411316417281975
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              1.5182873114316797e-32,
+              3.1697597001373254e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.029341724365353566,
+            "gradient_mse": [
+              1.4479166666666663,
+              1.4600888814337467,
+              1.472129677323932
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              7.36597093734251e-17,
+              2.294153123393953e-17
+            ],
+            "summed_error_mse": 4.380135225424345
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              1.2711137632955757e-32,
+              0.47664832032407317,
+              0.4705472582296547
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 2.858994026953594,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.028867156402279097,
+            "gradient_mse": [
+              0.4826388888888888,
+              0.47664832032407317,
+              0.4705472582296547
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              1.1274368112207335e-16,
+              0.008951490974478983,
+              0.01805107402233081
+            ],
+            "summed_error_mse": 4.288828494396211
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "1/4",
+          "1/8"
+        ],
+        "learning_rate": 0.2,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              2.744450170751811e-33,
+              1.3582114294725776e-32,
+              9.03391702156845e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": -7.105427357601002e-15,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.018310265365351863,
+            "gradient_mse": [
+              11.795138888888888,
+              10.769767479734877,
+              9.75488967345368
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              5.238750013840908e-17,
+              1.0950567362519843e-16,
+              8.202238557024614e-17
+            ],
+            "summed_error_mse": 32.31979604207744
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              7.16882282815077e-33,
+              1.4559268659228169e-32,
+              5.109826673199191e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.018083409139903257,
+            "gradient_mse": [
+              10.55208333333333,
+              10.832124176358738,
+              10.785223133932508
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.466890118662678e-17,
+              1.1163334443396584e-16,
+              5.443082901808046e-17
+            ],
+            "summed_error_mse": 32.16943064362458
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              8.373281359777318e-34,
+              0.8067221193399532,
+              0.6960019806268439
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 6.333155270887599,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": 0.003517872859095224,
+            "gradient_mse": [
+              3.5173611111111107,
+              0.8067221193399532,
+              0.6960019806268439
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              2.893662274657725e-17,
+              0.4499245896915831,
+              0.4910007275066455
+            ],
+            "summed_error_mse": 11.353240481965507
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "1/2",
+          "1/4"
+        ],
+        "learning_rate": 0.2,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              5.5611227144181435e-33,
+              2.0785237394981124e-32,
+              1.3753430188362197e-32
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.06332321933468249,
+            "gradient_mse": [
+              5.5868055555555545,
+              4.588844072515107,
+              3.6831515692430195
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.457293553574342e-17,
+              1.2138888443508935e-16,
+              8.245480350618173e-17
+            ],
+            "summed_error_mse": 13.858801197313682
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              6.454874579235345e-33,
+              2.1093051823245516e-32,
+              8.173898368006252e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.06371263783864993,
+            "gradient_mse": [
+              4.343749999999999,
+              4.443549397383219,
+              4.539541860056922
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.034223409412602e-17,
+              1.1572730109006612e-16,
+              6.430955916927594e-17
+            ],
+            "summed_error_mse": 13.32684125744014
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              0.6228339227299304,
+              0.5574847729815994
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 4.295941948108147,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.03813652027028713,
+            "gradient_mse": [
+              1.4479166666666663,
+              0.6228339227299304,
+              0.5574847729815994
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              0.3268242631512011,
+              0.3619856710709682
+            ],
+            "summed_error_mse": 6.924177310486343
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "3/4",
+          "1/2"
+        ],
+        "learning_rate": 0.2,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              1.6400497182672555e-33,
+              1.6071484150506403e-32,
+              6.931592394896822e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": -1.7763568394002505e-15,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.08909269868146198,
+            "gradient_mse": [
+              2.690972222222222,
+              1.7459289710389136,
+              0.9881575445031074
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              4.0497527310531634e-17,
+              1.0944770179393505e-16,
+              3.986615303319883e-17
+            ],
+            "summed_error_mse": 5.425058737764242
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              7.52918237633885e-33,
+              6.881989667943723e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": -8.881784197001252e-16,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.09098457921252637,
+            "gradient_mse": [
+              1.4479166666666663,
+              1.4951353381907866,
+              1.5392766824775985
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              6.011135994867897e-17,
+              4.6208958327702283e-17
+            ],
+            "summed_error_mse": 4.482328687335051
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              1.2711137632955757e-32,
+              0.45697485133820126,
+              0.3309003084567716
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 2.423970660906958,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.08064781782390802,
+            "gradient_mse": [
+              0.4826388888888888,
+              0.45697485133820126,
+              0.3309003084567716
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              1.1274368112207335e-16,
+              0.037436188937099324,
+              0.19035549369326848
+            ],
+            "summed_error_mse": 3.6944847095908195
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "1/4",
+          "1/8"
+        ],
+        "learning_rate": 0.8,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              2.744450170751811e-33,
+              9.467695334699222e-33,
+              1.0962503583188544e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 3.552713678800501e-15,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": -0.08531885665240631,
+            "gradient_mse": [
+              11.795138888888888,
+              11.08582202978574,
+              4.699617468002301
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              5.238750013840908e-17,
+              9.103094107820069e-17,
+              2.5806834818128602e-17
+            ],
+            "summed_error_mse": 27.580578386676933
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              7.16882282815077e-33,
+              9.252086065881955e-33,
+              5.7087746717689676e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": -0.08477735595531675,
+            "gradient_mse": [
+              10.55208333333333,
+              11.133520970655798,
+              5.404551222236441
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.466890118662678e-17,
+              8.895215133515441e-17,
+              4.1070167478642345e-17
+            ],
+            "summed_error_mse": 27.090155526225573
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              8.373281359777318e-34,
+              0.5111937078016174,
+              0.2861461981690679
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 2.656181964478903,
+            "expected_distinct_labels": "9/8",
+            "expected_final_full_reward": -0.07031740080471814,
+            "gradient_mse": [
+              3.5173611111111107,
+              0.5111937078016174,
+              0.2861461981690679
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              2.893662274657725e-17,
+              0.5701243529362933,
+              0.4133746101931618
+            ],
+            "summed_error_mse": 6.9708829815607
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "1/2",
+          "1/4"
+        ],
+        "learning_rate": 0.8,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              5.5611227144181435e-33,
+              1.0454345211957073e-32,
+              2.074052681429518e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": -1.7763568394002505e-15,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.03675191641403149,
+            "gradient_mse": [
+              5.5868055555555545,
+              4.571540945478646,
+              1.8405300929777213
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.457293553574342e-17,
+              8.942518892143446e-17,
+              1.8274413037820627e-17
+            ],
+            "summed_error_mse": 11.99887659401192
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              6.454874579235345e-33,
+              9.538826326414246e-33,
+              2.604732707513537e-33
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 0.0,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.04683996837250566,
+            "gradient_mse": [
+              4.343749999999999,
+              4.23173108904399,
+              2.252960991315505
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              8.034223409412602e-17,
+              7.375778531988893e-17,
+              1.5564300421128038e-17
+            ],
+            "summed_error_mse": 10.828442080359494
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              0.36992460868890265,
+              0.2705829427152263
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 2.346957067149137,
+            "expected_distinct_labels": "9/4",
+            "expected_final_full_reward": 0.027480534144291004,
+            "gradient_mse": [
+              1.4479166666666663,
+              0.36992460868890265,
+              0.2705829427152263
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              0.3907335473431837,
+              0.3608639450681978
+            ],
+            "summed_error_mse": 4.435381285219933
+          }
+        }
+      },
+      {
+        "final_purchase_probabilities": [
+          "3/4",
+          "1/2"
+        ],
+        "learning_rate": 0.8,
+        "methods": {
+          "equal_time": {
+            "conditional_bias_squared": [
+              1.6400497182672555e-33,
+              1.3493421286798983e-32,
+              4.473774766649516e-34
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 8.881784197001252e-16,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.18791982569665258,
+            "gradient_mse": [
+              2.690972222222222,
+              1.642561896597892,
+              0.4836112740236572
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              4.0497527310531634e-17,
+              8.567880562016751e-17,
+              9.078570342312816e-18
+            ],
+            "summed_error_mse": 4.817145392843772
+          },
+          "inverse_survival": {
+            "conditional_bias_squared": [
+              5.1766890419252226e-33,
+              8.64975763109072e-33,
+              7.635509758685228e-34
+            ],
+            "conditional_states": 14,
+            "error_cross_term": 4.440892098500626e-16,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.20403319518856614,
+            "gradient_mse": [
+              1.4479166666666663,
+              1.201728568752458,
+              0.7361496484116727
+            ],
+            "leaves": 16,
+            "marginal_gradient_bias_norm": [
+              7.194921154484755e-17,
+              6.808133565699446e-17,
+              1.2801480927941501e-17
+            ],
+            "summed_error_mse": 3.385794883830797
+          },
+          "reuse": {
+            "conditional_bias_squared": [
+              1.2711137632955757e-32,
+              0.2838514838244856,
+              0.15002484315711612
+            ],
+            "conditional_states": 9,
+            "error_cross_term": 1.4877895016015554,
+            "expected_distinct_labels": "15/4",
+            "expected_final_full_reward": 0.13234771936563633,
+            "gradient_mse": [
+              0.4826388888888888,
+              0.2838514838244856,
+              0.15002484315711612
+            ],
+            "leaves": 4,
+            "marginal_gradient_bias_norm": [
+              1.1274368112207335e-16,
+              0.2648243863464204,
+              0.16565670430899737
+            ],
+            "summed_error_mse": 2.404304717472046
+          }
+        }
+      }
+    ],
+    "torch_version": "2.11.0+cu128",
+    "updates": 3
+  }
+}
