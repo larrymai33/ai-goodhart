@@ -166,3 +166,14 @@ there has been no independent proof review.
 
 The original theorem, auditor and saved certificate are unchanged. No
 downloads, installations, model calls, dataset execution or outreach occurred.
+
+## Follow-up on the actual target
+
+The [program-audit benchmark](program-audit-zero-cost.md) now gives an exact
+all-passing-input cost for direct component access and a bound on the number
+of programs with any failure. It permits arbitrary adaptive partial queries.
+When a bad program may fail only one test, random complete-row inspection
+attains the optimum on the all-zero input. A known minimum failure density
+can make partial testing better, but the example also quantifies loss of
+validity when that promise fails. This is a conditional baseline with a
+narrow cost objective; it does not establish a practical evaluation advantage.

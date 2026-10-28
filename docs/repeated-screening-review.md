@@ -87,3 +87,21 @@ The raw-access upper bound and two symbolic counterexamples have four new
 tests; the complete suite now passes 407 tests. The exact opaque-model
 certificate remains unchanged. A credible application still needs its actual
 observation interface, target and cost model analyzed together.
+
+The [program-audit follow-up](program-audit-zero-cost.md) directly studies
+the any-failure target with raw component access. Its all-zero allocation
+LP has a matching hard-prior lower bound and symmetrized sampling policy.
+For singleton failures, concentration and hypergeometric convexity give a
+closed form. A one-cell coupling separately forces near-census cost at the
+safe boundary. A promised-density example saves queries but violates its
+error target when the promise fails. These are conditional mathematical
+baselines, with classical ingredients and unresolved priority.
+
+Seven new tests independently enumerate hidden tables, queried subsets and
+two-profile mixtures on small instances. All 414 repository tests pass;
+the new tests also pass under optimized standard-library Python. The checker
+covers 789 singleton allocation profiles, and normal/optimized calculations
+match byte for byte. Self-review checked the uniform-validity coupling,
+census completion, promise dependence and narrow cost objective. No independent
+review is available. The original eight pins and 3,890-byte separation
+certificate remain unchanged.

@@ -1,5 +1,15 @@
 # Provenance and contribution disclosure
 
+The [program-audit benchmark](program-audit-zero-cost.md) studies raw test
+access and the any-failure program target directly. Codex derived an exact
+all-zero-input allocation characterization, its single-failure hypergeometric
+closed form, and a counterexample to dropping an assumed failure-density
+promise. Seven tests use independent finite enumerations. The derivation
+builds on classical sampling and decision-tree arguments; established
+novelty, independent review and real-model usefulness are not claimed.
+The owner has not personally checked the result. This is a separate research
+baseline, not a change to the frozen noisy-screening proof or certificate.
+
 The [component-access scope check](repeated-screening-operational-check.md)
 rejects an automatic test-suite interpretation of the noisy-oracle result.
 Codex read the EvalPlus primary paper and evaluation interface, derived a
