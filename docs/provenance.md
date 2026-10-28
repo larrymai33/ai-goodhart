@@ -1,5 +1,34 @@
 # Provenance and contribution disclosure
 
+The [training-audit working draft](audit-surrogate-contract.md) is a separate
+analysis of verifier corrections in a fixed-batch clipped surrogate. Codex
+derived the exact clipping-gap identity, the two-action audit-reuse example,
+and the conditional fresh-or-cached rule. Six standard-library tests, an
+optional installed-PyTorch autograd test, and exact finite checks support
+the initial calculation. A subsequent [cache experiment](audit-cache-experiment.md)
+adds four standard-library tests and one optional tensor test. It executes
+three SGD updates of a constructed categorical policy, enumerates all audit
+histories and tests split microbatches. It includes an exact premature-cache
+counterexample and local negative controls. Codex designed, implemented and
+checked this experiment; independent agent review was unavailable. No LLM
+was trained. Primary papers and the TRL
+v0.26.2 clipping and buffering code were read without installing or saving
+external source files. The referenced study's own implementation was not
+inspected. This is generating-session self-review, not independent validation.
+Novelty, practical benefit and owner research ownership remain unestablished.
+
+The [matched-budget extension](audit-budget-report.md) adds a one-label
+minimax proof, a schedule attaining its bound, exact checks and a comparison
+of three audit rules in nine constructed training settings. Eight tests
+cover the new checker, including an optional tensor case. Codex selected
+the settings after earlier experiments, derived the argument, implemented
+and ran the checks, and reported all settings, including adverse reward
+outcomes. The protocol is not an external preregistration. Prior active-
+learning constructions are explicitly attributed; general importance
+weighting, cached-plus-fresh estimation and the distinction between bias
+correction and training quality are not claimed as new. Independent review,
+real-model evidence and demonstrated owner contribution are still absent.
+
 Version 0.14.1 consolidates the existing all-grid finite-cost result and its
 complete project-specific proof dependencies into a current
 [manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the
