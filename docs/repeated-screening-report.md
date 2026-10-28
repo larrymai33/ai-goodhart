@@ -117,6 +117,15 @@ Bernoulli factories, and multi-fidelity sampling. Whether an earlier method
 with bundled, randomly priced reports subsumes this construction remains
 unresolved. This draft does not establish priority.
 
+The subsequent [report-bundling analysis](repeated-screening-bundling.md)
+resolves one part of that question: a completed gate does have a binary report
+interface, and a fixed price can dominate its expected primitive cost.
+Neither binary channel is a random post-processing of the other. Thus the
+comparison is specifically against one **primitive cost-one rating** per
+item, not every compound report described as a single query. The full audit's
+revisits and fixed-table objective still prevent this single-call calculation
+from being a complete equivalence or a novelty determination.
+
 Codex performed the derivation, implementation, numerical checking and writing.
 Larry reports having personally checked none of the project yet. No downloads,
 installations, model calls or outreach occurred. Independent correctness,

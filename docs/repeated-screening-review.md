@@ -62,8 +62,19 @@ does not settle these universal claims.
 
 No judgement of established novelty is made. The proof-level comparison with
 random-cost report bundling and earlier active-evaluation methods is unfinished.
+The [subsequent bundling analysis](repeated-screening-bundling.md) now gives
+an explicit single-call report representation and a conservative expected
+price. It also shows that the two coarsened binary channels are incomparable
+under randomized post-processing. This resolves the finite-report-interface
+subquestion, while leaving the entire audit/optimality comparison open.
 No real-model calibration, field impact, or independent contribution by the
 project owner has been demonstrated. Computational scaling of the exact
 likelihood implementation is also unbenchmarked; the optional rating cap is
 not a general resource limit. These limits are explicit scope boundaries, not
 evidence that the corresponding research questions have been solved.
+
+After this follow-up, all 403 repository tests pass, including five added
+bundling tests that also pass under optimized standard-library Python. The
+901 gate cases and the universal derivation were checked by the generating
+session only. The original eight source pins and 3,890-byte certificate remain
+unchanged; no independent review is implied by these extra checks.

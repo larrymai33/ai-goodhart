@@ -1,5 +1,13 @@
 # Provenance and contribution disclosure
 
+The [report-bundling follow-up](repeated-screening-bundling.md) derives a
+finite-report representation and a one-sided expected-price transfer for the
+repeated gate. Codex read the relevant primary-source model and transcript
+sections, derived both binary post-processing obstructions, and checked 901
+finite gate cases with five new tests. This narrows the interpretation of
+“one report” to one primitive rating; it does not establish priority or change
+the frozen separation. The review remains by the generating session only.
+
 An unmerged [repeated-screening working draft](repeated-screening-report.md)
 adds a separate ideal two-oracle finite comparison. Codex derived the gate
 bound and elementary lower comparisons, implemented the callback auditor,
