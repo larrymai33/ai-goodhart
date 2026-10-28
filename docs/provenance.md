@@ -5,7 +5,13 @@ analysis of verifier corrections in a fixed-batch clipped surrogate. Codex
 derived the exact clipping-gap identity, the two-action audit-reuse example,
 and the conditional fresh-or-cached rule. Six standard-library tests, an
 optional installed-PyTorch autograd test, and exact finite checks support
-the calculation; no model was trained. Primary papers and the TRL
+the initial calculation. A subsequent [cache experiment](audit-cache-experiment.md)
+adds four standard-library tests and one optional tensor test. It executes
+three SGD updates of a constructed categorical policy, enumerates all audit
+histories and tests split microbatches. It includes an exact premature-cache
+counterexample and local negative controls. Codex designed, implemented and
+checked this experiment; independent agent review was unavailable. No LLM
+was trained. Primary papers and the TRL
 v0.26.2 clipping and buffering code were read without installing or saving
 external source files. The referenced study's own implementation was not
 inspected. This is generating-session self-review, not independent validation.

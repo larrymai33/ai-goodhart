@@ -197,6 +197,11 @@ to full-audit trajectories, and does not remove nonlinear optimizer effects.
 Caching also needs a well-defined reference: flaky or stateful verifier runs
 cannot silently be treated as immutable labels for a different target.
 
+The [cache experiment](audit-cache-experiment.md) now tests this lifecycle
+through three actual tensor optimizer steps and split microbatches. Its
+additional counterexample shows why newly purchased labels must retain the
+current update's inverse weight until all gradient accumulation finishes.
+
 ## 5. Relation to prior work and current evidence
 
 [Li et al. (2026), Sections 2-3 and Proposition 8](https://arxiv.org/html/2610.35716v1)
@@ -219,6 +224,15 @@ identity, the isolated audit-reuse counterexample, and a checkable conditional
 rule with explicit cached-label cost. A complete priority comparison remains
 open. These calculations do not establish a new general sampling method,
 measured LLM savings or a field-moving AI-safety result.
+
+A broader priority search also checked
+[Garg et al. (2021)](https://proceedings.mlr.press/v139/garg21b.html), whose
+abstract describes empirical heavy-tailed PPO gradients and the role of
+clipping, and [Huang et al. (2026), Section 3](https://arxiv.org/html/2609.36816v1),
+which changes the clipping operation and compares gradient second moments
+under explicit assumptions. These are related analyses, not verification
+of the identity here. This bounded search does not settle priority; the
+gap calculation could already be known in the broader PPO literature.
 
 ### Implementation boundary checked in TRL
 
@@ -268,8 +282,9 @@ within 8.89e-16, and returned second expected gradients -1.92 versus -1.96.
 These are conformance checks on a constructed example, not a model-training
 experiment or a test of the cited study's implementation.
 
-All 380 tests on this branch pass with the installed environment, including
-the optional autograd check. The standard-library normal and optimized
+At initial draft commit `772ec82`, all 380 tests on this branch passed with
+the installed environment, including the optional autograd check. The
+standard-library normal and optimized
 calculations produce identical 825-byte output, SHA-256
 `0023c788112670333752e5a1791c9d6a058a42f9ee25badcc29e36c478938789`.
 Under `-O -S`, the six standard-library tests pass and the optional test is
