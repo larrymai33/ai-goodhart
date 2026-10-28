@@ -1,5 +1,45 @@
 # Provenance and contribution disclosure
 
+The [program-audit benchmark](program-audit-zero-cost.md) studies raw test
+access and the any-failure program target directly. Codex derived an exact
+all-zero-input allocation characterization, its single-failure hypergeometric
+closed form, and a counterexample to dropping an assumed failure-density
+promise. Seven tests use independent finite enumerations. The derivation
+builds on classical sampling and decision-tree arguments; established
+novelty, independent review and real-model usefulness are not claimed.
+The owner has not personally checked the result. This is a separate research
+baseline, not a change to the frozen noisy-screening proof or certificate.
+
+The [component-access scope check](repeated-screening-operational-check.md)
+rejects an automatic test-suite interpretation of the noisy-oracle result.
+Codex read the EvalPlus primary paper and evaluation interface, derived a
+standard direct-component likelihood/census bound, and constructed two exact
+counterexamples distinguishing average test failure from program failure.
+Four regression tests cover the arithmetic and counterexamples. No benchmark
+or model was run, and no new statistical-method novelty is claimed. This
+changes the application assessment, not the frozen theorem or certificate.
+
+The [report-bundling follow-up](repeated-screening-bundling.md) derives a
+finite-report representation and a one-sided expected-price transfer for the
+repeated gate. Codex read the relevant primary-source model and transcript
+sections, derived both binary post-processing obstructions, and checked 901
+finite gate cases with five new tests. This narrows the interpretation of
+“one report” to one primitive rating; it does not establish priority or change
+the frozen separation. The review remains by the generating session only.
+
+An unmerged [repeated-screening working draft](repeated-screening-report.md)
+adds a separate ideal two-oracle finite comparison. Codex derived the gate
+bound and elementary lower comparisons, implemented the callback auditor,
+wrote the proof and report, and ran exact checks. The two examples were chosen
+exploratorily; source/protocol freeze `144e3a7` preceded saved results, not the
+discovery process. Two runs reproduce all 3,890 bytes. The 25 new tests and all
+398 repository tests pass. Review was performed by the generating session
+only because independent agents were unavailable; the [review record](repeated-screening-review.md)
+states that limitation. No independent human review or owner verification has
+occurred. Existing scientific sources and results are preserved. No downloads,
+installations, model calls or outreach occurred. Novelty, real-model relevance,
+field impact and fellowship competitiveness remain unestablished.
+
 Version 0.14.1 consolidates the existing all-grid finite-cost result and its
 complete project-specific proof dependencies into a current
 [manuscript](../paper/finite-cost/manuscript.pdf). Codex assembled the
