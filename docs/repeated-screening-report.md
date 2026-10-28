@@ -111,6 +111,14 @@ calibration procedure or real evaluation setting establishing them is supplied.
 The theorem concerns uniform mean risk in this two-oracle experiment; it is
 separate from the existing best-of-N rank-envelope manuscript.
 
+The [operational scope check](repeated-screening-operational-check.md) finds
+two obstacles to treating a finite executable test suite as that experiment:
+raw component access enables a cheaper standard bound, and average test
+failure does not determine the fraction of programs with any failure. This
+mapping therefore supplies no demonstrated practical advantage for the
+opaque noisy-rating construction. Its observation interface and target need
+an operational justification before further applied claims.
+
 The [source comparison](repeated-screening-theorem.md#interpretation-implementation-and-prior-work)
 credits earlier selective evaluation, adaptive KL bounds, lazy continuation,
 Bernoulli factories, and multi-fidelity sampling. Whether an earlier method

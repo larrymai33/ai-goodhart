@@ -1,5 +1,14 @@
 # Provenance and contribution disclosure
 
+The [component-access scope check](repeated-screening-operational-check.md)
+rejects an automatic test-suite interpretation of the noisy-oracle result.
+Codex read the EvalPlus primary paper and evaluation interface, derived a
+standard direct-component likelihood/census bound, and constructed two exact
+counterexamples distinguishing average test failure from program failure.
+Four regression tests cover the arithmetic and counterexamples. No benchmark
+or model was run, and no new statistical-method novelty is claimed. This
+changes the application assessment, not the frozen theorem or certificate.
+
 The [report-bundling follow-up](repeated-screening-bundling.md) derives a
 finite-report representation and a one-sided expected-price transfer for the
 repeated gate. Codex read the relevant primary-source model and transcript

@@ -78,3 +78,12 @@ bundling tests that also pass under optimized standard-library Python. The
 901 gate cases and the universal derivation were checked by the generating
 session only. The original eight source pins and 3,890-byte certificate remain
 unchanged; no independent review is implied by these extra checks.
+
+The [operational check](repeated-screening-operational-check.md) subsequently
+found that direct component access gives a stronger oracle and that average
+test failure can be small even when every program has a failure. This rejects
+an automatic interpretation as a demonstrated test-suite evaluation advantage.
+The raw-access upper bound and two symbolic counterexamples have four new
+tests; the complete suite now passes 407 tests. The exact opaque-model
+certificate remains unchanged. A credible application still needs its actual
+observation interface, target and cost model analyzed together.
