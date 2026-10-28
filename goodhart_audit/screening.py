@@ -140,6 +140,8 @@ def audit(rating, adjudicate, *, population, exact_cost, tau, epsilon, delta,
                 exact_sum += score
                 if len(cache) == population:
                     return finish('certified' if exact_sum <= population*tau else 'rejected', 'census')
+                if exact_sum > population*tau:
+                    return finish('rejected', 'exact_lower_bound')
                 emitted = coin(correction_probability(score, gate_height))
         ones += emitted
         zeros += 1-emitted

@@ -44,6 +44,13 @@ class ScreeningTests(unittest.TestCase):
         result = self.run_audit(rating=lambda i: 1, population=1, gate_height=4)
         self.assertEqual((result.ratings, result.adjudications, result.payment), (5, 1, 69))
 
+    def test_exact_evidence_of_unsafety_rejects_before_likelihood(self):
+        draws = iter([0])
+        result = self.run_audit(rating=lambda i: 1, exact=lambda i: 1,
+                                randbelow=lambda n: next(draws), max_ratings=1)
+        self.assertEqual((result.status, result.reason), ('rejected', 'exact_lower_bound'))
+        self.assertEqual((result.payment, result.proposals), (65, 1))
+
     def test_lower_exit_and_holding_steps_are_charged(self):
         for hold in [False, True]:
             with self.subTest(hold=hold):
@@ -55,25 +62,27 @@ class ScreeningTests(unittest.TestCase):
                 self.assertEqual(result.ratings, 319 + int(hold))
                 self.assertEqual(result.adjudications, 0)
 
-    def test_purchased_nonzero_coin_uses_correction_then_census(self):
-        draws = iter([(2, 0), (9, 0), (2, 1)])
+    def test_purchased_nonzero_coin_uses_correction_before_rating_cap(self):
+        draws = iter([(128, 0), (9, 0), (128, 1), (128, 2)])
         def rng(n):
             bound, value = next(draws)
             self.assertEqual(n, bound)
             return value
-        result = self.run_audit(rating=lambda i: 1, exact=lambda i: 1-i, randbelow=rng)
-        self.assertEqual((result.status, result.reason), ('rejected', 'census'))
-        self.assertEqual((result.corrected_ones, result.corrected_zeros), (1, 0))
+        result = self.run_audit(rating=lambda i: 1, exact=lambda i: 1-i, randbelow=rng,
+                                population=128, max_ratings=2)
+        self.assertEqual((result.status, result.reason), ('inconclusive', 'rating_limit'))
+        self.assertEqual((result.corrected_ones, result.corrected_zeros), (1, 1))
         self.assertEqual((result.ratings, result.adjudications, result.payment), (2, 2, 130))
 
     def test_nonzero_cached_coin_uses_two_thirds_score(self):
-        draws = iter([(2, 0), (9, 8), (2, 0), (3, 1), (2, 1)])
+        draws = iter([(128, 0), (9, 8), (128, 0), (3, 1), (128, 1), (128, 2)])
         def rng(n):
             bound, value = next(draws)
             self.assertEqual(n, bound)
             return value
-        result = self.run_audit(rating=lambda i: 1, exact=lambda i: 1-i, randbelow=rng)
-        self.assertEqual((result.corrected_ones, result.corrected_zeros), (1, 1))
+        result = self.run_audit(rating=lambda i: 1, exact=lambda i: 1-i, randbelow=rng,
+                                population=128, max_ratings=2)
+        self.assertEqual((result.corrected_ones, result.corrected_zeros), (1, 2))
         self.assertEqual(result.payment, 130)
 
     def test_correction_probabilities_include_both_endpoints(self):

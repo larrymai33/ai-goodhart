@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "scope": "Finite ideal-channel theory; exploratory example selection; no LLM measurements or independent proof review.",
+  "log_series_terms": 64,
+  "gate_heights": [0, 32],
+  "score_denominator": 16,
+  "examples": [
+    {
+      "name": "wide-margin finite example",
+      "N": 13000,
+      "c": 64,
+      "tau": "1/64",
+      "epsilon": "9/640",
+      "delta": "1/20",
+      "nu": "1/200",
+      "K": 4,
+      "p": "0",
+      "pp": "5/256",
+      "cap": null
+    },
+    {
+      "name": "small-relative-margin example",
+      "N": 70000000,
+      "c": 8192,
+      "tau": "1/512",
+      "epsilon": "1/8192",
+      "delta": "1/20",
+      "nu": "1/10000000",
+      "K": 52,
+      "p": "59/32768",
+      "pp": "65/32768",
+      "cap": "48"
+    }
+  ]
+}
